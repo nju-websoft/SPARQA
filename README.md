@@ -3,24 +3,29 @@
 Code and dataset for AAAI 2020 paper: "SPARQA: Skeleton-based Semantic Parsing for Complex Questions over Knowledge Bases".
 
 ## Dataset
+Two public datasets involving complex questions.
+Also, it contains resources for entity linking or candidate grounded query ranking.
 
 ## Skeleton
+It is a complex questions skeleton bank by manually annotation. It contains about 10K questions (5,166 questions and 5000 questions from ComplexWebQuestions). We make this resource public to supporch future research (in specific, question understanding or parsing research).
 
 ## Dependencies
 
 ## Run
+SPARQA pipeline has two steps for answering questions: (1) KB-indenpendent graph-structured ungrounded query generation. (2) KB-dependent graph-structure grounded query generation and ranking. (also, retrieve knowledge base). Below, I will describe how to run our SPARQA by step-to-step.
 
-    1
+### step 1
 
-    2.1
+### step 2
 
-    2.2
+#### step 2.1
 
-    3
+#### step 2.2
+
+#### step 2.3
 
 ## Citation
 
     SPARQA: Skeleton-based Semantic Parsing for Complex Questions over Knowledge Bases, AAAI, 2020}
 
-
-If you have any difficulty or any question in running code, reproducing experimental results, and skeleton annotation data, please email to me (ywsun@smail.nju.edu.cn)
+If you have any difficulty or questions in running code, reproducing experimental results, and skeleton parsing, please email to me (ywsun@smail.nju.edu.cn).
