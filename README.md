@@ -11,6 +11,16 @@ It is a complex questions skeleton bank by manually annotation. It contains abou
 
 ## Dependencies
 
+sklearn
+corenlp
+pytorch
+SPARQLWrapper
+pyodbc
+nltk
+fuzzywuzzy
+sutime
+virtuoso
+
 ## Run
 SPARQA pipeline has two steps for answering questions: (1) KB-indenpendent graph-structured ungrounded query generation. (2) KB-dependent graph-structure grounded query generation and ranking. (also, retrieve knowledge base). Below, I will describe how to run our SPARQA by step-to-step.
 
