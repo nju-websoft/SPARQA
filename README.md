@@ -7,7 +7,7 @@ It contains two public datasets involving complex questions: GraphQuestions and 
 Also, it contains resources for entity linking or candidate grounded query ranking.
 
 ## Skeleton
-It is a complex questions skeleton bank by manually annotation. It contains about 10K questions (5,166 questions and 5000 questions from ComplexWebQuestions). We make this resource public to supporch future research (in specific, question understanding or parsing research).
+It is a complex questions skeleton bank by manually annotation. It contains about 10K questions (5,166 questions and 5000 questions from ComplexWebQuestions). We make this resource public to supporch future research (question understanding or semanatic parsing research).
 
 ## Dependencies
 
