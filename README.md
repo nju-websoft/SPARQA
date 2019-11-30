@@ -1,6 +1,6 @@
 # SPARQA
 
-Code and dataset for AAAI 2020 paper: "SPARQA: Skeleton-based Semantic Parsing for Complex Questions over Knowledge Bases".
+Code and dataset for paper: "SPARQA: Skeleton-based Semantic Parsing for Complex Questions over Knowledge Bases".
 
 ## Dataset
 Two public datasets involving complex questions.
@@ -24,8 +24,9 @@ SPARQA pipeline has two steps for answering questions: (1) KB-indenpendent graph
 
 #### step 2.3
 
+
 ## Citation
 
-    SPARQA: Skeleton-based Semantic Parsing for Complex Questions over Knowledge Bases, AAAI, 2020}
+    SPARQA: Skeleton-based Semantic Parsing for Complex Questions over Knowledge Bases, AAAI-2020
 
 If you have any difficulty or questions in running code, reproducing experimental results, and skeleton parsing, please email to me (ywsun@smail.nju.edu.cn).
