@@ -1,27 +1,26 @@
 # SPARQA
 
-Codes and dataset for AAAI 2020 paper: "SPARQA: Skeleton-based Semantic Parsing for Complex Questions over Knowledge Bases".
+    Codes and dataset for AAAI 2020 paper: "SPARQA: Skeleton-based Semantic Parsing for Complex Questions over Knowledge Bases".
 
-Question Datasets
+##Dataset
 
-Dependencies
+##Skeleton
 
-Run
-1
-2.1
-2.2
-3
+##Dependencies
 
-If you have any difficulty or any question in running code, reproducing experimental results, and skeleton annotation data, please email to
-me (ywsun@smail.nju.edu.cn)
+##Run
 
-Citation
+    1
 
-@inproceedings{SPARQA,
-  author    = {Yawei Sun, Lingling Zhang, Gong Cheng, Yuzhong Qu},
-  title     = {SPARQA: Skeleton-based Semantic Parsing for Complex Questions over Knowledge Bases},
-  booktitle = {AAAI},
-  pages     = {XXXX--XXXX},
-  year      = {2020}
-}
+    2.1
 
+    2.2
+
+    3
+
+##Citation
+
+    SPARQA: Skeleton-based Semantic Parsing for Complex Questions over Knowledge Bases, AAAI, 2020}
+
+
+If you have any difficulty or any question in running code, reproducing experimental results, and skeleton annotation data, please email to me (ywsun@smail.nju.edu.cn)
