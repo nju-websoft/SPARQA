@@ -1,9 +1,9 @@
 # SPARQA
 
-Code and dataset for paper: "SPARQA: Skeleton-based Semantic Parsing for Complex Questions over Knowledge Bases".
+Code and dataset for paper: "SPARQA: Skeleton-based Semantic Parsing for Complex Questions over Knowledge Bases" (AAAI-2020).
 
 ## Dataset
-Two public datasets involving complex questions.
+It contains two public datasets involving complex questions: GraphQuestions and ComplexWebQuestions.
 Also, it contains resources for entity linking or candidate grounded query ranking.
 
 ## Skeleton
