@@ -1,14 +1,14 @@
 # SPARQA
 
-    Codes and dataset for AAAI 2020 paper: "SPARQA: Skeleton-based Semantic Parsing for Complex Questions over Knowledge Bases".
+Code and dataset for AAAI 2020 paper: "SPARQA: Skeleton-based Semantic Parsing for Complex Questions over Knowledge Bases".
 
-##Dataset
+## Dataset
 
-##Skeleton
+## Skeleton
 
-##Dependencies
+## Dependencies
 
-##Run
+## Run
 
     1
 
@@ -18,7 +18,7 @@
 
     3
 
-##Citation
+## Citation
 
     SPARQA: Skeleton-based Semantic Parsing for Complex Questions over Knowledge Bases, AAAI, 2020}
 
