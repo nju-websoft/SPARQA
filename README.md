@@ -12,13 +12,21 @@ It is a complex questions skeleton bank by manually annotation. It contains abou
 ## Dependencies
 
 sklearn
+
 corenlp
+
 pytorch
+
 SPARQLWrapper
+
 pyodbc
+
 nltk
+
 fuzzywuzzy
-sutime
+
+SUTime
+
 virtuoso
 
 ## Run
