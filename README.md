@@ -7,7 +7,7 @@ Code and dataset for paper: "SPARQA: Skeleton-based Semantic Parsing for Complex
 
 Please, refer to the paper for more the model description and training details. Preprint: [https://arxiv.org/pdf/2003.13956.pdf](https://arxiv.org/pdf/2003.13956.pdf) 
 
-## Project structure:
+## Project Structure:
 
 <table>
     <tr>
@@ -44,11 +44,10 @@ It is a complex questions skeleton bank by manually annotation. It contains abou
 * To set up a virtuoso graph database to store and query Freebase 2013 version for ComplexQuestion [read here about installation](https://github.com/percyliang/sempre)
 
 ## Resources
-* lexicons for Entity Linking and Disambigution of Freebase latest version
-* lexicons for Entity Linking and Disambigution of Freebase 2013 version
+* lexicons for Entity Linking and Disambigution of Freebase latest version and Freebase 2013 version. We will provide Google dive URI to get the lexicons. [read here](https://drive.google.com/open?id=1AW5rT5MaZrDkc2rNz0TZhDJaQVQwJgT4)
 * GloVe embedding (glove.6B.300d) [read here about download](https://nlp.stanford.edu/projects/glove/)
 
-## Run
+## How to run SPARQA pipeline
 SPARQA pipeline has two steps for answering questions: (1) KB-indenpendent graph-structured ungrounded query generation. (2) KB-dependent graph-structure grounded query generation and ranking. (also, retrieve knowledge base). Below, I will describe how to run our SPARQA by step-to-step.
 
 ### step 1 KB-indenpendent query generation
@@ -60,6 +59,10 @@ SPARQA pipeline has two steps for answering questions: (1) KB-indenpendent graph
 * step 2.1 Variant Generation
 * step 2.2 Grounding
 * step 2.3 Multi-Strategy Scoring
+
+## How to train Skeleton Parsing models
+
+## How to train Multi-Strategy Scoring models
 
 ## Citation
 
