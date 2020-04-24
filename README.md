@@ -59,11 +59,7 @@ SPARQA pipeline has two steps for answering questions: (1) KB-indenpendent graph
 * step 2.1 Variant Generation
 * step 2.2 Grounding
 * step 2.3 Multi-Strategy Scoring
-
-## How to train Skeleton Parsing models
-
-## How to train Multi-Strategy Scoring models
-
+  
 ## Citation
 
     SPARQA: Skeleton-based Semantic Parsing for Complex Questions over Knowledge Bases, AAAI-2020
