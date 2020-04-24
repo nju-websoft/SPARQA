@@ -44,7 +44,7 @@ It is a complex questions skeleton bank by manually annotation. It contains abou
 * To set up a virtuoso graph database to store and query Freebase 2013 version for ComplexQuestion [read here about installation](https://github.com/percyliang/sempre)
 
 ## Resources
-* lexicons for Entity Linking and Disambigution of Freebase latest version and Freebase 2013 version. We will provide Google dive URI to get the lexicons. [read here](https://drive.google.com/open?id=1AW5rT5MaZrDkc2rNz0TZhDJaQVQwJgT4)
+* Lexicons for Entity Linking and Disambigution of Freebase latest version and Freebase 2013 version. We will provide Google dive URI to get the lexicons. [read here](https://drive.google.com/open?id=1AW5rT5MaZrDkc2rNz0TZhDJaQVQwJgT4)
 * GloVe embedding (glove.6B.300d) [read here about download](https://nlp.stanford.edu/projects/glove/)
 
 ## How to run SPARQA pipeline
@@ -68,4 +68,5 @@ SPARQA pipeline has two steps for answering questions: (1) KB-indenpendent graph
 
     SPARQA: Skeleton-based Semantic Parsing for Complex Questions over Knowledge Bases, AAAI-2020
 
-If you have any difficulty or questions in running code, reproducing experimental results, and skeleton parsing, please email to me (ywsun@smail.nju.edu.cn).
+## Contacts
+If you have any difficulty or questions in running codes, reproducing experimental results, and skeleton parsing, please email to me (ywsun@smail.nju.edu.cn).
