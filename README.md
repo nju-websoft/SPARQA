@@ -34,13 +34,19 @@ Also, it contains resources for entity linking or candidate grounded query ranki
 ## Skeleton
 It is a complex questions skeleton bank by manually annotation. It contains about 10K questions (5,166 questions and 5000 questions from ComplexWebQuestions). We make this resource public to supporch future research (question understanding or semanatic parsing research).
 
-## Requirements:
+## Requirements
 * Python 3.6
 * PyTorch 1.3.0+ - [read here about installation](http://pytorch.org/)
 * See `requirements.txt` for the full list of packages
 * A running instance of the Stanford CoreNLP server (https://stanfordnlp.github.io/CoreNLP/corenlp-server.html) for dependency parsing and NE recognition. Do not forget to download English model. Replace the address in configution with URL of your CoreNLP instance.
+* A running instance of the python wrapper for Stanford CoreNLP's SUTime Java library. [read here about installation](https://github.com/FraBle/python-sutime)
 * To set up a virtuoso graph database to store and query Freebase latest version for ComplexWebQuestions [read here about installation](https://developers.google.com/freebase)
 * To set up a virtuoso graph database to store and query Freebase 2013 version for ComplexQuestion [read here about installation](https://github.com/percyliang/sempre)
+
+## Resources
+* lexicons for Entity Linking and Disambigution of Freebase latest version
+* lexicons for Entity Linking and Disambigution of Freebase 2013 version
+* GloVe embedding (glove.6B.300d) [read here about download](https://nlp.stanford.edu/projects/glove/)
 
 ## Run
 SPARQA pipeline has two steps for answering questions: (1) KB-indenpendent graph-structured ungrounded query generation. (2) KB-dependent graph-structure grounded query generation and ranking. (also, retrieve knowledge base). Below, I will describe how to run our SPARQA by step-to-step.
