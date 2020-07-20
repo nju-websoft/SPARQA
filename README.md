@@ -5,7 +5,7 @@ Code and dataset for paper: "SPARQA: Skeleton-based Semantic Parsing for Complex
 ## Paper Abstract:
 > Semantic parsing transforms a natural language question into a formal query over a knowledge base. Many existing methods rely on syntactic parsing like dependencies. However, the accuracy of producing such expressive formalisms is not satisfying on long complex questions. In this paper, we propose a novel skeleton grammar to represent the high-level structure of a complex question. This dedicated coarse-grained formalism with a BERT-based parsing algorithm helps to improve the accuracy of the downstream fine-grained semantic parsing. Besides, to align the structure of a question with the structure of a knowledge base, our multi-strategy method combines sentence-level and word-level semantics. Our approach shows promising performance on several datasets.
 
-Please, refer to the paper for more the model description and training details. Preprint: [https://arxiv.org/pdf/2003.13956.pdf](https://arxiv.org/pdf/2003.13956.pdf) 
+Please, refer to the paper for more the model description and training details. print: [https://www.aaai.org/Papers/AAAI/2020GB/AAAI-SunY.3419.pdf) 
 
 ## Project Structure:
 
@@ -64,7 +64,7 @@ SPARQA pipeline has two steps for answering questions: (1) KB-indenpendent graph
   
 ## Citation
 
-    SPARQA: Skeleton-based Semantic Parsing for Complex Questions over Knowledge Bases, AAAI-2020
+    Sun Y, Zhang L, Cheng G, et al. SPARQA: Skeleton-Based Semantic Parsing for Complex Questions over Knowledge Bases[C]//AAAI. 2020: 8952-8959.
 
 ## Contacts
 If you have any difficulty or questions in running codes, reproducing experimental results, and skeleton parsing, please email to me (ywsun@smail.nju.edu.cn).
