@@ -44,7 +44,9 @@ It is a complex questions skeleton bank by manually annotation. It contains abou
 * To set up a virtuoso graph database to store and query Freebase 2013 version for ComplexQuestion [read here about installation](https://github.com/percyliang/sempre)
 
 ## Resources
-* Lexicons for Entity Linking and Disambigution of Freebase latest version and Freebase 2013 version. We will provide Google dive URI to get the lexicons. [read here](https://drive.google.com/open?id=1AW5rT5MaZrDkc2rNz0TZhDJaQVQwJgT4)
+* Lexicons for Entity Linking and Disambigution of Freebase latest version and Freebase 2013 version. We will provide Google dive URI to get the lexicons. [read here](https://drive.google.com/open?id=1AW5rT5MaZrDkc2rNz0TZhDJaQVQwJgT4).
+** Entity lexicons from ClubWeb and Freebase entity literal or alias.
+** Freebase schema
 * GloVe embedding (glove.6B.300d) [read here about download](https://nlp.stanford.edu/projects/glove/)
 
 ## How to run SPARQA pipeline
