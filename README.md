@@ -104,7 +104,7 @@ Below, I describe how to run our SPARQA by step-to-steps on GraphQuestions.
 
 ## Compare with Baselines
 * GraphQuestions: PARA4QA, SCANNER, UDEPLAMBDA
-* ComplexWebQuestions: PullNet, SPLITQA, and MHQA-GRN. Note that PullNet used annotated topic entities of questions in its kB only setting. SPARQA, an end-to-end method, do not use annotated topic entities. (In the future, SPARQA can support to used annotated topic entities of questions.)
+* ComplexWebQuestions: PullNet, SPLITQA, and MHQA-GRN. Note that PullNet used annotated topic entities of questions in its kB only setting. SPARQA, an end-to-end method, do not use annotated topic entities. It is thus not comparable. (In the future, SPARQA can support to use annotated topic entities of questions)
 
 ## Citation
 
