@@ -64,7 +64,7 @@ It is a complex questions skeleton bank by manually annotation. It contains abou
 * Entity-related Lexicons and schema-related lexicons of Freebase 2013 version. download [here](https://drive.google.com/drive/folders/1Mjpan599INCVRgRQTsirgVdyt29iKblO). Specificaly, the files variables in KB_Freebase_en_2013 class in the configuration kb_name.py.
 * GraphQuestions dataset. download all files from [here](https://github.com/nju-websoft/SPARQA/tree/master/dataset/graphquestions). It consists of train/test data and pre-processed sparql files. Note that the data_path_match file is used to save the word-level scoring model and the data_question_match file is used to save the sentence-level scoring model. The oracle_grounded_graph_graphq file used to save the pre-processed query structures to improve the query generation efficiency. The three files (graph_testing_question_normal.txt, 2019.05.13_test_answers, and 2019.05.13_train_answers) are combined in graphquestions.testing_nju_1209.json and graphquestions.training_nju_1209.json. It should modify the dataset interface of code. Once meet error when runing, please email to ywsun.
 
-## Run SPARQA pipeline
+## Run SPARQA Pipeline
 The pipeline has two steps for answering questions: 
 
 * (1) KB-indenpendent graph-structured ungrounded query generation.
@@ -75,23 +75,27 @@ Below, I describe how to run our SPARQA by step-to-steps on GraphQuestions.
 
 ### Specific-dataset Configuration
 
-Datset Selection in the configuration globals_args.py: q_mode = graphq, which means GraphQuestions. q_mode = cwq, which means ComplexWebQuestions 1.1.
-Skeleton Parsing in the configuration globals_args.py: parser_mode = head, which means skeleton parsing. (note that parser_mode=dep, which means dependency parsing).
-Replace the address freebase_pyodbc_info and freebase_sparql_html_info in the globals_args.py with your local information.
+* Datset Selection in the configuration globals_args.py: q_mode = graphq, which means GraphQuestions. q_mode = cwq, which means ComplexWebQuestions 1.1.
+* Skeleton Parsing in the configuration globals_args.py: parser_mode = head, which means skeleton parsing. (note that parser_mode=dep, which means dependency parsing).
+* Replace the address freebase_pyodbc_info and freebase_sparql_html_info in the globals_args.py with your local information.
 
 ### KB-indenpendent query generation
-* The step mainly consists of skeleton parsing, node recognition, and relation extraction.
-* See variable module in pipeline_grapqh.py.
 * The variable module value = 1.0, which means run KB-indenpendent query generation. The input: graph_questions_filepath. The output: structure_with_1_ungrounded_graphq_file.
 
 ### KB-dependent query generation
-* The step mainly consists of candidate query generation and ranking. Candidate query generation consists of variant generation and grounding. Ranking consists of multi-strategy scoring (word-level scorer and sentence-level scorer).
 * The variable module value = 2.1, which means to run variant generation. The input: structure_with_1_ungrounded_graphq_file. The output: structure_with_2_1_grounded_graph_file.
 * The variable module value = 2.2, which means to grounding. The input: structure_with_2_1_grounded_graph_file. The output: structure_with_2_2_grounded_graph_folder.
 * The variable module value = 2.3_word_match, which means to ranking using word-level scorer. The input: structure_with_2_2_grounded_graph_folder.
 * The variable module value = 2.3_add_question_match, which means to combine sentence-level scorer and word-level scorer. The input: structure_with_2_2_grounded_graph_folder.
 * The variable module value = 3_evaluation, which means to run evaluation. The input: structure_with_2_2_grounded_graph_folder. The output: evaluation results.
   
+##Train Skeleton Models
+* Five models
+
+##Train Multi-strategy Scoring Models
+* Word-level scorer
+* Sentence-level scorer
+
 ## Citation
 
 	@inproceedings{SunZ0Q20,
