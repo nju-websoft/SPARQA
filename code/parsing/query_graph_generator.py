@@ -13,9 +13,7 @@ def run_ungrounded_graph_interface(qid=None, question_normal=None, gold_graph_qu
     ''' 1. span tree;  2. node mention annotation;   3. dependency tree;  4. relation extraction '''
     # 1. span tree generate span tree
     tokens = parsing_utils.create_tokens(question_normal.split(" "))
-    if parsing_args.parser_mode == 'joint':
-        span_tree = skeleton_parser.span_tree_generation_joint(tokens=tokens)
-    elif parsing_args.parser_mode == 'head':
+    if parsing_args.parser_mode == 'head':
         span_tree = skeleton_parser.span_tree_generation_head(tokens=tokens)
     else:
         span_tree = skeleton_parser.span_tree_generation_only_dep(tokens=tokens)
