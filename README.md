@@ -7,7 +7,7 @@ If you meet any questions about SPARQA, please email to him (ywsun@smail.nju.edu
 ## Paper Abstract:
 > Semantic parsing transforms a natural language question into a formal query over a knowledge base. Many existing methods rely on syntactic parsing like dependencies. However, the accuracy of producing such expressive formalisms is not satisfying on long complex questions. In this paper, we propose a novel skeleton grammar to represent the high-level structure of a complex question. This dedicated coarse-grained formalism with a BERT-based parsing algorithm helps to improve the accuracy of the downstream fine-grained semantic parsing. Besides, to align the structure of a question with the structure of a knowledge base, our multi-strategy method combines sentence-level and word-level semantics. Our approach shows promising performance on several datasets.
 
-Please, refer to the paper for more the model description and training details.[the paper](https://www.aaai.org/Papers/AAAI/2020GB/AAAI-SunY.3419.pdf)
+Please, read the paper for SPARQA in detail [here](https://www.aaai.org/Papers/AAAI/2020GB/AAAI-SunY.3419.pdf).
 
 ## Project Structure:
 
