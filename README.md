@@ -1,11 +1,13 @@
 # SPARQA: a question answering system over knowledge bases
 
-Code and dataset for paper: "SPARQA: Skeleton-based Semantic Parsing for Complex Questions over Knowledge Bases" (AAAI-2020). 
+Code and dataset for paper: "SPARQA: Skeleton-based Semantic Parsing for Complex Questions over Knowledge Bases" (AAAI-2020).
+
+If you meet any question, please email to him (ywsun@smail.nju.edu.cn).
 
 ## Paper Abstract:
 > Semantic parsing transforms a natural language question into a formal query over a knowledge base. Many existing methods rely on syntactic parsing like dependencies. However, the accuracy of producing such expressive formalisms is not satisfying on long complex questions. In this paper, we propose a novel skeleton grammar to represent the high-level structure of a complex question. This dedicated coarse-grained formalism with a BERT-based parsing algorithm helps to improve the accuracy of the downstream fine-grained semantic parsing. Besides, to align the structure of a question with the structure of a knowledge base, our multi-strategy method combines sentence-level and word-level semantics. Our approach shows promising performance on several datasets.
 
-Please, refer to the paper for more the model description and training details. print: [https://www.aaai.org/Papers/AAAI/2020GB/AAAI-SunY.3419.pdf) 
+Please, refer to the paper for more the model description and training details.[the paper](https://www.aaai.org/Papers/AAAI/2020GB/AAAI-SunY.3419.pdf)
 
 ## Project Structure:
 
@@ -57,6 +59,8 @@ It is a complex questions skeleton bank by manually annotation. It contains abou
 * Entity-related Lexicons and schema-related lexicons of Freebase latest version. [download here](https://drive.google.com/drive/folders/1t4Rb2feVOSGF_5lRBHwrB_GfxyL2rqby). Specificaly, the files variables in KB_Freebase_Latest class in the configuration kb_name.py.
 * Entity-related Lexicons and schema-related lexicons of Freebase 2013 version. [download here](https://drive.google.com/drive/folders/1Mjpan599INCVRgRQTsirgVdyt29iKblO). Specificaly, the files variables in KB_Freebase_en_2013 class in the configuration kb_name.py.
 
+
+
 ## How to run SPARQA pipeline
 SPARQA pipeline has two steps for answering questions: (1) KB-indenpendent graph-structured ungrounded query generation. (2) KB-dependent graph-structure grounded query generation and ranking. (also, retrieve knowledge base). Below, **I will describe how to run our SPARQA by step-to-step**.
 
@@ -76,4 +80,4 @@ SPARQA pipeline has two steps for answering questions: (1) KB-indenpendent graph
     Sun Y, Zhang L, Cheng G, et al. SPARQA: Skeleton-Based Semantic Parsing for Complex Questions over Knowledge Bases[C]//AAAI. 2020: 8952-8959.
 
 ## Contacts
-If you have any difficulty or questions in running codes, reproducing experimental results, and skeleton parsing, please email to me (ywsun@smail.nju.edu.cn).
+If you have any difficulty or questions in running codes, reproducing experimental results, and skeleton parsing, please email to him (ywsun@smail.nju.edu.cn).
