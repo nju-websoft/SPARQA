@@ -80,19 +80,19 @@ Below, I describe how to run our SPARQA by step-to-steps on GraphQuestions.
 * Replace the address freebase_pyodbc_info and freebase_sparql_html_info in the globals_args.py with your local information.
 
 ### KB-indenpendent query generation
-* The variable module value = 1.0, which means run KB-indenpendent query generation. The input: graph_questions_filepath. The output: structure_with_1_ungrounded_graphq_file.
+* Variable module = 1.0, which means run KB-indenpendent query generation. The input: graph_questions_filepath. The output: structure_with_1_ungrounded_graphq_file.
 
 ### KB-dependent query generation
-* The variable module value = 2.1, which means to run variant generation. The input: structure_with_1_ungrounded_graphq_file. The output: structure_with_2_1_grounded_graph_file.
-* The variable module value = 2.2, which means to grounding. The input: structure_with_2_1_grounded_graph_file. The output: structure_with_2_2_grounded_graph_folder.
-* The variable module value = 2.3_word_match, which means to ranking using word-level scorer. The input: structure_with_2_2_grounded_graph_folder.
-* The variable module value = 2.3_add_question_match, which means to combine sentence-level scorer and word-level scorer. The input: structure_with_2_2_grounded_graph_folder.
-* The variable module value = 3_evaluation, which means to run evaluation. The input: structure_with_2_2_grounded_graph_folder. The output: evaluation results.
+* Variable module = 2.1, which means to run variant generation. The input: structure_with_1_ungrounded_graphq_file. The output: structure_with_2_1_grounded_graph_file.
+* Variable module = 2.2, which means to grounding. The input: structure_with_2_1_grounded_graph_file. The output: structure_with_2_2_grounded_graph_folder.
+* Variable module = 2.3_word_match, which means to ranking using word-level scorer. The input: structure_with_2_2_grounded_graph_folder.
+* Variable module = 2.3_add_question_match, which means to combine sentence-level scorer and word-level scorer. The input: structure_with_2_2_grounded_graph_folder.
+* Variable module = 3_evaluation, which means to run evaluation. The input: structure_with_2_2_grounded_graph_folder. The output: results.
   
-##Train Skeleton Models
+## Train Skeleton Models
 * Five models
 
-##Train Multi-strategy Scoring Models
+## Train Multi-strategy Scoring Models
 * Word-level scorer
 * Sentence-level scorer
 
