@@ -46,6 +46,8 @@ It is a complex questions skeleton bank by manually annotation. It contains abou
 ## Resources Preparation (occur error if not prepare the resources and lexicons)
 * Lexicons for Entity Linking and Disambigution of Freebase latest version and Freebase 2013 version. [download here](https://drive.google.com/open?id=1AW5rT5MaZrDkc2rNz0TZhDJaQVQwJgT4). Entity lexicons from ClubWeb and Freebase entity literal or alias.
 * GloVe embedding (glove.6B.300d) [download here](https://nlp.stanford.edu/projects/glove/)
+* Stanford CoreNLP server. The sever version we use is stanford-corenlp-full-2018-10-05. download here, run server, and replace ip_port address in globals_args.py with URL of your CoreNLP.
+
 
 ## How to run SPARQA pipeline
 SPARQA pipeline has two steps for answering questions: (1) KB-indenpendent graph-structured ungrounded query generation. (2) KB-dependent graph-structure grounded query generation and ranking. (also, retrieve knowledge base). Below, **I will describe how to run our SPARQA by step-to-step**.
