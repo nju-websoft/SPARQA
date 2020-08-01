@@ -68,22 +68,41 @@ It is a complex questions skeleton bank by manually annotation. It contains abou
 The pipeline has two steps for answering questions: 
 
 * (1) KB-indenpendent graph-structured ungrounded query generation.
-* (2) KB-dependent graph-structure grounded query generation and ranking. 
+* (2) KB-dependent graph-structure grounded query generation and ranking.
 
-### step 1 KB-indenpendent query generation
-* step 1.1 Skeleton Parsing
-** Configuration: is_span_tree = True, which means skeleton parsing. is_span_tree = False, which means dependency parsing.
-* step 1.2 Node Recognition
-* step 1.3 Relation Extraction
+Specifically, see running/freebase/pipeline_cwq.py if you want to run ComplexWebQuestions 1.1. or see running/freebase/pipeline_grapqh.py if you want to run GraphQuestions.
+Below, I describe how to run our SPARQA by step-to-steps on GraphQuestions.
 
-### step 2 KB-dependent query generation
-* step 2.1 Variant Generation
-* step 2.2 Grounding
-* step 2.3 Multi-Strategy Scoring
+### Specific-dataset Configuration
+
+Datset Selection in the configuration globals_args.py: q_mode = graphq, which means GraphQuestions. q_mode = cwq, which means ComplexWebQuestions 1.1.
+Skeleton Parsing in the configuration globals_args.py: parser_mode = head, which means skeleton parsing. (note that parser_mode=dep, which means dependency parsing).
+Replace the address freebase_pyodbc_info and freebase_sparql_html_info in the globals_args.py with your local information.
+
+### KB-indenpendent query generation
+* The step mainly consists of skeleton parsing, node recognition, and relation extraction.
+* See variable module in pipeline_grapqh.py.
+* The variable module value = 1.0, which means run KB-indenpendent query generation. The input: graph_questions_filepath. The output: structure_with_1_ungrounded_graphq_file.
+
+### KB-dependent query generation
+* The step mainly consists of candidate query generation and ranking. Candidate query generation consists of variant generation and grounding. Ranking consists of multi-strategy scoring (word-level scorer and sentence-level scorer).
+* The variable module value = 2.1, which means to run variant generation. The input: structure_with_1_ungrounded_graphq_file. The output: structure_with_2_1_grounded_graph_file.
+* The variable module value = 2.2, which means to grounding. The input: structure_with_2_1_grounded_graph_file. The output: structure_with_2_2_grounded_graph_folder.
+* The variable module value = 2.3_word_match, which means to ranking using word-level scorer. The input: structure_with_2_2_grounded_graph_folder.
+* The variable module value = 2.3_add_question_match, which means to combine sentence-level scorer and word-level scorer. The input: structure_with_2_2_grounded_graph_folder.
+* The variable module value = 3_evaluation, which means to run evaluation. The input: structure_with_2_2_grounded_graph_folder. The output: evaluation results.
   
 ## Citation
 
-    Sun Y, Zhang L, Cheng G, et al. SPARQA: Skeleton-Based Semantic Parsing for Complex Questions over Knowledge Bases[C]//AAAI. 2020: 8952-8959.
+	@inproceedings{SunZ0Q20,
+	  author    = {Yawei Sun and Lingling Zhang and Gong Cheng and Yuzhong Qu},
+	  title     = {{SPARQA:} Skeleton-Based Semantic Parsing for Complex Questions over Knowledge Bases},
+	  booktitle = {The Thirty-Fourth {AAAI} Conference on Artificial Intelligence, {AAAI} 2020, The Thirty-Second Innovative Applications of Artificial Intelligence Conference, {IAAI} 2020, The Tenth {AAAI} Symposium on Educational Advances in Artificial Intelligence, {EAAI} 2020, New York, NY, USA, February 7-12, 2020},
+	  pages     = {8952--8959},
+	  publisher = {{AAAI} Press},
+	  year      = {2020},
+	  url       = {https://aaai.org/ojs/index.php/AAAI/article/view/6426},
+	}
 
 ## Contacts
 If you have any difficulty or questions in running codes, reproducing experimental results, and skeleton parsing, please email to him (ywsun@smail.nju.edu.cn).
