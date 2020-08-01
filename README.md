@@ -34,34 +34,34 @@ It is a complex questions skeleton bank by manually annotation. It contains abou
 
 ## Requirements
 * Python 3.6
-* PyTorch 1.3.0+ - [read here about installation](http://pytorch.org/)
+* PyTorch 1.3.0+ - [installation](http://pytorch.org/)
 * See `requirements.txt` for the full list of packages
-* A running instance of the Stanford CoreNLP server (https://stanfordnlp.github.io/CoreNLP/corenlp-server.html) for dependency parsing and NE recognition. Do not forget to download English model. Replace the address in configution with URL of your CoreNLP instance.
-* A running instance of the python wrapper for Stanford CoreNLP's SUTime Java library. [read here about installation](https://github.com/FraBle/python-sutime)
-* To set up a virtuoso graph database to store and query Freebase latest version for ComplexWebQuestions [read here about installation](https://developers.google.com/freebase)
-* To set up a virtuoso graph database to store and query Freebase 2013 version for ComplexQuestion [read here about installation](https://github.com/percyliang/sempre)
+* A running instance of the Stanford CoreNLP server for dependency parsing and NE recognition. Do not forget to download English model. Replace the address in configution with URL of your CoreNLP instance.
+* A running instance of the python wrapper for Stanford CoreNLP's SUTime Java library. [installation](https://github.com/FraBle/python-sutime)
+* To set up a virtuoso graph database to store and query Freebase latest version for ComplexWebQuestions [installation](https://developers.google.com/freebase)
+* To set up a virtuoso graph database to store and query Freebase 2013 version for ComplexQuestion [installation](https://github.com/percyliang/sempre)
 * After you download the KBs, you need to run a virtuoso and load the KBs. It costs long time. If you meet questions, the [file](http://ws.nju.edu.cn/blog/2017/03/virtuoso%E5%AE%89%E8%A3%85%E5%92%8C%E5%AF%BC%E5%85%A5%E6%95%B0%E6%8D%AE/) is helpful. 
 
 ## Common Resources
 * Root datasets: default value D:/dataset. You can edit it in the configution globals_args.py. 
-* GloVe embedding (glove.6B.300d) [download here](https://nlp.stanford.edu/projects/glove/)
+* GloVe embedding (glove.6B.300d) [download](https://nlp.stanford.edu/projects/glove/)
 * Stanford CoreNLP server. The sever version we use is stanford-corenlp-full-2018-10-05. download [here](https://stanfordnlp.github.io/CoreNLP/corenlp-server.html), get started, and replace ip_port address in globals_args.py with URL of your CoreNLP.
-* Python wrapper for Stanford CoreNLP's SUTime Java library. download [here](https://github.com/FraBle/python-sutime)). SPARQA need to use the Java library. default save in the folder: root/resource_sutime/. if you save other place, remember to replace the address sutime_jar_files in configution with your folder path.
-* Four files (stopwords.txt, ordinal_fengli.tsv, unimportantphrase, and unimportantwords) [download here](https://drive.google.com/open?id=1AW5rT5MaZrDkc2rNz0TZhDJaQVQwJgT4). download the file, and saves in the root (default. you can edit these addresses).
-* BERT pre-trained Models [download here](https://drive.google.com/drive/folders/1tlUF7ALLLXiHu280gPdlVyQlGvJFklGC) and save the seven files in the default root/pre_train_models address in the configuration bert.args.py (you can edit these addresses).
+* Python wrapper for Stanford CoreNLP's SUTime Java library. download [here](https://github.com/FraBle/python-sutime). SPARQA need to use the Java library. default save in the folder: root/resource_sutime/. if you save other place, remember to replace the address sutime_jar_files in configution with your folder path.
+* Four files (stopwords.txt, ordinal_fengli.tsv, unimportantphrase, and unimportantwords) download [here](https://drive.google.com/open?id=1AW5rT5MaZrDkc2rNz0TZhDJaQVQwJgT4). download the file, and saves in the root (default. you can edit these addresses).
+* BERT pre-trained Models download [here](https://drive.google.com/drive/folders/1tlUF7ALLLXiHu280gPdlVyQlGvJFklGC) and save the seven files in the default root/pre_train_models address in the configuration bert.args.py (you can edit these addresses).
 
 ## Specific CWQ 1.1 Resources
-* To access interface virtuoso server, you need configure odbc address (freebase_pyodbc_info) in globals_args.py. Note that the KB verions of CWQ 1.1 is Freebase latest version. download[here](https://stanfordnlp.github.io/CoreNLP/corenlp-server.html)
+* To access interface virtuoso server, you need configure odbc address (freebase_pyodbc_info) in globals_args.py. Note that the KB verions of CWQ 1.1 is Freebase latest version. download [here](https://stanfordnlp.github.io/CoreNLP/corenlp-server.html)
 * To access interface virtuoso html service, you need configure html address (freebase_sparql_html_info) in globals_args.py. Note that the KB verions of CWQ 1.1 is Freebase latest version.
-* CWQ 1.1 five BERT pre-trained Models for Skeleton Parsing. [download here](https://drive.google.com/drive/folders/1t4Rb2feVOSGF_5lRBHwrB_GfxyL2rqby) and save the five files in the default root/dataset_cwq_1_1 address in the configuration bert.args.py (you can edit these addresses).
-* Entity-related Lexicons and schema-related lexicons of Freebase latest version. [download here](https://drive.google.com/drive/folders/1t4Rb2feVOSGF_5lRBHwrB_GfxyL2rqby). Specificaly, the files variables in KB_Freebase_Latest class in the configuration kb_name.py.
+* CWQ 1.1 five BERT pre-trained Models for Skeleton Parsing. download [here](https://drive.google.com/drive/folders/1t4Rb2feVOSGF_5lRBHwrB_GfxyL2rqby) and save the five files in the default root/dataset_cwq_1_1 address in the configuration bert.args.py (you can edit these addresses).
+* Entity-related Lexicons and schema-related lexicons of Freebase latest version. download [here](https://drive.google.com/drive/folders/1t4Rb2feVOSGF_5lRBHwrB_GfxyL2rqby). Specificaly, the files variables in KB_Freebase_Latest class in the configuration kb_name.py.
 * ComplexWebQuestions 1.1 dataset. download all files from [here](https://github.com/nju-websoft/SPARQA/tree/master/dataset/complexwebquestions). It consists of train/dev/test data and pre-processed sparql query bgp files. Note that the data_path_match file is used to save the word-level scoring model and the data_question_match file is used to save the sentence-level scoring model. The oracle_grounded_graph_cwq file used to save the pre-processed query structures to improve the query generation efficiency.
 
 ## Specific GraphQuestions Resources
-* To access interface virtuoso server, you need configure odbc address (freebase_pyodbc_info) in globals_args.py. Note that the KB verions of GraphQuestions is Freebase 2013 version. download from[here](https://github.com/ysu1989/GraphQuestions). If you do not have the version, please email to him (ywsun@smail.nju.edu.cn).
+* To access interface virtuoso server, you need configure odbc address (freebase_pyodbc_info) in globals_args.py. Note that the KB verions of GraphQuestions is Freebase 2013 version. download from [here](https://github.com/ysu1989/GraphQuestions). If you do not have the version, please email to him (ywsun@smail.nju.edu.cn).
 * To access interface virtuoso html service, you need configure html address (freebase_sparql_html_info) in globals_args.py. Note that the KB verions of GraphQuestions is Freebase 2013 version.
-* GraphQuestions five BERT pre-trained Models for Skeleton Parsing. [download here](https://drive.google.com/drive/folders/1Mjpan599INCVRgRQTsirgVdyt29iKblO) and save the five files in the default root/dataset_graphquestions address in the configuration bert.args.py (you can edit these addresses).
-* Entity-related Lexicons and schema-related lexicons of Freebase 2013 version. [download here](https://drive.google.com/drive/folders/1Mjpan599INCVRgRQTsirgVdyt29iKblO). Specificaly, the files variables in KB_Freebase_en_2013 class in the configuration kb_name.py.
+* GraphQuestions five BERT pre-trained Models for Skeleton Parsing. download [here](https://drive.google.com/drive/folders/1Mjpan599INCVRgRQTsirgVdyt29iKblO) and save the five files in the default root/dataset_graphquestions address in the configuration bert.args.py (you can edit these addresses).
+* Entity-related Lexicons and schema-related lexicons of Freebase 2013 version. download [here](https://drive.google.com/drive/folders/1Mjpan599INCVRgRQTsirgVdyt29iKblO). Specificaly, the files variables in KB_Freebase_en_2013 class in the configuration kb_name.py.
 * GraphQuestions dataset. download all files from [here](https://github.com/nju-websoft/SPARQA/tree/master/dataset/graphquestions). It consists of train/test data and pre-processed sparql files. Note that the data_path_match file is used to save the word-level scoring model and the data_question_match file is used to save the sentence-level scoring model. The oracle_grounded_graph_graphq file used to save the pre-processed query structures to improve the query generation efficiency. The three files (graph_testing_question_normal.txt, 2019.05.13_test_answers, and 2019.05.13_train_answers) are combined in graphquestions.testing_nju_1209.json and graphquestions.training_nju_1209.json. It should modify the dataset interface of code. Once meet error when runing, please email to him (ywsun@smail.nju.edu.cn).
 
 ## Run SPARQA pipeline
