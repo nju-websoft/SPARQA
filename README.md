@@ -88,13 +88,19 @@ Below, I describe how to run our SPARQA by step-to-steps on GraphQuestions.
 * Variable module = 2.3_word_match, which means to ranking using word-level scorer. The input: structure_with_2_2_grounded_graph_folder.
 * Variable module = 2.3_add_question_match, which means to combine sentence-level scorer and word-level scorer. The input: structure_with_2_2_grounded_graph_folder.
 * Variable module = 3_evaluation, which means to run evaluation. The input: structure_with_2_2_grounded_graph_folder. The output: results.
-  
+
+## Instruction of Output File
+* It consists of list. The output of every question is dict. Specifically, keys (question, qid, function, compositionality_type, num_node, num_edge, words, gold_graph_query, gold_answer, and gold_sparql_query) is question information.
+* Key span_tree represents question skeleton. 
+* Key ungrounded_graph_forest represents KB-indenpendent query. It consists of ungrounded_query_id, blag, nodes, edges, important_words_list, abstract_question, sequence_ner_tag_dict, grounded_linking, and grounded_graph_forest.
+* Key grounded_graph_forest represents candidate KB-dependent queries. It consists of grounded_query_id, type, nodes, edges, key_path, sparql_query, score, and denotation.
+
 ## Train Skeleton Models
-* Five models
+* Five models (continue...)
 
 ## Train Multi-strategy Scoring Models
-* Word-level scorer
-* Sentence-level scorer
+* Word-level scorer (continue...)
+* Sentence-level scorer (continue...)
 
 ## Citation
 
