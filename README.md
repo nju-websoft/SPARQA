@@ -35,7 +35,7 @@ It is a complex questions skeleton bank by manually annotation. It contains abou
 ## Requirements
 * Python 3.6
 * PyTorch 1.3.0+ - [installation](http://pytorch.org/)
-* See `requirements.txt` for the full list of packages
+* See [requirements.txt](http://pytorch.org/) for the full list of packages
 * A running instance of the Stanford CoreNLP server for dependency parsing and NE recognition. Do not forget to download English model. Replace the address in configution with URL of your CoreNLP instance.
 * A running instance of the python wrapper for Stanford CoreNLP's SUTime Java library. [installation](https://github.com/FraBle/python-sutime)
 * To set up a virtuoso graph database to store and query Freebase latest version for ComplexWebQuestions [installation](https://developers.google.com/freebase)
