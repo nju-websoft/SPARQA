@@ -44,8 +44,7 @@ It is a complex questions skeleton bank by manually annotation. It contains abou
 * Python wrapper for Stanford CoreNLP's SUTime Java library. download [here](https://github.com/FraBle/python-sutime). SPARQA need to use the Java library. default save in the folder: root/resource_sutime/. if you save other place, remember to replace the address sutime_jar_files in configution with your folder path.
 * Four files (stopwords.txt, ordinal_fengli.tsv, unimportantphrase, and unimportantwords) download [here](https://drive.google.com/open?id=1AW5rT5MaZrDkc2rNz0TZhDJaQVQwJgT4). download the file, and saves in the root (default. you can edit these addresses).
 * BERT pre-trained Models download [here](https://drive.google.com/drive/folders/1tlUF7ALLLXiHu280gPdlVyQlGvJFklGC) and save the seven files in the default root/pre_train_models address in the configuration bert.args.py (you can edit these addresses).
-* To set up a virtuoso graph database to store and query Freebase latest version for ComplexWebQuestions [here](https://developers.google.com/freebase)
-* To set up a virtuoso graph database to store and query Freebase 2013 version for GraphQuestions [here](https://github.com/ysu1989/GraphQuestions)
+* Download two version freebases: the latest version for ComplexWebQuestions [here](https://developers.google.com/freebase) and the 2013 version for GraphQuestions [here](https://github.com/ysu1989/GraphQuestions)
 * After you download the KBs, you need to run a virtuoso and load the KBs. It costs long time. If you meet questions, the [file](http://ws.nju.edu.cn/blog/2017/03/virtuoso%E5%AE%89%E8%A3%85%E5%92%8C%E5%AF%BC%E5%85%A5%E6%95%B0%E6%8D%AE/) is helpful. 
 
 ## Specific CWQ 1.1 Resources
