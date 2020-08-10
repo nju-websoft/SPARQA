@@ -48,14 +48,14 @@ It is a complex questions skeleton bank by manually annotation. It contains abou
 * After you download the KBs, you need to run a virtuoso and load the KBs. It costs long time. If you meet questions, the [file](http://ws.nju.edu.cn/blog/2017/03/virtuoso%E5%AE%89%E8%A3%85%E5%92%8C%E5%AF%BC%E5%85%A5%E6%95%B0%E6%8D%AE/) is helpful. 
 
 ## Specific CWQ 1.1 Resources
-* To access interface virtuoso server, you need configure odbc address (freebase_pyodbc_info) in globals_args.py. Note that the KB verions of CWQ 1.1 is Freebase latest version. download [here](https://developers.google.com/freebase)
+* To access interface virtuoso server, you need configure odbc address (freebase_pyodbc_info) in globals_args.py. 
 * To access interface virtuoso html service, you need configure html address (freebase_sparql_html_info) in globals_args.py. 
 * CWQ 1.1 five BERT pre-trained Models for Skeleton Parsing. download [here](https://drive.google.com/drive/folders/1t4Rb2feVOSGF_5lRBHwrB_GfxyL2rqby) and save the five files in the default root/dataset_cwq_1_1 address in the configuration bert.args.py (you can edit these addresses).
 * Entity-related Lexicons and schema-related lexicons of Freebase latest version. download [here](https://drive.google.com/drive/folders/1t4Rb2feVOSGF_5lRBHwrB_GfxyL2rqby). Specificaly, the files variables in KB_Freebase_Latest class in the configuration kb_name.py.
 * ComplexWebQuestions 1.1 dataset. download all files from [here](https://github.com/nju-websoft/SPARQA/tree/master/dataset/dataset_cwq_1_1). It consists of train/dev/test data and pre-processed sparql query bgp files. Note that the data_path_match file is used to save the word-level scoring model and the data_question_match file is used to save the sentence-level scoring model. The oracle_grounded_graph_cwq file used to save the pre-processed query structures to improve the query generation efficiency.
 
 ## Specific GraphQuestions Resources
-* To access interface virtuoso server, you need configure odbc address (freebase_pyodbc_info) in globals_args.py. Note that the KB verions of GraphQuestions is Freebase 2013 version. download from [here](https://github.com/ysu1989/GraphQuestions). If you do not have the version, please email to ywsun.
+* To access interface virtuoso server, you need configure odbc address (freebase_pyodbc_info) in globals_args.py. 
 * To access interface virtuoso html service, you need configure html address (freebase_sparql_html_info) in globals_args.py.
 * GraphQuestions five BERT pre-trained Models for Skeleton Parsing. download [here](https://drive.google.com/drive/folders/1Mjpan599INCVRgRQTsirgVdyt29iKblO) and save the five files in the default root/dataset_graphquestions address in the configuration bert.args.py (you can edit these addresses).
 * Entity-related Lexicons and schema-related lexicons of Freebase 2013 version. download [here](https://drive.google.com/drive/folders/1Mjpan599INCVRgRQTsirgVdyt29iKblO). Specificaly, the files variables in KB_Freebase_en_2013 class in the configuration kb_name.py.
