@@ -64,8 +64,8 @@ Below, an example on GraphQuestions.
 
 ### Specific-dataset Configuration
 
-* Datset Selection in the common/globals_args.py: q_mode=graphq. (note that q_mode=cwq if CWQ 1.1)
-* Skeleton Parsing in the common/globals_args.py: parser_mode=head, which means skeleton parsing. (note that parser_mode=dep, which means dependency parsing).
+* Set datset in the common/globals_args.py: q_mode=graphq. (note that q_mode=cwq if CWQ 1.1)
+* Set skeleton parsing in the common/globals_args.py: parser_mode=head, which means skeleton parsing. (note that parser_mode=dep, which means dependency parsing).
 * Replace the freebase_pyodbc_info and freebase_sparql_html_info in the common/globals_args.py with your local address.
 
 ### KB-indenpendent query generation
@@ -81,9 +81,9 @@ Below, an example on GraphQuestions.
 ## Skeleton Models
 * Five pre-trained models in the dataset_graphquestions/fine_tuning_models_graphq_0905.
 
-## Train Multi-strategy Scoring Models
-* Word-level scorer in grounding/ranking/path_match_nn/train_test_path_nn.py
-* Sentence-level scorer in paraphrase_classifier_interface.py
+## Multi-strategy Scoring Models
+* Word-level scorer. The code is in grounding/ranking/path_match_nn/train_test_path_nn.py. The trained model is in dataset_graphquestions/data_path_match/models
+* Sentence-level scorer. The code is in paraphrase_classifier_interface.py in BERT folder. The trained model is in dataset_graphquestions/data_question_match
 
 ## Compare with Baselines
 * GraphQuestions: PARA4QA, SCANNER, UDEPLAMBDA.
