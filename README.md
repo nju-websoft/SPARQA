@@ -24,12 +24,7 @@ If you meet any questions about SPARQA, please email to him (ywsun@smail.nju.edu
     </tr>
 </table>
  
-## Skeleton
-It is a complex questions skeleton bank by manually annotation. It contains about 10K questions (5,166 questions and 5000 questions from ComplexWebQuestions). We make this resource public to supporch future research (question understanding or semanatic parsing research).
-
 ## Requirements
-* Python 3.6
-* PyTorch 1.3.0+ - [installation](http://pytorch.org/)
 * See [requirements.txt](https://github.com/nju-websoft/SPARQA/blob/master/code/requirements.txt) for the full list of packages
 
 ## Common Resources
