@@ -1,7 +1,6 @@
 # SPARQA: question answering over knowledge bases
 
 Codes for paper: "SPARQA: Skeleton-based Semantic Parsing for Complex Questions over Knowledge Bases" (AAAI-2020) [detail](https://www.aaai.org/Papers/AAAI/2020GB/AAAI-SunY.3419.pdf).
-
 If you meet any questions, please email to him (ywsun at smail.nju.edu.cn).
 
 ## Project Structure:
@@ -65,36 +64,30 @@ Below, an example on GraphQuestions.
 
 ### Specific-dataset Configuration
 
-* Datset Selection in the configuration globals_args.py: q_mode = graphq, which means GraphQuestions. q_mode = cwq, which means ComplexWebQuestions 1.1.
-* Skeleton Parsing in the configuration globals_args.py: parser_mode = head, which means skeleton parsing. (note that parser_mode=dep, which means dependency parsing).
-* Replace the address freebase_pyodbc_info and freebase_sparql_html_info in the globals_args.py with your local information.
+* Datset Selection in the common/globals_args.py: q_mode=graphq. (note that q_mode=cwq if CWQ 1.1)
+* Skeleton Parsing in the common/globals_args.py: parser_mode=head, which means skeleton parsing. (note that parser_mode=dep, which means dependency parsing).
+* Replace the freebase_pyodbc_info and freebase_sparql_html_info in the common/globals_args.py with your local address.
 
 ### KB-indenpendent query generation
-* Variable module = 1.0, which means run KB-indenpendent query generation. The input: graph_questions_filepath. The output: structure_with_1_ungrounded_graphq_file.
+* Run KB-indenpendent query generation. Setup variable module=1.0. The input: graph_questions_filepath. The output: structure_with_1_ungrounded_graphq_file.
 
 ### KB-dependent query generation
-* Variable module = 2.1, which means to run variant generation. The input: structure_with_1_ungrounded_graphq_file. The output: structure_with_2_1_grounded_graph_file.
-* Variable module = 2.2, which means to grounding. The input: structure_with_2_1_grounded_graph_file. The output: structure_with_2_2_grounded_graph_folder.
-* Variable module = 2.3_word_match, which means to ranking using word-level scorer. The input: structure_with_2_2_grounded_graph_folder.
-* Variable module = 2.3_add_question_match, which means to combine sentence-level scorer and word-level scorer. The input: structure_with_2_2_grounded_graph_folder.
-* Variable module = 3_evaluation, which means to run evaluation. The input: structure_with_2_2_grounded_graph_folder. The output: results.
+* Generate variant generation. Set variable module=2.1. The input: structure_with_1_ungrounded_graphq_file. The output: structure_with_2_1_grounded_graph_file.
+* Ground candidate queries. Set module=2.2. The input: structure_with_2_1_grounded_graph_file. The output: structure_with_2_2_grounded_graph_folder.
+* Rank using word-level scorer. Set module=2.3_word_match. The input: structure_with_2_2_grounded_graph_folder.
+* Combine sentence-level scorer and word-level scorer. Set module=2.3_add_question_match. The input: structure_with_2_2_grounded_graph_folder.
+* Run evaluation. Set module=3_evaluation. The input: structure_with_2_2_grounded_graph_folder. The output: results.
 
-## Instruction of Output File
-* It consists of list. The output of every question is dict. Specifically, keys (question, qid, function, compositionality_type, num_node, num_edge, words, gold_graph_query, gold_answer, and gold_sparql_query) is question information.
-* Key span_tree represents question skeleton. 
-* Key ungrounded_graph_forest represents KB-indenpendent query. It consists of ungrounded_query_id, blag, nodes, edges, important_words_list, abstract_question, sequence_ner_tag_dict, grounded_linking, and grounded_graph_forest.
-* Key grounded_graph_forest represents candidate KB-dependent queries. It consists of grounded_query_id, type, nodes, edges, key_path, sparql_query, score, and denotation.
-
-## Train Skeleton Models
-* Five models (continue...)
+## Skeleton Models
+* Five pre-trained models in the dataset_graphquestions/fine_tuning_models_graphq_0905.
 
 ## Train Multi-strategy Scoring Models
-* Word-level scorer (continue...)
-* Sentence-level scorer (continue...)
+* Word-level scorer in grounding/ranking/path_match_nn/train_test_path_nn.py
+* Sentence-level scorer in paraphrase_classifier_interface.py
 
 ## Compare with Baselines
-* GraphQuestions: PARA4QA, SCANNER, UDEPLAMBDA
-* ComplexWebQuestions: PullNet, SPLITQA, and MHQA-GRN. Note that PullNet used annotated topic entities of questions in its kB only setting. SPARQA, an end-to-end method, do not use annotated topic entities. It is thus not comparable.
+* GraphQuestions: PARA4QA, SCANNER, UDEPLAMBDA.
+* CWQ 1.1: PullNet, SPLITQA, and MHQA-GRN. Note that PullNet used annotated topic entities of questions in its KB only setting. SPARQA, an end-to-end method, do not use annotated topic entities. Thus, it is not comparable.
 
 ## Citation
 
@@ -109,4 +102,4 @@ Below, an example on GraphQuestions.
 	}
 
 ## Contacts
-If you have any difficulty or questions in running codes, reproducing experimental results, and skeleton parsing, please email to him (ywsun@smail.nju.edu.cn).
+If you have any difficulty or questions in running codes, reproducing experimental results, and skeleton parsing, please email to him (ywsun at smail.nju.edu.cn).
