@@ -78,10 +78,10 @@ Below, an example on GraphQuestions.
 * Combine sentence-level scorer and word-level scorer. Set module=2.3_add_question_match. The input: structure_with_2_2_grounded_graph_folder.
 * Run evaluation. Set module=3_evaluation. The input: structure_with_2_2_grounded_graph_folder. The output: results.
 
-## Skeleton Models
+### Skeleton Parsing
 * Five pre-trained models in the dataset_graphquestions/fine_tuning_models_graphq_0905.
 
-## Multi-strategy Scoring Models
+### Multi-strategy Scoring Models
 * Word-level scorer. The code is in grounding/ranking/path_match_nn/train_test_path_nn.py. The trained model is in dataset_graphquestions/data_path_match/models
 * Sentence-level scorer. The code is in paraphrase_classifier_interface.py in BERT folder. The trained model is in dataset_graphquestions/data_question_match
 
