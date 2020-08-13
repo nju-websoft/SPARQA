@@ -34,11 +34,10 @@ If you meet any questions, please email to him (ywsun at smail.nju.edu.cn).
 * GloVe (glove.6B.300d) [download](https://nlp.stanford.edu/projects/glove/). Default save in the root.
 * Stanford CoreNLP server. [download](https://stanfordnlp.github.io/CoreNLP/corenlp-server.html), get started, and replace ip_port address in globals_args.py with URL of your CoreNLP.
 * Python wrapper for Stanford CoreNLP's SUTime Java library. [download](https://github.com/FraBle/python-sutime). Default save in root/resource_sutime/. Note that if you save other place, replace the sutime_jar_files in configution with your path.
-* BERT pre-trained Models download [here](https://drive.google.com/drive/folders/1tlUF7ALLLXiHu280gPdlVyQlGvJFklGC) and save the seven files in the default root/pre_train_models address in the configuration bert.args.py.
-* Download two version freebases: [latest version](https://developers.google.com/freebase) and 2013 version (you can email SPARQA author, if you do not find it)
-
+* BERT pre-trained Models download [download](https://drive.google.com/drive/folders/1tlUF7ALLLXiHu280gPdlVyQlGvJFklGC) and default save the seven files in the root/pre_train_models.
+* Four preprocessing files [download](https://drive.google.com/open?id=1AW5rT5MaZrDkc2rNz0TZhDJaQVQwJgT4), and save in the root.
+* Two version Freebases: [latest version](https://developers.google.com/freebase) and 2013 version (email SPARQA author, if you can not find the version)
 * Download a virtuoso server and load the KBs. The [file](http://ws.nju.edu.cn/blog/2017/03/virtuoso%E5%AE%89%E8%A3%85%E5%92%8C%E5%AF%BC%E5%85%A5%E6%95%B0%E6%8D%AE/) is helpful, if you meet questions.
-* Four files (stopwords.txt, ordinal_fengli.tsv, unimportantphrase, and unimportantwords) download [here](https://drive.google.com/open?id=1AW5rT5MaZrDkc2rNz0TZhDJaQVQwJgT4). download the file, and saves in the root.
 
 ## Specific CWQ 1.1 Resources
 * To access interface virtuoso server, you need configure odbc address (freebase_pyodbc_info) in globals_args.py. 
