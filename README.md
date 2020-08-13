@@ -2,7 +2,7 @@
 
 Codes for paper: "SPARQA: Skeleton-based Semantic Parsing for Complex Questions over Knowledge Bases" (AAAI-2020) [detail](https://www.aaai.org/Papers/AAAI/2020GB/AAAI-SunY.3419.pdf).
 
-If you meet any questions about SPARQA, please email to him (ywsun@smail.nju.edu.cn).
+If you meet any questions, please email to him (ywsun at smail.nju.edu.cn).
 
 ## Project Structure:
 
@@ -11,16 +11,16 @@ If you meet any questions about SPARQA, please email to him (ywsun@smail.nju.edu
         <th>File</th><th>Description</th>
     </tr>
     <tr>
-        <td>code</td><td>SPARQA codes</td>
+        <td>code</td><td>codes</td>
     </tr>
     <tr>
-        <td>dataset</td><td>QA datasets and resouces for entity linking</td>
+        <td>dataset</td><td>datasets and files for preprocessing </td>
     </tr>
     <tr>
-        <td>skeleton</td><td>Skeleton bank of 10K complex questions</td>
+        <td>skeleton</td><td>skeleton bank of complex questions</td>
     </tr>
     <tr>
-        <td>slides</td><td>SPARQA slides and poster</td>
+        <td>slides</td><td>slides and poster</td>
     </tr>
 </table>
  
