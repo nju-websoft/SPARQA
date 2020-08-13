@@ -27,17 +27,18 @@ If you meet any questions, please email to him (ywsun at smail.nju.edu.cn).
 ## Requirements
 * See [requirements.txt](https://github.com/nju-websoft/SPARQA/blob/master/code/requirements.txt) for the full list of packages
 
-## Common Resources
-* GloVe (glove.6B.300d) [download](https://nlp.stanford.edu/projects/glove/)
-* Stanford CoreNLP server. download [here](https://stanfordnlp.github.io/CoreNLP/corenlp-server.html), get started, and replace ip_port address in globals_args.py with URL of your CoreNLP.
-* Python wrapper for Stanford CoreNLP's SUTime Java library. download [here](https://github.com/FraBle/python-sutime). Default save in root/resource_sutime/. If you save other place, replace the address sutime_jar_files in configution with your path.
-* BERT pre-trained Models download [here](https://drive.google.com/drive/folders/1tlUF7ALLLXiHu280gPdlVyQlGvJFklGC) and save the seven files in the default root/pre_train_models address in the configuration bert.args.py.
-* Download two version freebases: latest version for ComplexWebQuestions [here](https://developers.google.com/freebase) and 2013 version for GraphQuestions [here](https://github.com/ysu1989/GraphQuestions)
-* Download a virtuoso server and load the KBs. The [file](http://ws.nju.edu.cn/blog/2017/03/virtuoso%E5%AE%89%E8%A3%85%E5%92%8C%E5%AF%BC%E5%85%A5%E6%95%B0%E6%8D%AE/) is helpful, if you meet questions.
-
 ## Configuration
-* Root datasets: default value D:/dataset. You can edit it in the configution globals_args.py. 
-* Four files (stopwords.txt, ordinal_fengli.tsv, unimportantphrase, and unimportantwords) download [here](https://drive.google.com/open?id=1AW5rT5MaZrDkc2rNz0TZhDJaQVQwJgT4). download the file, and saves in the root (default, you can edit these addresses).
+* Root of dataset: default D:/dataset. Note that you can edit it in common/globals_args.py. 
+
+## Common Resources
+* GloVe (glove.6B.300d) [download](https://nlp.stanford.edu/projects/glove/). Default save in the root.
+* Stanford CoreNLP server. [download](https://stanfordnlp.github.io/CoreNLP/corenlp-server.html), get started, and replace ip_port address in globals_args.py with URL of your CoreNLP.
+* Python wrapper for Stanford CoreNLP's SUTime Java library. [download](https://github.com/FraBle/python-sutime). Default save in root/resource_sutime/. Note that if you save other place, replace the sutime_jar_files in configution with your path.
+* BERT pre-trained Models download [here](https://drive.google.com/drive/folders/1tlUF7ALLLXiHu280gPdlVyQlGvJFklGC) and save the seven files in the default root/pre_train_models address in the configuration bert.args.py.
+* Download two version freebases: [latest version](https://developers.google.com/freebase) and 2013 version (you can email SPARQA author, if you do not find it)
+
+* Download a virtuoso server and load the KBs. The [file](http://ws.nju.edu.cn/blog/2017/03/virtuoso%E5%AE%89%E8%A3%85%E5%92%8C%E5%AF%BC%E5%85%A5%E6%95%B0%E6%8D%AE/) is helpful, if you meet questions.
+* Four files (stopwords.txt, ordinal_fengli.tsv, unimportantphrase, and unimportantwords) download [here](https://drive.google.com/open?id=1AW5rT5MaZrDkc2rNz0TZhDJaQVQwJgT4). download the file, and saves in the root.
 
 ## Specific CWQ 1.1 Resources
 * To access interface virtuoso server, you need configure odbc address (freebase_pyodbc_info) in globals_args.py. 
