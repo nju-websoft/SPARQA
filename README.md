@@ -30,7 +30,7 @@ If you meet any questions, please email to him (ywsun at smail.nju.edu.cn).
 * Root of dataset: default D:/dataset. Note that you can edit it in common/globals_args.py. 
 
 ## Common Resources
-* GloVe (glove.6B.300d) [download](https://nlp.stanford.edu/projects/glove/). Default save in the root.
+* GloVe (glove.6B.300d). [pan](https://pan.baidu.com/s/1ZwIqiv4L75FojS1AD7cahQ), The extraction code is glov. Default save in the root. If you can not pan, you can also [download](https://nlp.stanford.edu/projects/glove/).
 * Stanford CoreNLP server. [download](https://stanfordnlp.github.io/CoreNLP/corenlp-server.html), get started, and replace ip_port address in globals_args.py with URL of your CoreNLP.
 * Python wrapper for Stanford CoreNLP's SUTime Java library. [download](https://github.com/FraBle/python-sutime). Default save in root/resource_sutime/. Note that if you save other place, replace the sutime_jar_files in configution with your path.
 * BERT pre-trained Models download [download](https://drive.google.com/drive/folders/1tlUF7ALLLXiHu280gPdlVyQlGvJFklGC) and default save the seven files in the root/pre_train_models.
