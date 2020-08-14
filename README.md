@@ -30,26 +30,16 @@ If you meet any questions, please email to him (ywsun at smail.nju.edu.cn).
 * Root of dataset: default D:/dataset. Note that you can edit it in common/globals_args.py. 
 
 ## Common Resources
-* Eight Resources: GloVe (glove.6B.300d), Stanford CoreNLP server, SUTime Java library, BERT pre-trained Models, and four preprocessing files(stopwords.txt, ordinal_fengli.tsv, unimportantphrase, and unimportantwords). [pan](https://pan.baidu.com/s/1nMZRVqgxQxiiMNxfLwrq3w). The extraction code is kbqa. Default save in the root.
-* Two version Freebase: [latest version](https://developers.google.com/freebase) and 2013 version (email SPARQA author, if you can not find the version)
-* Download a virtuoso server and load the KBs. The [file](http://ws.nju.edu.cn/blog/2017/03/virtuoso%E5%AE%89%E8%A3%85%E5%92%8C%E5%AF%BC%E5%85%A5%E6%95%B0%E6%8D%AE/) is helpful, if you meet questions.
+* Eight Resources: GloVe (glove.6B.300d), Stanford CoreNLP server, SUTime Java library, BERT pre-trained Models, and four preprocessing files(stopwords.txt, ordinal_fengli.tsv, unimportantphrase, and unimportantwords). [pan](https://pan.baidu.com/s/1Wd3ghjpn3oB20uTodDFGHA). The extraction code is kbqa. unzip and save in the root.
+* Two version Freebase: [latest version](https://developers.google.com/freebase) and 2013 version (email SPARQA author, if you can not find the version). Next, download a virtuoso server and load the KBs. The [file](http://ws.nju.edu.cn/blog/2017/03/virtuoso%E5%AE%89%E8%A3%85%E5%92%8C%E5%AF%BC%E5%85%A5%E6%95%B0%E6%8D%AE/) is helpful, if you meet questions.
 
 ## Specific CWQ 1.1 Resources
-* Configure odbc address of virtuoso server (freebase_pyodbc_info) in common/globals_args.py. 
-* Configure html address of virtuoso html (freebase_sparql_html_info) in common/globals_args.py. 
-* Five BERT pre-trained models for skeleton parsing. [pan](https://pan.baidu.com/s/18evOvnj5o_Olgb3511V_iQ). The extraction code is cwqf. and save the five files in the default root/dataset_cwq_1_1.
-* Entity-related Lexicons and schema-related lexicons. [pan](https://pan.baidu.com/s/1hstefmuE93HyUq1CLPRrcA). The extraction code is cwqr. and save in the default root/kb_freebase_latest.
-* CWQ 1.1 dataset. [pan](https://pan.baidu.com/s/18BUqpArhSaOTIYw1Uq8oDg). The extraction code is cwqd. and save in the default root/dataset_cwq_1_1.
-* Word-level scorer model. The code is in grounding/ranking/path_match_nn/train_test_path_nn.py. The trained model is in [pan](https://pan.baidu.com/s/1rxEiEJHFcdqcpu3JXU0Rng). The extraction code is wora. and save in root/dataset_cwq_1_1.
-* Sentence-level scorer model. The code is in paraphrase_classifier_interface.py in BERT folder. The trained model is in [pan](https://pan.baidu.com/s/11HPqg92OrouTgggoTKXNzQ). The extraction code is worc. and save in root/dataset_cwq_1_1.
+* CWQ 1.1 dataset, Skeleton Parsing models, Word-level scorer model, Sentence-level scorer model. [pan](https://pan.baidu.com/s/1gOPkTwXAS3dD9I3-ORQkSg). The extraction code is kbqa. unzip and save in the root.
+* Entity-related Lexicons and schema-related lexicons. [pan](https://pan.baidu.com/s/1ToAesUe11RouLuQO_olorA). The extraction code is kbqa. unzip and save in the root.
 
 ## Specific GraphQuestions Resources
-* Configure odbc address of virtuoso server (freebase_pyodbc_info) in common/globals_args.py. 
-* Configure html address of virtuoso html (freebase_sparql_html_info) in common/globals_args.py. 
-* Five BERT pre-trained models for skeleton parsing. [pan](https://pan.baidu.com/s/11ksbcLUODNNPWljci4Ob6w). The extraction code is grad. and save the files in the default root/dataset_graphquestions.
-* Entity-related Lexicons and schema-related lexicons. [pan](https://pan.baidu.com/s/1Tkbr0SF66-54TTD4bYZM-A). The extraction code is grab. and save in the default root/kb_freebase_en_2013.
-* GraphQuestions dataset. [pan](https://pan.baidu.com/s/1w0xKC9WXgDJRPZlfMvDlVA). The extraction code is graa. and save the files in the default root/dataset_graphquestions.
-* Word-level scorer model. The code is in grounding/ranking/path_match_nn/train_test_path_nn.py. The trained model is in [pan](https://pan.baidu.com/s/1_TrGORMXFYTW2ozayarGUQ). The extraction code is word. and save in root/dataset_graphquestions.
+* GraphQuestions dataset, Skeleton Parsing models, Word-level scorer model. [pan](https://pan.baidu.com/s/1wiNczntTiWzE_k7hy9RuQw). The extraction code is kbqa. unzip and save in the root.
+* Entity-related Lexicons and schema-related lexicons. [pan](https://pan.baidu.com/s/1Zs0ufmSAHYHqFgoD4Hig3w). The extraction code is kbqa. unzip and save in the default root/kb_freebase_en_2013.
 
 ## Run SPARQA Pipeline
 The pipeline has two steps for answering questions: 
@@ -65,7 +55,7 @@ Below, an example on GraphQuestions.
 
 * Set datset in the common/globals_args.py: q_mode=graphq. (note that q_mode=cwq if CWQ 1.1)
 * Set skeleton parsing in the common/globals_args.py: parser_mode=head, which means skeleton parsing. (note that parser_mode=dep, which means dependency parsing).
-* Replace the freebase_pyodbc_info and freebase_sparql_html_info in the common/globals_args.py with your local address.
+* Replace the freebase_pyodbc_info and freebase_sparql_html_info in the common/globals_args.py with your local address. (note that 2013 version is for GraphQuestions, and latest version is for CWQ 1.1).
 
 ### KB-indenpendent query generation
 * Run KB-indenpendent query generation. Setup variable module=1.0. The input: graph_questions_filepath. The output: structure_with_1_ungrounded_graphq_file.
