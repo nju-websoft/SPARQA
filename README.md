@@ -24,7 +24,7 @@ If you meet any questions, please email to him (ywsun at smail.nju.edu.cn).
 </table>
  
 ## Requirements
-* See [requirements.txt](https://github.com/nju-websoft/SPARQA/blob/master/code/requirements.txt)
+* [requirements.txt](https://github.com/nju-websoft/SPARQA/blob/master/code/requirements.txt)
 
 ## Configuration
 * Root of dataset: default D:/dataset. Note that you can edit it in common/globals_args.py. 
@@ -41,16 +41,19 @@ If you meet any questions, please email to him (ywsun at smail.nju.edu.cn).
 ## Specific CWQ 1.1 Resources
 * Configure odbc address of virtuoso server (freebase_pyodbc_info) in common/globals_args.py. 
 * Configure html address of virtuoso html (freebase_sparql_html_info) in common/globals_args.py. 
-* Five BERT pre-trained models for skeleton parsing. [download](https://drive.google.com/drive/folders/1t4Rb2feVOSGF_5lRBHwrB_GfxyL2rqby) and save the five files in the default root/dataset_cwq_1_1.
-* Entity-related Lexicons and schema-related lexicons. [download](https://drive.google.com/drive/folders/1t4Rb2feVOSGF_5lRBHwrB_GfxyL2rqby) and save in the default root/kb_freebase_latest.
-* CWQ 1.1 dataset. [download](https://github.com/nju-websoft/SPARQA/tree/master/dataset/dataset_cwq_1_1).
+* Five BERT pre-trained models for skeleton parsing. [pan](https://pan.baidu.com/s/18evOvnj5o_Olgb3511V_iQ). The extraction code is cwqf. and save the five files in the default root/dataset_cwq_1_1.
+* Entity-related Lexicons and schema-related lexicons. [pan](https://pan.baidu.com/s/1hstefmuE93HyUq1CLPRrcA). The extraction code is cwqr. and save in the default root/kb_freebase_latest.
+* CWQ 1.1 dataset. [pan](https://pan.baidu.com/s/18BUqpArhSaOTIYw1Uq8oDg). The extraction code is cwqd.
+* Word-level scorer model. The code is in grounding/ranking/path_match_nn/train_test_path_nn.py. The trained model is in [pan](https://pan.baidu.com/s/1rxEiEJHFcdqcpu3JXU0Rng). The extraction code is wora. and save in root/dataset_cwq_1_1.
+* Sentence-level scorer model. The code is in paraphrase_classifier_interface.py in BERT folder. The trained model is in [pan](https://pan.baidu.com/s/11HPqg92OrouTgggoTKXNzQ). The extraction code is worc. and save in root/dataset_cwq_1_1.
 
 ## Specific GraphQuestions Resources
 * Configure odbc address of virtuoso server (freebase_pyodbc_info) in common/globals_args.py. 
 * Configure html address of virtuoso html (freebase_sparql_html_info) in common/globals_args.py. 
-* Five BERT pre-trained models for skeleton parsing. [download](https://drive.google.com/drive/folders/1Mjpan599INCVRgRQTsirgVdyt29iKblO) and save the five files in the default root/dataset_graphquestions.
-* Entity-related Lexicons and schema-related lexicons. [download](https://drive.google.com/drive/folders/1Mjpan599INCVRgRQTsirgVdyt29iKblO) and save in the default root/kb_freebase_en_2013.
-* GraphQuestions dataset. [download](https://github.com/nju-websoft/SPARQA/tree/master/dataset/dataset_graphquestions).
+* Five BERT pre-trained models for skeleton parsing. [pan](https://pan.baidu.com/s/11ksbcLUODNNPWljci4Ob6w). The extraction code is grad. and save the files in the default root/dataset_graphquestions.
+* Entity-related Lexicons and schema-related lexicons. [pan](https://pan.baidu.com/s/1Tkbr0SF66-54TTD4bYZM-A). The extraction code is grab. and save in the default root/kb_freebase_en_2013.
+* GraphQuestions dataset. [pan](https://pan.baidu.com/s/1w0xKC9WXgDJRPZlfMvDlVA). The extraction code is graa. and save the files in the default root/dataset_graphquestions.
+* Word-level scorer model. The code is in grounding/ranking/path_match_nn/train_test_path_nn.py. The trained model is in [pan](https://pan.baidu.com/s/1_TrGORMXFYTW2ozayarGUQ). The extraction code is word. and save in root/dataset_graphquestions.
 
 ## Run SPARQA Pipeline
 The pipeline has two steps for answering questions: 
@@ -77,13 +80,6 @@ Below, an example on GraphQuestions.
 * Rank using word-level scorer. Set module=2.3_word_match. The input: structure_with_2_2_grounded_graph_folder.
 * Combine sentence-level scorer and word-level scorer. Set module=2.3_add_question_match. The input: structure_with_2_2_grounded_graph_folder.
 * Run evaluation. Set module=3_evaluation. The input: structure_with_2_2_grounded_graph_folder. The output: results.
-
-### Skeleton Parsing
-* Five pre-trained models in the dataset_graphquestions/fine_tuning_models_graphq_0905.
-
-### Multi-strategy Scoring Models
-* Word-level scorer. The code is in grounding/ranking/path_match_nn/train_test_path_nn.py. The trained model is in dataset_graphquestions/data_path_match/models
-* Sentence-level scorer. The code is in paraphrase_classifier_interface.py in BERT folder. The trained model is in dataset_graphquestions/data_question_match
 
 ## Compare with Baselines
 * GraphQuestions: PARA4QA, SCANNER, UDEPLAMBDA.
