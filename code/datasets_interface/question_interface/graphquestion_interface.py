@@ -33,7 +33,8 @@ def read_graph_question_json(filename):
         graphq.graph_entity_level_paraphrase_id = graphq.qid % 100
         graphq.graph_sentence_level_paraphrase_id = (graphq.qid // 100) % 10000
         graphq.graph_query_id = graphq.qid // 1000000
-        graphq.question = questionAnnotation["question"]
+        # graphq.question = questionAnnotation["question"]
+        graphq.question = questionAnnotation["question_normal"]
         graphq.answer = questionAnnotation["answer"]
         graphq.function = questionAnnotation["function"]
         graphq.commonness = questionAnnotation["commonness"]
@@ -62,10 +63,11 @@ def look_for_aggregation_by_qid(qid):
             break
     return function
 
+"""
 qid_to_q_dict = read_dict(globals_args.fn_graph_file.question_qid_normal_dict)
 def look_for_q_normal_by_qid(qid):
     q_normal = "none"
     if str(qid) in qid_to_q_dict:
         q_normal = qid_to_q_dict[str(qid)][0]
     return q_normal
-
+"""

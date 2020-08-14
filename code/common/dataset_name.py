@@ -23,8 +23,10 @@ class GraphqFileName():
 
     def __init__(self, root):
         self.dataset = root + '/dataset_graphquestions/'
-        self.graphquestions_testing_dir = self.dataset + 'graphquestions.testing.json'
-        self.graphquestions_training_dir = self.dataset + 'graphquestions.training.json'
+        # self.graphquestions_testing_dir = self.dataset + 'graphquestions.testing.json'
+        self.graphquestions_testing_dir = self.dataset + 'graphquestions.testing_nju_1209.json'
+        # self.graphquestions_training_dir = self.dataset + 'graphquestions.training.json'
+        self.graphquestions_training_dir = self.dataset + 'graphquestions.training_nju_1209.json'
         self.question_qid_normal_dict = self.dataset + 'graph_testing_question_normal.txt'
         self.graphquestions_testing_answers_dir = self.dataset + '2019.05.13_test_answers'
         self.graphquestions_training_answers_dir = self.dataset + '2019.05.13_train_answers'

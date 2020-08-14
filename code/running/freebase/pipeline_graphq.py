@@ -9,13 +9,13 @@ def run_ungrounded_graph_from_graphq(graph_questions_filepath, output_file):
     tuples_list = []
     for i in range(len(graph_questions_struct)):
         graphquestion = graph_questions_struct[i]
-        q_normal = graphquestion_interface.look_for_q_normal_by_qid(graphquestion.qid)
+        q_normal = graphquestion.question  #graphquestion_interface.look_for_q_normal_by_qid(graphquestion.qid)
         tuples_list.append((graphquestion.qid, q_normal, graphquestion.graph_query, graphquestion.answer))
     structure_list = running_interface.run_query_graph_generation(tuples_list=tuples_list)
     write_structure_file(structure_list, output_file)
 
 if __name__ == '__main__':
-    module = "3_evaluation"
+    module = "1.0"
     #1.0  utterance -> span tree -> ungrounded graph
     #2.1  node linking
     #2.2  grounded graph

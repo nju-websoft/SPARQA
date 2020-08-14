@@ -5,12 +5,12 @@ from argparse import ArgumentParser
 root = 'D:/dataset'
 q_mode = 'graphq' #cwq graphq
 parser_mode = 'head' #head, dep
-kb_mode = 'kb_freebase_latest' #kb_freebase_latest, kb_freebase_en_2013
+kb_mode = 'kb_freebase_en_2013' #kb_freebase_latest, kb_freebase_en_2013
 
 def get_args(root):
     parser = ArgumentParser(description="arguments")
     parser.add_argument('--glove_file', type=str, default=root+'/glove.6B.300d.txt')
-    parser.add_argument('--ip_port', type=str, default='http://127.0.0.1:9000')
+    parser.add_argument('--ip_port', type=str, default='http://114.212.190.19:9003')
     parser.add_argument('--sutime_jar_files', type=str, default=root + '/resources_sutime/python-sutime-master/jars')
     parser.add_argument('--stopwords_dir', type=str, default=root+'/stopwords.txt')
     parser.add_argument('--ordinal_fengli', type=str, default=root + '/ordinal_fengli.tsv')
