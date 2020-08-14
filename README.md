@@ -30,11 +30,7 @@ If you meet any questions, please email to him (ywsun at smail.nju.edu.cn).
 * Root of dataset: default D:/dataset. Note that you can edit it in common/globals_args.py. 
 
 ## Common Resources
-* GloVe (glove.6B.300d). [pan](https://pan.baidu.com/s/1ZwIqiv4L75FojS1AD7cahQ). The extraction code is glov. Default save in the root. If you can not open pan, you can also [download](https://nlp.stanford.edu/projects/glove/).
-* Stanford CoreNLP server. [pan](https://pan.baidu.com/s/1_aJ4kRCTH8p9jOyc5usweA). The extraction code is core. Get started, and replace ip_port address in globals_args.py with URL of your CoreNLP. If you can not open pan, you can also [download](https://stanfordnlp.github.io/CoreNLP/corenlp-server.html).
-* Python wrapper for Stanford CoreNLP's SUTime Java library. [pan](https://pan.baidu.com/s/1iJULnxWOmjklm_ML1SxXkA). The extraction code is suti. Default save in root/resource_sutime/. Note that if you save other place, replace the sutime_jar_files in configution with your path. If you can not open pan, you can also [download](https://github.com/FraBle/python-sutime). 
-* BERT pre-trained Models [pan](https://pan.baidu.com/s/1mR-k8oA7Hb5OI7T426KoMA). The extraction code is suti. and default save in the root. If you can not open pan, you can also google drive [download](https://drive.google.com/drive/folders/1tlUF7ALLLXiHu280gPdlVyQlGvJFklGC?usp=sharing).
-* Four preprocessing files (stopwords.txt, ordinal_fengli.tsv, unimportantphrase, and unimportantwords) [pan](https://pan.baidu.com/s/1Ht96jORpkaCllOLlIol8UQ), The extraction code four. and save in the root.
+* Eight Resources: GloVe (glove.6B.300d), Stanford CoreNLP server, SUTime Java library, BERT pre-trained Models, and four preprocessing files(stopwords.txt, ordinal_fengli.tsv, unimportantphrase, and unimportantwords). [pan](https://pan.baidu.com/s/1nMZRVqgxQxiiMNxfLwrq3w). The extraction code is kbqa. Default save in the root.
 * Two version Freebase: [latest version](https://developers.google.com/freebase) and 2013 version (email SPARQA author, if you can not find the version)
 * Download a virtuoso server and load the KBs. The [file](http://ws.nju.edu.cn/blog/2017/03/virtuoso%E5%AE%89%E8%A3%85%E5%92%8C%E5%AF%BC%E5%85%A5%E6%95%B0%E6%8D%AE/) is helpful, if you meet questions.
 
