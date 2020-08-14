@@ -13,9 +13,6 @@ If you meet any questions, please email to him (ywsun at smail.nju.edu.cn).
         <td>code</td><td>codes</td>
     </tr>
     <tr>
-        <td>dataset</td><td>datasets and files for preprocessing </td>
-    </tr>
-    <tr>
         <td>skeleton</td><td>skeleton bank of complex questions</td>
     </tr>
     <tr>
