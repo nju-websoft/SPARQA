@@ -43,7 +43,7 @@ If you meet any questions, please email to him (ywsun at smail.nju.edu.cn).
 * Configure html address of virtuoso html (freebase_sparql_html_info) in common/globals_args.py. 
 * Five BERT pre-trained models for skeleton parsing. [pan](https://pan.baidu.com/s/18evOvnj5o_Olgb3511V_iQ). The extraction code is cwqf. and save the five files in the default root/dataset_cwq_1_1.
 * Entity-related Lexicons and schema-related lexicons. [pan](https://pan.baidu.com/s/1hstefmuE93HyUq1CLPRrcA). The extraction code is cwqr. and save in the default root/kb_freebase_latest.
-* CWQ 1.1 dataset. [pan](https://pan.baidu.com/s/18BUqpArhSaOTIYw1Uq8oDg). The extraction code is cwqd.
+* CWQ 1.1 dataset. [pan](https://pan.baidu.com/s/18BUqpArhSaOTIYw1Uq8oDg). The extraction code is cwqd. and save in the default root/dataset_cwq_1_1.
 * Word-level scorer model. The code is in grounding/ranking/path_match_nn/train_test_path_nn.py. The trained model is in [pan](https://pan.baidu.com/s/1rxEiEJHFcdqcpu3JXU0Rng). The extraction code is wora. and save in root/dataset_cwq_1_1.
 * Sentence-level scorer model. The code is in paraphrase_classifier_interface.py in BERT folder. The trained model is in [pan](https://pan.baidu.com/s/11HPqg92OrouTgggoTKXNzQ). The extraction code is worc. and save in root/dataset_cwq_1_1.
 
