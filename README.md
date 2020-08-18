@@ -68,6 +68,13 @@ Below, an example on GraphQuestions.
 * GraphQuestions: PARA4QA, SCANNER, UDEPLAMBDA.
 * CWQ 1.1: PullNet, SPLITQA, and MHQA-GRN. Note that PullNet used annotated topic entities of questions in its KB only setting. SPARQA, an end-to-end method, do not use annotated topic entities. Thus, it is not comparable.
 
+## Skeleton Parsing
+* SPARQA also provides a tool of parsing. The input is a question. The output is the skeleton of the question. (Now, it only supports English language. Later, it will support Chinese language)
+* You can use SPARQA's skeleton parsing to train yourself language. (It need replace the pre-trained models and annotated data with your language)
+
+## Multi-Strategy Scoring
+* SPARQA has provided a trained word-level scorer model and sentence-level scorer above pan.
+
 ## Citation
 
 	@inproceedings{SunZ0Q20,
