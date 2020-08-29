@@ -1,0 +1,2260 @@
+[
+    {
+        "question": "find the opera productions of joseph papp .",
+        "qid": 274000300,
+        "function": null,
+        "compositionality_type": "simple",
+        "num_node": 2,
+        "num_edge": 1,
+        "commonness": 0,
+        "span_tree": "[find the opera productions .[None{None}][of joseph papp[3{nmod}]]]",
+        "words": "['find', 'the', 'opera', 'productions', 'of', 'joseph', 'papp', '.']",
+        "ungrounded_graph_forest": [
+            {
+                "ungrounded_query_id": 1,
+                "blag": "super",
+                "nodes": [
+                    {
+                        "nid": 1,
+                        "node_type": "class",
+                        "friendly_name": "the opera productions",
+                        "question_node": 1,
+                        "function": "none",
+                        "score": 1.0,
+                        "normalization_value": null,
+                        "type_class": null,
+                        "ordinal": "none"
+                    },
+                    {
+                        "nid": 2,
+                        "node_type": "entity",
+                        "friendly_name": "joseph papp",
+                        "question_node": 0,
+                        "function": "none",
+                        "score": 1.0,
+                        "normalization_value": null,
+                        "type_class": null,
+                        "ordinal": "none"
+                    }
+                ],
+                "edges": [
+                    {
+                        "start": 1,
+                        "end": 2,
+                        "friendly_name": "",
+                        "score": 1.0
+                    }
+                ],
+                "important_words_list": "[]",
+                "abstract_question": "['find', 'class', 'of', 'entity', '.']",
+                "sequence_ner_tag_dict": "{'1\\t3': 'class', '5\\t6': 'entity'}",
+                "grounded_linking": {
+                    "1": {
+                        "hhh": 1.0
+                    },
+                    "2": {
+                        "en.joseph_papp": 1.9915412693852996,
+                        "en.joseph_m_papp": 1.5400239999999998,
+                        "en.wilford_leach": 1.0,
+                        "en.orson_welles": 0.9911685
+                    }
+                },
+                "grounded_graph_forest": [
+                    {
+                        "grounded_query_id": 100000,
+                        "type": "1_0",
+                        "nodes": [
+                            {
+                                "nid": 1,
+                                "node_type": "entity",
+                                "id": "en.joseph_papp",
+                                "type_class": "",
+                                "friendly_name": "",
+                                "question_node": 0,
+                                "function": "none",
+                                "score": 0.0,
+                                "ordinal": "none"
+                            },
+                            {
+                                "nid": 2,
+                                "node_type": "class",
+                                "id": "?a",
+                                "type_class": "",
+                                "friendly_name": "",
+                                "question_node": 1,
+                                "function": "none",
+                                "score": 0.0,
+                                "ordinal": "none"
+                            }
+                        ],
+                        "edges": [
+                            {
+                                "start": 1,
+                                "end": 2,
+                                "relation": "award.award_nominee.award_nominations",
+                                "friendly_name": "",
+                                "score": 0.0
+                            }
+                        ],
+                        "key_path": "award.award_nominee.award_nominations",
+                        "sparql_query": "SELECT DISTINCT ?x WHERE {\nFILTER (!isLiteral(?x)) \nVALUES ?x1 { :en.joseph_papp } .\n?x1 :award.award_nominee.award_nominations ?x .\n}",
+                        "score": 0.8351960182189941,
+                        "denotation": [
+                            "m.0n3jq3p",
+                            "m.0kfss_w",
+                            "m.0v4_yw5",
+                            "m.0kdff3g",
+                            "m.0n3mdz2",
+                            "m.0kfr1y6",
+                            "m.0n3jf_p",
+                            "m.0n4jc8z",
+                            "m.0n4kf1x"
+                        ],
+                        "total_score": 0.0,
+                        "f1_score": 0
+                    },
+                    {
+                        "grounded_query_id": 100001,
+                        "type": "1_0",
+                        "nodes": [
+                            {
+                                "nid": 1,
+                                "node_type": "entity",
+                                "id": "en.joseph_papp",
+                                "type_class": "",
+                                "friendly_name": "",
+                                "question_node": 0,
+                                "function": "none",
+                                "score": 0.0,
+                                "ordinal": "none"
+                            },
+                            {
+                                "nid": 2,
+                                "node_type": "class",
+                                "id": "?a",
+                                "type_class": "",
+                                "friendly_name": "",
+                                "question_node": 1,
+                                "function": "none",
+                                "score": 0.0,
+                                "ordinal": "none"
+                            }
+                        ],
+                        "edges": [
+                            {
+                                "start": 1,
+                                "end": 2,
+                                "relation": "people.person.profession",
+                                "friendly_name": "",
+                                "score": 0.0
+                            }
+                        ],
+                        "key_path": "people.person.profession",
+                        "sparql_query": "SELECT DISTINCT ?x WHERE {\nFILTER (!isLiteral(?x)) \nVALUES ?x1 { :en.joseph_papp } .\n?x1 :people.person.profession ?x .\n}",
+                        "score": 0.48616549372673035,
+                        "denotation": [
+                            "en.businessperson",
+                            "en.theatrical_producer",
+                            "en.film_producer",
+                            "en.theatre_direction"
+                        ],
+                        "total_score": 0.0,
+                        "f1_score": 0
+                    },
+                    {
+                        "grounded_query_id": 100002,
+                        "type": "1_0",
+                        "nodes": [
+                            {
+                                "nid": 1,
+                                "node_type": "entity",
+                                "id": "en.joseph_papp",
+                                "type_class": "",
+                                "friendly_name": "",
+                                "question_node": 0,
+                                "function": "none",
+                                "score": 0.0,
+                                "ordinal": "none"
+                            },
+                            {
+                                "nid": 2,
+                                "node_type": "class",
+                                "id": "?a",
+                                "type_class": "",
+                                "friendly_name": "",
+                                "question_node": 1,
+                                "function": "none",
+                                "score": 0.0,
+                                "ordinal": "none"
+                            }
+                        ],
+                        "edges": [
+                            {
+                                "start": 1,
+                                "end": 2,
+                                "relation": "people.person.languages",
+                                "friendly_name": "",
+                                "score": 0.0
+                            }
+                        ],
+                        "key_path": "people.person.languages",
+                        "sparql_query": "SELECT DISTINCT ?x WHERE {\nFILTER (!isLiteral(?x)) \nVALUES ?x1 { :en.joseph_papp } .\n?x1 :people.person.languages ?x .\n}",
+                        "score": 0.6049920320510864,
+                        "denotation": [
+                            "en.english"
+                        ],
+                        "total_score": 0.0,
+                        "f1_score": 0
+                    },
+                    {
+                        "grounded_query_id": 100003,
+                        "type": "1_0",
+                        "nodes": [
+                            {
+                                "nid": 1,
+                                "node_type": "entity",
+                                "id": "en.joseph_papp",
+                                "type_class": "",
+                                "friendly_name": "",
+                                "question_node": 0,
+                                "function": "none",
+                                "score": 0.0,
+                                "ordinal": "none"
+                            },
+                            {
+                                "nid": 2,
+                                "node_type": "class",
+                                "id": "?a",
+                                "type_class": "",
+                                "friendly_name": "",
+                                "question_node": 1,
+                                "function": "none",
+                                "score": 0.0,
+                                "ordinal": "none"
+                            }
+                        ],
+                        "edges": [
+                            {
+                                "start": 1,
+                                "end": 2,
+                                "relation": "theater.theater_producer.plays_produced",
+                                "friendly_name": "",
+                                "score": 0.0
+                            }
+                        ],
+                        "key_path": "theater.theater_producer.plays_produced",
+                        "sparql_query": "SELECT DISTINCT ?x WHERE {\nFILTER (!isLiteral(?x)) \nVALUES ?x1 { :en.joseph_papp } .\n?x1 :theater.theater_producer.plays_produced ?x .\n}",
+                        "score": 1.9997832775115967,
+                        "denotation": [
+                            "m.0n27swb",
+                            "m.0n9xqvm",
+                            "m.0n3jp_t",
+                            "m.0n3mf34",
+                            "m.0kf94hz",
+                            "m.0n3kdlc",
+                            "m.0kdt6nd",
+                            "m.0n3jfnv",
+                            "m.0n3mc5m",
+                            "m.0hnfk31",
+                            "m.0k3q7s9",
+                            "m.0pddky8",
+                            "m.0n23syd"
+                        ],
+                        "total_score": 0.0,
+                        "f1_score": 0
+                    },
+                    {
+                        "grounded_query_id": 100004,
+                        "type": "1_0",
+                        "nodes": [
+                            {
+                                "nid": 1,
+                                "node_type": "entity",
+                                "id": "en.joseph_papp",
+                                "type_class": "",
+                                "friendly_name": "",
+                                "question_node": 0,
+                                "function": "none",
+                                "score": 0.0,
+                                "ordinal": "none"
+                            },
+                            {
+                                "nid": 2,
+                                "node_type": "class",
+                                "id": "?a",
+                                "type_class": "",
+                                "friendly_name": "",
+                                "question_node": 1,
+                                "function": "none",
+                                "score": 0.0,
+                                "ordinal": "none"
+                            }
+                        ],
+                        "edges": [
+                            {
+                                "start": 1,
+                                "end": 2,
+                                "relation": "award.award_winner.awards_won",
+                                "friendly_name": "",
+                                "score": 0.0
+                            }
+                        ],
+                        "key_path": "award.award_winner.awards_won",
+                        "sparql_query": "SELECT DISTINCT ?x WHERE {\nFILTER (!isLiteral(?x)) \nVALUES ?x1 { :en.joseph_papp } .\n?x1 :award.award_winner.awards_won ?x .\n}",
+                        "score": 0.9062399864196777,
+                        "denotation": [
+                            "m.0kddcvk",
+                            "m.0n4kdvz",
+                            "m.0kfssp6"
+                        ],
+                        "total_score": 0.0,
+                        "f1_score": 0
+                    },
+                    {
+                        "grounded_query_id": 100005,
+                        "type": "1_0",
+                        "nodes": [
+                            {
+                                "nid": 1,
+                                "node_type": "entity",
+                                "id": "en.joseph_papp",
+                                "type_class": "",
+                                "friendly_name": "",
+                                "question_node": 0,
+                                "function": "none",
+                                "score": 0.0,
+                                "ordinal": "none"
+                            },
+                            {
+                                "nid": 2,
+                                "node_type": "class",
+                                "id": "?a",
+                                "type_class": "",
+                                "friendly_name": "",
+                                "question_node": 1,
+                                "function": "none",
+                                "score": 0.0,
+                                "ordinal": "none"
+                            }
+                        ],
+                        "edges": [
+                            {
+                                "start": 1,
+                                "end": 2,
+                                "relation": "people.deceased_person.place_of_death",
+                                "friendly_name": "",
+                                "score": 0.0
+                            }
+                        ],
+                        "key_path": "people.deceased_person.place_of_death",
+                        "sparql_query": "SELECT DISTINCT ?x WHERE {\nFILTER (!isLiteral(?x)) \nVALUES ?x1 { :en.joseph_papp } .\n?x1 :people.deceased_person.place_of_death ?x .\n}",
+                        "score": 0.747330904006958,
+                        "denotation": [
+                            "en.new_york_ny"
+                        ],
+                        "total_score": 0.0,
+                        "f1_score": 0
+                    },
+                    {
+                        "grounded_query_id": 100006,
+                        "type": "1_0",
+                        "nodes": [
+                            {
+                                "nid": 1,
+                                "node_type": "entity",
+                                "id": "en.joseph_papp",
+                                "type_class": "",
+                                "friendly_name": "",
+                                "question_node": 0,
+                                "function": "none",
+                                "score": 0.0,
+                                "ordinal": "none"
+                            },
+                            {
+                                "nid": 2,
+                                "node_type": "class",
+                                "id": "?a",
+                                "type_class": "",
+                                "friendly_name": "",
+                                "question_node": 1,
+                                "function": "none",
+                                "score": 0.0,
+                                "ordinal": "none"
+                            }
+                        ],
+                        "edges": [
+                            {
+                                "start": 1,
+                                "end": 2,
+                                "relation": "book.author.works_written",
+                                "friendly_name": "",
+                                "score": 0.0
+                            }
+                        ],
+                        "key_path": "book.author.works_written",
+                        "sparql_query": "SELECT DISTINCT ?x WHERE {\nFILTER (!isLiteral(?x)) \nVALUES ?x1 { :en.joseph_papp } .\n?x1 :book.author.works_written ?x .\n}",
+                        "score": 1.1134846210479736,
+                        "denotation": [
+                            "m.0cgv1w3"
+                        ],
+                        "total_score": 0.0,
+                        "f1_score": 0
+                    },
+                    {
+                        "grounded_query_id": 100007,
+                        "type": "1_0",
+                        "nodes": [
+                            {
+                                "nid": 1,
+                                "node_type": "entity",
+                                "id": "en.joseph_papp",
+                                "type_class": "",
+                                "friendly_name": "",
+                                "question_node": 0,
+                                "function": "none",
+                                "score": 0.0,
+                                "ordinal": "none"
+                            },
+                            {
+                                "nid": 2,
+                                "node_type": "class",
+                                "id": "?a",
+                                "type_class": "",
+                                "friendly_name": "",
+                                "question_node": 1,
+                                "function": "none",
+                                "score": 0.0,
+                                "ordinal": "none"
+                            }
+                        ],
+                        "edges": [
+                            {
+                                "start": 1,
+                                "end": 2,
+                                "relation": "people.person.parents",
+                                "friendly_name": "",
+                                "score": 0.0
+                            }
+                        ],
+                        "key_path": "people.person.parents",
+                        "sparql_query": "SELECT DISTINCT ?x WHERE {\nFILTER (!isLiteral(?x)) \nVALUES ?x1 { :en.joseph_papp } .\n?x1 :people.person.parents ?x .\n}",
+                        "score": 0.5625401735305786,
+                        "denotation": [
+                            "m.0n2gfxj",
+                            "m.0n2gghh"
+                        ],
+                        "total_score": 0.0,
+                        "f1_score": 0
+                    },
+                    {
+                        "grounded_query_id": 100008,
+                        "type": "1_0",
+                        "nodes": [
+                            {
+                                "nid": 1,
+                                "node_type": "entity",
+                                "id": "en.joseph_papp",
+                                "type_class": "",
+                                "friendly_name": "",
+                                "question_node": 0,
+                                "function": "none",
+                                "score": 0.0,
+                                "ordinal": "none"
+                            },
+                            {
+                                "nid": 2,
+                                "node_type": "class",
+                                "id": "?a",
+                                "type_class": "",
+                                "friendly_name": "",
+                                "question_node": 1,
+                                "function": "none",
+                                "score": 0.0,
+                                "ordinal": "none"
+                            }
+                        ],
+                        "edges": [
+                            {
+                                "start": 1,
+                                "end": 2,
+                                "relation": "organization.organization_founder.organizations_founded",
+                                "friendly_name": "",
+                                "score": 0.0
+                            }
+                        ],
+                        "key_path": "organization.organization_founder.organizations_founded",
+                        "sparql_query": "SELECT DISTINCT ?x WHERE {\nFILTER (!isLiteral(?x)) \nVALUES ?x1 { :en.joseph_papp } .\n?x1 :organization.organization_founder.organizations_founded ?x .\n}",
+                        "score": 0.8660333752632141,
+                        "denotation": [
+                            "en.new_york_shakespeare_festival",
+                            "en.public_theater"
+                        ],
+                        "total_score": 0.0,
+                        "f1_score": 0
+                    },
+                    {
+                        "grounded_query_id": 100009,
+                        "type": "1_0",
+                        "nodes": [
+                            {
+                                "nid": 1,
+                                "node_type": "entity",
+                                "id": "en.joseph_papp",
+                                "type_class": "",
+                                "friendly_name": "",
+                                "question_node": 0,
+                                "function": "none",
+                                "score": 0.0,
+                                "ordinal": "none"
+                            },
+                            {
+                                "nid": 2,
+                                "node_type": "class",
+                                "id": "?a",
+                                "type_class": "",
+                                "friendly_name": "",
+                                "question_node": 1,
+                                "function": "none",
+                                "score": 0.0,
+                                "ordinal": "none"
+                            }
+                        ],
+                        "edges": [
+                            {
+                                "start": 1,
+                                "end": 2,
+                                "relation": "film.producer.film",
+                                "friendly_name": "",
+                                "score": 0.0
+                            }
+                        ],
+                        "key_path": "film.producer.film",
+                        "sparql_query": "SELECT DISTINCT ?x WHERE {\nFILTER (!isLiteral(?x)) \nVALUES ?x1 { :en.joseph_papp } .\n?x1 :film.producer.film ?x .\n}",
+                        "score": 1.7556694746017456,
+                        "denotation": [
+                            "m.043sb69",
+                            "m.047s94v",
+                            "en.plenty_1985",
+                            "m.04j0l0l"
+                        ],
+                        "total_score": 0.0,
+                        "f1_score": 0
+                    },
+                    {
+                        "grounded_query_id": 100010,
+                        "type": "1_0",
+                        "nodes": [
+                            {
+                                "nid": 1,
+                                "node_type": "entity",
+                                "id": "en.joseph_papp",
+                                "type_class": "",
+                                "friendly_name": "",
+                                "question_node": 0,
+                                "function": "none",
+                                "score": 0.0,
+                                "ordinal": "none"
+                            },
+                            {
+                                "nid": 2,
+                                "node_type": "class",
+                                "id": "?a",
+                                "type_class": "",
+                                "friendly_name": "",
+                                "question_node": 1,
+                                "function": "none",
+                                "score": 0.0,
+                                "ordinal": "none"
+                            }
+                        ],
+                        "edges": [
+                            {
+                                "start": 1,
+                                "end": 2,
+                                "relation": "people.deceased_person.place_of_burial",
+                                "friendly_name": "",
+                                "score": 0.0
+                            }
+                        ],
+                        "key_path": "people.deceased_person.place_of_burial",
+                        "sparql_query": "SELECT DISTINCT ?x WHERE {\nFILTER (!isLiteral(?x)) \nVALUES ?x1 { :en.joseph_papp } .\n?x1 :people.deceased_person.place_of_burial ?x .\n}",
+                        "score": 0.7252479791641235,
+                        "denotation": [
+                            "en.baron_hirsch_cemetery"
+                        ],
+                        "total_score": 0.0,
+                        "f1_score": 0
+                    },
+                    {
+                        "grounded_query_id": 100011,
+                        "type": "1_0",
+                        "nodes": [
+                            {
+                                "nid": 1,
+                                "node_type": "entity",
+                                "id": "en.joseph_papp",
+                                "type_class": "",
+                                "friendly_name": "",
+                                "question_node": 0,
+                                "function": "none",
+                                "score": 0.0,
+                                "ordinal": "none"
+                            },
+                            {
+                                "nid": 2,
+                                "node_type": "class",
+                                "id": "?a",
+                                "type_class": "",
+                                "friendly_name": "",
+                                "question_node": 1,
+                                "function": "none",
+                                "score": 0.0,
+                                "ordinal": "none"
+                            }
+                        ],
+                        "edges": [
+                            {
+                                "start": 1,
+                                "end": 2,
+                                "relation": "people.person.place_of_birth",
+                                "friendly_name": "",
+                                "score": 0.0
+                            }
+                        ],
+                        "key_path": "people.person.place_of_birth",
+                        "sparql_query": "SELECT DISTINCT ?x WHERE {\nFILTER (!isLiteral(?x)) \nVALUES ?x1 { :en.joseph_papp } .\n?x1 :people.person.place_of_birth ?x .\n}",
+                        "score": 0.7452907562255859,
+                        "denotation": [
+                            "en.kings_county_new_york"
+                        ],
+                        "total_score": 0.0,
+                        "f1_score": 0
+                    },
+                    {
+                        "grounded_query_id": 100012,
+                        "type": "1_0",
+                        "nodes": [
+                            {
+                                "nid": 1,
+                                "node_type": "entity",
+                                "id": "en.joseph_papp",
+                                "type_class": "",
+                                "friendly_name": "",
+                                "question_node": 0,
+                                "function": "none",
+                                "score": 0.0,
+                                "ordinal": "none"
+                            },
+                            {
+                                "nid": 2,
+                                "node_type": "class",
+                                "id": "?a",
+                                "type_class": "",
+                                "friendly_name": "",
+                                "question_node": 1,
+                                "function": "none",
+                                "score": 0.0,
+                                "ordinal": "none"
+                            }
+                        ],
+                        "edges": [
+                            {
+                                "start": 1,
+                                "end": 2,
+                                "relation": "people.person.spouse_s",
+                                "friendly_name": "",
+                                "score": 0.0
+                            }
+                        ],
+                        "key_path": "people.person.spouse_s",
+                        "sparql_query": "SELECT DISTINCT ?x WHERE {\nFILTER (!isLiteral(?x)) \nVALUES ?x1 { :en.joseph_papp } .\n?x1 :people.person.spouse_s ?x .\n}",
+                        "score": 0.49642547965049744,
+                        "denotation": [
+                            "m.0kdd47g",
+                            "m.0pykk4d"
+                        ],
+                        "total_score": 0.0,
+                        "f1_score": 0
+                    },
+                    {
+                        "grounded_query_id": 100013,
+                        "type": "1_0",
+                        "nodes": [
+                            {
+                                "nid": 1,
+                                "node_type": "entity",
+                                "id": "en.joseph_papp",
+                                "type_class": "",
+                                "friendly_name": "",
+                                "question_node": 0,
+                                "function": "none",
+                                "score": 0.0,
+                                "ordinal": "none"
+                            },
+                            {
+                                "nid": 2,
+                                "node_type": "class",
+                                "id": "?a",
+                                "type_class": "",
+                                "friendly_name": "",
+                                "question_node": 1,
+                                "function": "none",
+                                "score": 0.0,
+                                "ordinal": "none"
+                            }
+                        ],
+                        "edges": [
+                            {
+                                "start": 1,
+                                "end": 2,
+                                "relation": "people.person.ethnicity",
+                                "friendly_name": "",
+                                "score": 0.0
+                            }
+                        ],
+                        "key_path": "people.person.ethnicity",
+                        "sparql_query": "SELECT DISTINCT ?x WHERE {\nFILTER (!isLiteral(?x)) \nVALUES ?x1 { :en.joseph_papp } .\n?x1 :people.person.ethnicity ?x .\n}",
+                        "score": 0.4211547076702118,
+                        "denotation": [
+                            "en.jew"
+                        ],
+                        "total_score": 0.0,
+                        "f1_score": 0
+                    },
+                    {
+                        "grounded_query_id": 100014,
+                        "type": "1_0",
+                        "nodes": [
+                            {
+                                "nid": 1,
+                                "node_type": "entity",
+                                "id": "en.joseph_papp",
+                                "type_class": "",
+                                "friendly_name": "",
+                                "question_node": 0,
+                                "function": "none",
+                                "score": 0.0,
+                                "ordinal": "none"
+                            },
+                            {
+                                "nid": 2,
+                                "node_type": "class",
+                                "id": "?a",
+                                "type_class": "",
+                                "friendly_name": "",
+                                "question_node": 1,
+                                "function": "none",
+                                "score": 0.0,
+                                "ordinal": "none"
+                            }
+                        ],
+                        "edges": [
+                            {
+                                "start": 1,
+                                "end": 2,
+                                "relation": "people.person.places_lived",
+                                "friendly_name": "",
+                                "score": 0.0
+                            }
+                        ],
+                        "key_path": "people.person.places_lived",
+                        "sparql_query": "SELECT DISTINCT ?x WHERE {\nFILTER (!isLiteral(?x)) \nVALUES ?x1 { :en.joseph_papp } .\n?x1 :people.person.places_lived ?x .\n}",
+                        "score": 0.6493772268295288,
+                        "denotation": [
+                            "m.0km_m5y"
+                        ],
+                        "total_score": 0.0,
+                        "f1_score": 0
+                    },
+                    {
+                        "grounded_query_id": 100015,
+                        "type": "1_0",
+                        "nodes": [
+                            {
+                                "nid": 1,
+                                "node_type": "entity",
+                                "id": "en.joseph_papp",
+                                "type_class": "",
+                                "friendly_name": "",
+                                "question_node": 0,
+                                "function": "none",
+                                "score": 0.0,
+                                "ordinal": "none"
+                            },
+                            {
+                                "nid": 2,
+                                "node_type": "class",
+                                "id": "?a",
+                                "type_class": "",
+                                "friendly_name": "",
+                                "question_node": 1,
+                                "function": "none",
+                                "score": 0.0,
+                                "ordinal": "none"
+                            }
+                        ],
+                        "edges": [
+                            {
+                                "start": 1,
+                                "end": 2,
+                                "relation": "people.person.gender",
+                                "friendly_name": "",
+                                "score": 0.0
+                            }
+                        ],
+                        "key_path": "people.person.gender",
+                        "sparql_query": "SELECT DISTINCT ?x WHERE {\nFILTER (!isLiteral(?x)) \nVALUES ?x1 { :en.joseph_papp } .\n?x1 :people.person.gender ?x .\n}",
+                        "score": 0.4261547029018402,
+                        "denotation": [
+                            "en.male"
+                        ],
+                        "total_score": 0.0,
+                        "f1_score": 0
+                    },
+                    {
+                        "grounded_query_id": 100016,
+                        "type": "1_0",
+                        "nodes": [
+                            {
+                                "nid": 1,
+                                "node_type": "entity",
+                                "id": "en.joseph_papp",
+                                "type_class": "",
+                                "friendly_name": "",
+                                "question_node": 0,
+                                "function": "none",
+                                "score": 0.0,
+                                "ordinal": "none"
+                            },
+                            {
+                                "nid": 2,
+                                "node_type": "class",
+                                "id": "?a",
+                                "type_class": "",
+                                "friendly_name": "",
+                                "question_node": 1,
+                                "function": "none",
+                                "score": 0.0,
+                                "ordinal": "none"
+                            }
+                        ],
+                        "edges": [
+                            {
+                                "start": 1,
+                                "end": 2,
+                                "relation": "theater.theater_director.plays_directed",
+                                "friendly_name": "",
+                                "score": 0.0
+                            }
+                        ],
+                        "key_path": "theater.theater_director.plays_directed",
+                        "sparql_query": "SELECT DISTINCT ?x WHERE {\nFILTER (!isLiteral(?x)) \nVALUES ?x1 { :en.joseph_papp } .\n?x1 :theater.theater_director.plays_directed ?x .\n}",
+                        "score": 1.472991943359375,
+                        "denotation": [
+                            "m.0n3mc5m"
+                        ],
+                        "total_score": 0.0,
+                        "f1_score": 0
+                    },
+                    {
+                        "grounded_query_id": 100017,
+                        "type": "1_0",
+                        "nodes": [
+                            {
+                                "nid": 1,
+                                "node_type": "entity",
+                                "id": "en.joseph_papp",
+                                "type_class": "",
+                                "friendly_name": "",
+                                "question_node": 0,
+                                "function": "none",
+                                "score": 0.0,
+                                "ordinal": "none"
+                            },
+                            {
+                                "nid": 2,
+                                "node_type": "class",
+                                "id": "?a",
+                                "type_class": "",
+                                "friendly_name": "",
+                                "question_node": 1,
+                                "function": "none",
+                                "score": 0.0,
+                                "ordinal": "none"
+                            }
+                        ],
+                        "edges": [
+                            {
+                                "start": 1,
+                                "end": 2,
+                                "relation": "tv.tv_producer.programs_produced",
+                                "friendly_name": "",
+                                "score": 0.0
+                            }
+                        ],
+                        "key_path": "tv.tv_producer.programs_produced",
+                        "sparql_query": "SELECT DISTINCT ?x WHERE {\nFILTER (!isLiteral(?x)) \nVALUES ?x1 { :en.joseph_papp } .\n?x1 :tv.tv_producer.programs_produced ?x .\n}",
+                        "score": 1.778160572052002,
+                        "denotation": [
+                            "m.0v914nq"
+                        ],
+                        "total_score": 0.0,
+                        "f1_score": 0
+                    },
+                    {
+                        "grounded_query_id": 100018,
+                        "type": "1_0",
+                        "nodes": [
+                            {
+                                "nid": 1,
+                                "node_type": "entity",
+                                "id": "en.joseph_papp",
+                                "type_class": "",
+                                "friendly_name": "",
+                                "question_node": 0,
+                                "function": "none",
+                                "score": 0.0,
+                                "ordinal": "none"
+                            },
+                            {
+                                "nid": 2,
+                                "node_type": "class",
+                                "id": "?a",
+                                "type_class": "",
+                                "friendly_name": "",
+                                "question_node": 1,
+                                "function": "none",
+                                "score": 0.0,
+                                "ordinal": "none"
+                            }
+                        ],
+                        "edges": [
+                            {
+                                "start": 1,
+                                "end": 2,
+                                "relation": "people.deceased_person.cause_of_death",
+                                "friendly_name": "",
+                                "score": 0.0
+                            }
+                        ],
+                        "key_path": "people.deceased_person.cause_of_death",
+                        "sparql_query": "SELECT DISTINCT ?x WHERE {\nFILTER (!isLiteral(?x)) \nVALUES ?x1 { :en.joseph_papp } .\n?x1 :people.deceased_person.cause_of_death ?x .\n}",
+                        "score": 0.6740391850471497,
+                        "denotation": [
+                            "en.prostate_cancer"
+                        ],
+                        "total_score": 0.0,
+                        "f1_score": 0
+                    },
+                    {
+                        "grounded_query_id": 100019,
+                        "type": "1_0",
+                        "nodes": [
+                            {
+                                "nid": 1,
+                                "node_type": "entity",
+                                "id": "en.joseph_papp",
+                                "type_class": "",
+                                "friendly_name": "",
+                                "question_node": 0,
+                                "function": "none",
+                                "score": 0.0,
+                                "ordinal": "none"
+                            },
+                            {
+                                "nid": 2,
+                                "node_type": "class",
+                                "id": "?a",
+                                "type_class": "",
+                                "friendly_name": "",
+                                "question_node": 1,
+                                "function": "none",
+                                "score": 0.0,
+                                "ordinal": "none"
+                            }
+                        ],
+                        "edges": [
+                            {
+                                "start": 1,
+                                "end": 2,
+                                "relation": "people.person.children",
+                                "friendly_name": "",
+                                "score": 0.0
+                            }
+                        ],
+                        "key_path": "people.person.children",
+                        "sparql_query": "SELECT DISTINCT ?x WHERE {\nFILTER (!isLiteral(?x)) \nVALUES ?x1 { :en.joseph_papp } .\n?x1 :people.person.children ?x .\n}",
+                        "score": 0.6989119052886963,
+                        "denotation": [
+                            "m.0n2gm_0"
+                        ],
+                        "total_score": 0.0,
+                        "f1_score": 0
+                    },
+                    {
+                        "grounded_query_id": 100020,
+                        "type": "1_0",
+                        "nodes": [
+                            {
+                                "nid": 1,
+                                "node_type": "entity",
+                                "id": "en.joseph_papp",
+                                "type_class": "",
+                                "friendly_name": "",
+                                "question_node": 0,
+                                "function": "none",
+                                "score": 0.0,
+                                "ordinal": "none"
+                            },
+                            {
+                                "nid": 2,
+                                "node_type": "class",
+                                "id": "?a",
+                                "type_class": "",
+                                "friendly_name": "",
+                                "question_node": 1,
+                                "function": "none",
+                                "score": 0.0,
+                                "ordinal": "none"
+                            }
+                        ],
+                        "edges": [
+                            {
+                                "start": 1,
+                                "end": 2,
+                                "relation": "opera.opera_producer.operas_produced",
+                                "friendly_name": "",
+                                "score": 0.0
+                            }
+                        ],
+                        "key_path": "opera.opera_producer.operas_produced",
+                        "sparql_query": "SELECT DISTINCT ?x WHERE {\nFILTER (!isLiteral(?x)) \nVALUES ?x1 { :en.joseph_papp } .\n?x1 :opera.opera_producer.operas_produced ?x .\n}",
+                        "score": 2.6349425315856934,
+                        "denotation": [
+                            "m.0kdd12q"
+                        ],
+                        "total_score": 0.0,
+                        "f1_score": 1.0
+                    },
+                    {
+                        "grounded_query_id": 100021,
+                        "type": "1_0",
+                        "nodes": [
+                            {
+                                "nid": 1,
+                                "node_type": "entity",
+                                "id": "en.joseph_papp",
+                                "type_class": "",
+                                "friendly_name": "",
+                                "question_node": 0,
+                                "function": "none",
+                                "score": 0.0,
+                                "ordinal": "none"
+                            },
+                            {
+                                "nid": 2,
+                                "node_type": "class",
+                                "id": "?a",
+                                "type_class": "",
+                                "friendly_name": "",
+                                "question_node": 1,
+                                "function": "none",
+                                "score": 0.0,
+                                "ordinal": "none"
+                            }
+                        ],
+                        "edges": [
+                            {
+                                "start": 1,
+                                "end": 2,
+                                "relation": "people.person.nationality",
+                                "friendly_name": "",
+                                "score": 0.0
+                            }
+                        ],
+                        "key_path": "people.person.nationality",
+                        "sparql_query": "SELECT DISTINCT ?x WHERE {\nFILTER (!isLiteral(?x)) \nVALUES ?x1 { :en.joseph_papp } .\n?x1 :people.person.nationality ?x .\n}",
+                        "score": 0.4211547076702118,
+                        "denotation": [
+                            "en.united_states_of_america"
+                        ],
+                        "total_score": 0.0,
+                        "f1_score": 0
+                    },
+                    {
+                        "grounded_query_id": 100022,
+                        "type": "1_0",
+                        "nodes": [
+                            {
+                                "nid": 1,
+                                "node_type": "entity",
+                                "id": "en.joseph_papp",
+                                "type_class": "",
+                                "friendly_name": "",
+                                "question_node": 0,
+                                "function": "none",
+                                "score": 0.0,
+                                "ordinal": "none"
+                            },
+                            {
+                                "nid": 2,
+                                "node_type": "class",
+                                "id": "?a",
+                                "type_class": "",
+                                "friendly_name": "",
+                                "question_node": 1,
+                                "function": "none",
+                                "score": 0.0,
+                                "ordinal": "none"
+                            }
+                        ],
+                        "edges": [
+                            {
+                                "start": 1,
+                                "end": 2,
+                                "relation": "film.person_or_entity_appearing_in_film.films",
+                                "friendly_name": "",
+                                "score": 0.0
+                            }
+                        ],
+                        "key_path": "film.person_or_entity_appearing_in_film.films",
+                        "sparql_query": "SELECT DISTINCT ?x WHERE {\nFILTER (!isLiteral(?x)) \nVALUES ?x1 { :en.joseph_papp } .\n?x1 :film.person_or_entity_appearing_in_film.films ?x .\n}",
+                        "score": 1.2589266300201416,
+                        "denotation": [
+                            "m.0h4ycbk"
+                        ],
+                        "total_score": 0.0,
+                        "f1_score": 0
+                    },
+                    {
+                        "grounded_query_id": 100023,
+                        "type": "1_1",
+                        "nodes": [
+                            {
+                                "nid": 1,
+                                "node_type": "entity",
+                                "id": "en.joseph_papp",
+                                "type_class": "",
+                                "friendly_name": "",
+                                "question_node": 0,
+                                "function": "none",
+                                "score": 0.0,
+                                "ordinal": "none"
+                            },
+                            {
+                                "nid": 2,
+                                "node_type": "class",
+                                "id": "?c",
+                                "type_class": "",
+                                "friendly_name": "",
+                                "question_node": 0,
+                                "function": "none",
+                                "score": 0.0,
+                                "ordinal": "none"
+                            },
+                            {
+                                "nid": 3,
+                                "node_type": "class",
+                                "id": "?a",
+                                "type_class": "",
+                                "friendly_name": "",
+                                "question_node": 1,
+                                "function": "none",
+                                "score": 0.0,
+                                "ordinal": "none"
+                            }
+                        ],
+                        "edges": [
+                            {
+                                "start": 1,
+                                "end": 2,
+                                "relation": "people.person.places_lived",
+                                "friendly_name": "",
+                                "score": 0.0
+                            },
+                            {
+                                "start": 2,
+                                "end": 3,
+                                "relation": "people.place_lived.person",
+                                "friendly_name": "",
+                                "score": 0.0
+                            }
+                        ],
+                        "key_path": "people.person.places_lived\tpeople.place_lived.person",
+                        "sparql_query": "SELECT DISTINCT ?x WHERE {\nFILTER (!isLiteral(?x)) \nVALUES ?x1 { :en.joseph_papp } .\n?x1 :people.person.places_lived ?x2 .\n?x2 :people.place_lived.person ?x .\n}",
+                        "score": 0.6763689517974854,
+                        "denotation": [
+                            "en.joseph_papp"
+                        ],
+                        "total_score": 0.0,
+                        "f1_score": 0
+                    },
+                    {
+                        "grounded_query_id": 100024,
+                        "type": "1_1",
+                        "nodes": [
+                            {
+                                "nid": 1,
+                                "node_type": "entity",
+                                "id": "en.joseph_papp",
+                                "type_class": "",
+                                "friendly_name": "",
+                                "question_node": 0,
+                                "function": "none",
+                                "score": 0.0,
+                                "ordinal": "none"
+                            },
+                            {
+                                "nid": 2,
+                                "node_type": "class",
+                                "id": "?c",
+                                "type_class": "",
+                                "friendly_name": "",
+                                "question_node": 0,
+                                "function": "none",
+                                "score": 0.0,
+                                "ordinal": "none"
+                            },
+                            {
+                                "nid": 3,
+                                "node_type": "class",
+                                "id": "?a",
+                                "type_class": "",
+                                "friendly_name": "",
+                                "question_node": 1,
+                                "function": "none",
+                                "score": 0.0,
+                                "ordinal": "none"
+                            }
+                        ],
+                        "edges": [
+                            {
+                                "start": 1,
+                                "end": 2,
+                                "relation": "award.award_nominee.award_nominations",
+                                "friendly_name": "",
+                                "score": 0.0
+                            },
+                            {
+                                "start": 2,
+                                "end": 3,
+                                "relation": "award.award_nomination.nominated_for",
+                                "friendly_name": "",
+                                "score": 0.0
+                            }
+                        ],
+                        "key_path": "award.award_nominee.award_nominations\taward.award_nomination.nominated_for",
+                        "sparql_query": "SELECT DISTINCT ?x WHERE {\nFILTER (!isLiteral(?x)) \nVALUES ?x1 { :en.joseph_papp } .\n?x1 :award.award_nominee.award_nominations ?x2 .\n?x2 :award.award_nomination.nominated_for ?x .\n}",
+                        "score": 0.9179017543792725,
+                        "denotation": [
+                            "m.0n3jp_t",
+                            "en.alice_at_the_palace",
+                            "m.0kf94hz",
+                            "m.0kdd12q",
+                            "m.0kdt6nd",
+                            "m.0hnfk31",
+                            "m.0n3mc5m",
+                            "m.0n3jfnv",
+                            "m.0n23syd"
+                        ],
+                        "total_score": 0.0,
+                        "f1_score": 0.19999999999999998
+                    },
+                    {
+                        "grounded_query_id": 100025,
+                        "type": "1_1",
+                        "nodes": [
+                            {
+                                "nid": 1,
+                                "node_type": "entity",
+                                "id": "en.joseph_papp",
+                                "type_class": "",
+                                "friendly_name": "",
+                                "question_node": 0,
+                                "function": "none",
+                                "score": 0.0,
+                                "ordinal": "none"
+                            },
+                            {
+                                "nid": 2,
+                                "node_type": "class",
+                                "id": "?c",
+                                "type_class": "",
+                                "friendly_name": "",
+                                "question_node": 0,
+                                "function": "none",
+                                "score": 0.0,
+                                "ordinal": "none"
+                            },
+                            {
+                                "nid": 3,
+                                "node_type": "class",
+                                "id": "?a",
+                                "type_class": "",
+                                "friendly_name": "",
+                                "question_node": 1,
+                                "function": "none",
+                                "score": 0.0,
+                                "ordinal": "none"
+                            }
+                        ],
+                        "edges": [
+                            {
+                                "start": 1,
+                                "end": 2,
+                                "relation": "award.award_winner.awards_won",
+                                "friendly_name": "",
+                                "score": 0.0
+                            },
+                            {
+                                "start": 2,
+                                "end": 3,
+                                "relation": "award.award_honor.award_winner",
+                                "friendly_name": "",
+                                "score": 0.0
+                            }
+                        ],
+                        "key_path": "award.award_winner.awards_won\taward.award_honor.award_winner",
+                        "sparql_query": "SELECT DISTINCT ?x WHERE {\nFILTER (!isLiteral(?x)) \nVALUES ?x1 { :en.joseph_papp } .\n?x1 :award.award_winner.awards_won ?x2 .\n?x2 :award.award_honor.award_winner ?x .\n}",
+                        "score": 0.960585355758667,
+                        "denotation": [
+                            "en.joseph_papp"
+                        ],
+                        "total_score": 0.0,
+                        "f1_score": 0
+                    },
+                    {
+                        "grounded_query_id": 100026,
+                        "type": "1_1",
+                        "nodes": [
+                            {
+                                "nid": 1,
+                                "node_type": "entity",
+                                "id": "en.joseph_papp",
+                                "type_class": "",
+                                "friendly_name": "",
+                                "question_node": 0,
+                                "function": "none",
+                                "score": 0.0,
+                                "ordinal": "none"
+                            },
+                            {
+                                "nid": 2,
+                                "node_type": "class",
+                                "id": "?c",
+                                "type_class": "",
+                                "friendly_name": "",
+                                "question_node": 0,
+                                "function": "none",
+                                "score": 0.0,
+                                "ordinal": "none"
+                            },
+                            {
+                                "nid": 3,
+                                "node_type": "class",
+                                "id": "?a",
+                                "type_class": "",
+                                "friendly_name": "",
+                                "question_node": 1,
+                                "function": "none",
+                                "score": 0.0,
+                                "ordinal": "none"
+                            }
+                        ],
+                        "edges": [
+                            {
+                                "start": 1,
+                                "end": 2,
+                                "relation": "people.person.spouse_s",
+                                "friendly_name": "",
+                                "score": 0.0
+                            },
+                            {
+                                "start": 2,
+                                "end": 3,
+                                "relation": "people.marriage.spouse",
+                                "friendly_name": "",
+                                "score": 0.0
+                            }
+                        ],
+                        "key_path": "people.person.spouse_s\tpeople.marriage.spouse",
+                        "sparql_query": "SELECT DISTINCT ?x WHERE {\nFILTER (!isLiteral(?x)) \nVALUES ?x1 { :en.joseph_papp } .\n?x1 :people.person.spouse_s ?x2 .\n?x2 :people.marriage.spouse ?x .\n}",
+                        "score": 0.555854856967926,
+                        "denotation": [
+                            "m.0pykk4j",
+                            "m.0kdd47l",
+                            "en.joseph_papp"
+                        ],
+                        "total_score": 0.0,
+                        "f1_score": 0
+                    },
+                    {
+                        "grounded_query_id": 100027,
+                        "type": "1_1",
+                        "nodes": [
+                            {
+                                "nid": 1,
+                                "node_type": "entity",
+                                "id": "en.joseph_papp",
+                                "type_class": "",
+                                "friendly_name": "",
+                                "question_node": 0,
+                                "function": "none",
+                                "score": 0.0,
+                                "ordinal": "none"
+                            },
+                            {
+                                "nid": 2,
+                                "node_type": "class",
+                                "id": "?c",
+                                "type_class": "",
+                                "friendly_name": "",
+                                "question_node": 0,
+                                "function": "none",
+                                "score": 0.0,
+                                "ordinal": "none"
+                            },
+                            {
+                                "nid": 3,
+                                "node_type": "class",
+                                "id": "?a",
+                                "type_class": "",
+                                "friendly_name": "",
+                                "question_node": 1,
+                                "function": "none",
+                                "score": 0.0,
+                                "ordinal": "none"
+                            }
+                        ],
+                        "edges": [
+                            {
+                                "start": 1,
+                                "end": 2,
+                                "relation": "award.award_nominee.award_nominations",
+                                "friendly_name": "",
+                                "score": 0.0
+                            },
+                            {
+                                "start": 2,
+                                "end": 3,
+                                "relation": "award.award_nomination.award_nominee",
+                                "friendly_name": "",
+                                "score": 0.0
+                            }
+                        ],
+                        "key_path": "award.award_nominee.award_nominations\taward.award_nomination.award_nominee",
+                        "sparql_query": "SELECT DISTINCT ?x WHERE {\nFILTER (!isLiteral(?x)) \nVALUES ?x1 { :en.joseph_papp } .\n?x1 :award.award_nominee.award_nominations ?x2 .\n?x2 :award.award_nomination.award_nominee ?x .\n}",
+                        "score": 0.8650286197662354,
+                        "denotation": [
+                            "en.joseph_papp",
+                            "en.ntozake_shange",
+                            "en.david_hare",
+                            "en.woodie_king_jr",
+                            "en.david_rabe"
+                        ],
+                        "total_score": 0.0,
+                        "f1_score": 0
+                    },
+                    {
+                        "grounded_query_id": 100028,
+                        "type": "1_1",
+                        "nodes": [
+                            {
+                                "nid": 1,
+                                "node_type": "entity",
+                                "id": "en.joseph_papp",
+                                "type_class": "",
+                                "friendly_name": "",
+                                "question_node": 0,
+                                "function": "none",
+                                "score": 0.0,
+                                "ordinal": "none"
+                            },
+                            {
+                                "nid": 2,
+                                "node_type": "class",
+                                "id": "?c",
+                                "type_class": "",
+                                "friendly_name": "",
+                                "question_node": 0,
+                                "function": "none",
+                                "score": 0.0,
+                                "ordinal": "none"
+                            },
+                            {
+                                "nid": 3,
+                                "node_type": "class",
+                                "id": "?a",
+                                "type_class": "",
+                                "friendly_name": "",
+                                "question_node": 1,
+                                "function": "none",
+                                "score": 0.0,
+                                "ordinal": "none"
+                            }
+                        ],
+                        "edges": [
+                            {
+                                "start": 1,
+                                "end": 2,
+                                "relation": "tv.tv_producer.programs_produced",
+                                "friendly_name": "",
+                                "score": 0.0
+                            },
+                            {
+                                "start": 2,
+                                "end": 3,
+                                "relation": "tv.tv_producer_term.producer",
+                                "friendly_name": "",
+                                "score": 0.0
+                            }
+                        ],
+                        "key_path": "tv.tv_producer.programs_produced\ttv.tv_producer_term.producer",
+                        "sparql_query": "SELECT DISTINCT ?x WHERE {\nFILTER (!isLiteral(?x)) \nVALUES ?x1 { :en.joseph_papp } .\n?x1 :tv.tv_producer.programs_produced ?x2 .\n?x2 :tv.tv_producer_term.producer ?x .\n}",
+                        "score": 2.0638175010681152,
+                        "denotation": [
+                            "en.joseph_papp"
+                        ],
+                        "total_score": 0.0,
+                        "f1_score": 0
+                    },
+                    {
+                        "grounded_query_id": 100029,
+                        "type": "1_1",
+                        "nodes": [
+                            {
+                                "nid": 1,
+                                "node_type": "entity",
+                                "id": "en.joseph_papp",
+                                "type_class": "",
+                                "friendly_name": "",
+                                "question_node": 0,
+                                "function": "none",
+                                "score": 0.0,
+                                "ordinal": "none"
+                            },
+                            {
+                                "nid": 2,
+                                "node_type": "class",
+                                "id": "?c",
+                                "type_class": "",
+                                "friendly_name": "",
+                                "question_node": 0,
+                                "function": "none",
+                                "score": 0.0,
+                                "ordinal": "none"
+                            },
+                            {
+                                "nid": 3,
+                                "node_type": "class",
+                                "id": "?a",
+                                "type_class": "",
+                                "friendly_name": "",
+                                "question_node": 1,
+                                "function": "none",
+                                "score": 0.0,
+                                "ordinal": "none"
+                            }
+                        ],
+                        "edges": [
+                            {
+                                "start": 1,
+                                "end": 2,
+                                "relation": "film.person_or_entity_appearing_in_film.films",
+                                "friendly_name": "",
+                                "score": 0.0
+                            },
+                            {
+                                "start": 2,
+                                "end": 3,
+                                "relation": "film.personal_film_appearance.person",
+                                "friendly_name": "",
+                                "score": 0.0
+                            }
+                        ],
+                        "key_path": "film.person_or_entity_appearing_in_film.films\tfilm.personal_film_appearance.person",
+                        "sparql_query": "SELECT DISTINCT ?x WHERE {\nFILTER (!isLiteral(?x)) \nVALUES ?x1 { :en.joseph_papp } .\n?x1 :film.person_or_entity_appearing_in_film.films ?x2 .\n?x2 :film.personal_film_appearance.person ?x .\n}",
+                        "score": 1.4635093212127686,
+                        "denotation": [
+                            "en.joseph_papp"
+                        ],
+                        "total_score": 0.0,
+                        "f1_score": 0
+                    },
+                    {
+                        "grounded_query_id": 100030,
+                        "type": "1_1",
+                        "nodes": [
+                            {
+                                "nid": 1,
+                                "node_type": "entity",
+                                "id": "en.joseph_papp",
+                                "type_class": "",
+                                "friendly_name": "",
+                                "question_node": 0,
+                                "function": "none",
+                                "score": 0.0,
+                                "ordinal": "none"
+                            },
+                            {
+                                "nid": 2,
+                                "node_type": "class",
+                                "id": "?c",
+                                "type_class": "",
+                                "friendly_name": "",
+                                "question_node": 0,
+                                "function": "none",
+                                "score": 0.0,
+                                "ordinal": "none"
+                            },
+                            {
+                                "nid": 3,
+                                "node_type": "class",
+                                "id": "?a",
+                                "type_class": "",
+                                "friendly_name": "",
+                                "question_node": 1,
+                                "function": "none",
+                                "score": 0.0,
+                                "ordinal": "none"
+                            }
+                        ],
+                        "edges": [
+                            {
+                                "start": 1,
+                                "end": 2,
+                                "relation": "award.award_winner.awards_won",
+                                "friendly_name": "",
+                                "score": 0.0
+                            },
+                            {
+                                "start": 2,
+                                "end": 3,
+                                "relation": "award.award_honor.award",
+                                "friendly_name": "",
+                                "score": 0.0
+                            }
+                        ],
+                        "key_path": "award.award_winner.awards_won\taward.award_honor.award",
+                        "sparql_query": "SELECT DISTINCT ?x WHERE {\nFILTER (!isLiteral(?x)) \nVALUES ?x1 { :en.joseph_papp } .\n?x1 :award.award_winner.awards_won ?x2 .\n?x2 :award.award_honor.award ?x .\n}",
+                        "score": 0.9880263805389404,
+                        "denotation": [
+                            "en.tony_award_for_best_revival",
+                            "en.tony_award_for_best_musical"
+                        ],
+                        "total_score": 0.0,
+                        "f1_score": 0
+                    },
+                    {
+                        "grounded_query_id": 100031,
+                        "type": "1_1",
+                        "nodes": [
+                            {
+                                "nid": 1,
+                                "node_type": "entity",
+                                "id": "en.joseph_papp",
+                                "type_class": "",
+                                "friendly_name": "",
+                                "question_node": 0,
+                                "function": "none",
+                                "score": 0.0,
+                                "ordinal": "none"
+                            },
+                            {
+                                "nid": 2,
+                                "node_type": "class",
+                                "id": "?c",
+                                "type_class": "",
+                                "friendly_name": "",
+                                "question_node": 0,
+                                "function": "none",
+                                "score": 0.0,
+                                "ordinal": "none"
+                            },
+                            {
+                                "nid": 3,
+                                "node_type": "class",
+                                "id": "?a",
+                                "type_class": "",
+                                "friendly_name": "",
+                                "question_node": 1,
+                                "function": "none",
+                                "score": 0.0,
+                                "ordinal": "none"
+                            }
+                        ],
+                        "edges": [
+                            {
+                                "start": 1,
+                                "end": 2,
+                                "relation": "tv.tv_producer.programs_produced",
+                                "friendly_name": "",
+                                "score": 0.0
+                            },
+                            {
+                                "start": 2,
+                                "end": 3,
+                                "relation": "tv.tv_producer_term.program",
+                                "friendly_name": "",
+                                "score": 0.0
+                            }
+                        ],
+                        "key_path": "tv.tv_producer.programs_produced\ttv.tv_producer_term.program",
+                        "sparql_query": "SELECT DISTINCT ?x WHERE {\nFILTER (!isLiteral(?x)) \nVALUES ?x1 { :en.joseph_papp } .\n?x1 :tv.tv_producer.programs_produced ?x2 .\n?x2 :tv.tv_producer_term.program ?x .\n}",
+                        "score": 1.8417754173278809,
+                        "denotation": [
+                            "en.alice_at_the_palace"
+                        ],
+                        "total_score": 0.0,
+                        "f1_score": 0
+                    },
+                    {
+                        "grounded_query_id": 100032,
+                        "type": "1_1",
+                        "nodes": [
+                            {
+                                "nid": 1,
+                                "node_type": "entity",
+                                "id": "en.joseph_papp",
+                                "type_class": "",
+                                "friendly_name": "",
+                                "question_node": 0,
+                                "function": "none",
+                                "score": 0.0,
+                                "ordinal": "none"
+                            },
+                            {
+                                "nid": 2,
+                                "node_type": "class",
+                                "id": "?c",
+                                "type_class": "",
+                                "friendly_name": "",
+                                "question_node": 0,
+                                "function": "none",
+                                "score": 0.0,
+                                "ordinal": "none"
+                            },
+                            {
+                                "nid": 3,
+                                "node_type": "class",
+                                "id": "?a",
+                                "type_class": "",
+                                "friendly_name": "",
+                                "question_node": 1,
+                                "function": "none",
+                                "score": 0.0,
+                                "ordinal": "none"
+                            }
+                        ],
+                        "edges": [
+                            {
+                                "start": 1,
+                                "end": 2,
+                                "relation": "people.person.places_lived",
+                                "friendly_name": "",
+                                "score": 0.0
+                            },
+                            {
+                                "start": 2,
+                                "end": 3,
+                                "relation": "people.place_lived.location",
+                                "friendly_name": "",
+                                "score": 0.0
+                            }
+                        ],
+                        "key_path": "people.person.places_lived\tpeople.place_lived.location",
+                        "sparql_query": "SELECT DISTINCT ?x WHERE {\nFILTER (!isLiteral(?x)) \nVALUES ?x1 { :en.joseph_papp } .\n?x1 :people.person.places_lived ?x2 .\n?x2 :people.place_lived.location ?x .\n}",
+                        "score": 0.7240883708000183,
+                        "denotation": [
+                            "en.new_york_ny"
+                        ],
+                        "total_score": 0.0,
+                        "f1_score": 0
+                    },
+                    {
+                        "grounded_query_id": 100033,
+                        "type": "1_1",
+                        "nodes": [
+                            {
+                                "nid": 1,
+                                "node_type": "entity",
+                                "id": "en.joseph_papp",
+                                "type_class": "",
+                                "friendly_name": "",
+                                "question_node": 0,
+                                "function": "none",
+                                "score": 0.0,
+                                "ordinal": "none"
+                            },
+                            {
+                                "nid": 2,
+                                "node_type": "class",
+                                "id": "?c",
+                                "type_class": "",
+                                "friendly_name": "",
+                                "question_node": 0,
+                                "function": "none",
+                                "score": 0.0,
+                                "ordinal": "none"
+                            },
+                            {
+                                "nid": 3,
+                                "node_type": "class",
+                                "id": "?a",
+                                "type_class": "",
+                                "friendly_name": "",
+                                "question_node": 1,
+                                "function": "none",
+                                "score": 0.0,
+                                "ordinal": "none"
+                            }
+                        ],
+                        "edges": [
+                            {
+                                "start": 1,
+                                "end": 2,
+                                "relation": "award.award_nominee.award_nominations",
+                                "friendly_name": "",
+                                "score": 0.0
+                            },
+                            {
+                                "start": 2,
+                                "end": 3,
+                                "relation": "award.award_nomination.award",
+                                "friendly_name": "",
+                                "score": 0.0
+                            }
+                        ],
+                        "key_path": "award.award_nominee.award_nominations\taward.award_nomination.award",
+                        "sparql_query": "SELECT DISTINCT ?x WHERE {\nFILTER (!isLiteral(?x)) \nVALUES ?x1 { :en.joseph_papp } .\n?x1 :award.award_nominee.award_nominations ?x2 .\n?x2 :award.award_nomination.award ?x .\n}",
+                        "score": 0.9145328998565674,
+                        "denotation": [
+                            "en.tony_award_for_best_revival",
+                            "en.tony_award_for_best_play",
+                            "m.0k88t9g",
+                            "en.tony_award_for_best_musical"
+                        ],
+                        "total_score": 0.0,
+                        "f1_score": 0
+                    },
+                    {
+                        "grounded_query_id": 100034,
+                        "type": "1_1",
+                        "nodes": [
+                            {
+                                "nid": 1,
+                                "node_type": "entity",
+                                "id": "en.joseph_papp",
+                                "type_class": "",
+                                "friendly_name": "",
+                                "question_node": 0,
+                                "function": "none",
+                                "score": 0.0,
+                                "ordinal": "none"
+                            },
+                            {
+                                "nid": 2,
+                                "node_type": "class",
+                                "id": "?c",
+                                "type_class": "",
+                                "friendly_name": "",
+                                "question_node": 0,
+                                "function": "none",
+                                "score": 0.0,
+                                "ordinal": "none"
+                            },
+                            {
+                                "nid": 3,
+                                "node_type": "class",
+                                "id": "?a",
+                                "type_class": "",
+                                "friendly_name": "",
+                                "question_node": 1,
+                                "function": "none",
+                                "score": 0.0,
+                                "ordinal": "none"
+                            }
+                        ],
+                        "edges": [
+                            {
+                                "start": 1,
+                                "end": 2,
+                                "relation": "film.person_or_entity_appearing_in_film.films",
+                                "friendly_name": "",
+                                "score": 0.0
+                            },
+                            {
+                                "start": 2,
+                                "end": 3,
+                                "relation": "film.personal_film_appearance.type_of_appearance",
+                                "friendly_name": "",
+                                "score": 0.0
+                            }
+                        ],
+                        "key_path": "film.person_or_entity_appearing_in_film.films\tfilm.personal_film_appearance.type_of_appearance",
+                        "sparql_query": "SELECT DISTINCT ?x WHERE {\nFILTER (!isLiteral(?x)) \nVALUES ?x1 { :en.joseph_papp } .\n?x1 :film.person_or_entity_appearing_in_film.films ?x2 .\n?x2 :film.personal_film_appearance.type_of_appearance ?x .\n}",
+                        "score": 1.3689520359039307,
+                        "denotation": [
+                            "en.archive_footage"
+                        ],
+                        "total_score": 0.0,
+                        "f1_score": 0
+                    },
+                    {
+                        "grounded_query_id": 100035,
+                        "type": "1_1",
+                        "nodes": [
+                            {
+                                "nid": 1,
+                                "node_type": "entity",
+                                "id": "en.joseph_papp",
+                                "type_class": "",
+                                "friendly_name": "",
+                                "question_node": 0,
+                                "function": "none",
+                                "score": 0.0,
+                                "ordinal": "none"
+                            },
+                            {
+                                "nid": 2,
+                                "node_type": "class",
+                                "id": "?c",
+                                "type_class": "",
+                                "friendly_name": "",
+                                "question_node": 0,
+                                "function": "none",
+                                "score": 0.0,
+                                "ordinal": "none"
+                            },
+                            {
+                                "nid": 3,
+                                "node_type": "class",
+                                "id": "?a",
+                                "type_class": "",
+                                "friendly_name": "",
+                                "question_node": 1,
+                                "function": "none",
+                                "score": 0.0,
+                                "ordinal": "none"
+                            }
+                        ],
+                        "edges": [
+                            {
+                                "start": 1,
+                                "end": 2,
+                                "relation": "award.award_winner.awards_won",
+                                "friendly_name": "",
+                                "score": 0.0
+                            },
+                            {
+                                "start": 2,
+                                "end": 3,
+                                "relation": "award.award_honor.ceremony",
+                                "friendly_name": "",
+                                "score": 0.0
+                            }
+                        ],
+                        "key_path": "award.award_winner.awards_won\taward.award_honor.ceremony",
+                        "sparql_query": "SELECT DISTINCT ?x WHERE {\nFILTER (!isLiteral(?x)) \nVALUES ?x1 { :en.joseph_papp } .\n?x1 :award.award_winner.awards_won ?x2 .\n?x2 :award.award_honor.ceremony ?x .\n}",
+                        "score": 0.9699891209602356,
+                        "denotation": [
+                            "m.0k0bblw",
+                            "m.0k0bbjh",
+                            "m.0k060dy"
+                        ],
+                        "total_score": 0.0,
+                        "f1_score": 0
+                    },
+                    {
+                        "grounded_query_id": 100036,
+                        "type": "1_1",
+                        "nodes": [
+                            {
+                                "nid": 1,
+                                "node_type": "entity",
+                                "id": "en.joseph_papp",
+                                "type_class": "",
+                                "friendly_name": "",
+                                "question_node": 0,
+                                "function": "none",
+                                "score": 0.0,
+                                "ordinal": "none"
+                            },
+                            {
+                                "nid": 2,
+                                "node_type": "class",
+                                "id": "?c",
+                                "type_class": "",
+                                "friendly_name": "",
+                                "question_node": 0,
+                                "function": "none",
+                                "score": 0.0,
+                                "ordinal": "none"
+                            },
+                            {
+                                "nid": 3,
+                                "node_type": "class",
+                                "id": "?a",
+                                "type_class": "",
+                                "friendly_name": "",
+                                "question_node": 1,
+                                "function": "none",
+                                "score": 0.0,
+                                "ordinal": "none"
+                            }
+                        ],
+                        "edges": [
+                            {
+                                "start": 1,
+                                "end": 2,
+                                "relation": "award.award_winner.awards_won",
+                                "friendly_name": "",
+                                "score": 0.0
+                            },
+                            {
+                                "start": 2,
+                                "end": 3,
+                                "relation": "award.award_honor.honored_for",
+                                "friendly_name": "",
+                                "score": 0.0
+                            }
+                        ],
+                        "key_path": "award.award_winner.awards_won\taward.award_honor.honored_for",
+                        "sparql_query": "SELECT DISTINCT ?x WHERE {\nFILTER (!isLiteral(?x)) \nVALUES ?x1 { :en.joseph_papp } .\n?x1 :award.award_winner.awards_won ?x2 .\n?x2 :award.award_honor.honored_for ?x .\n}",
+                        "score": 0.9727022647857666,
+                        "denotation": [
+                            "m.0hnfk31",
+                            "m.0kf94hz",
+                            "m.0kdd12q"
+                        ],
+                        "total_score": 0.0,
+                        "f1_score": 0.5
+                    },
+                    {
+                        "grounded_query_id": 100037,
+                        "type": "1_1",
+                        "nodes": [
+                            {
+                                "nid": 1,
+                                "node_type": "entity",
+                                "id": "en.joseph_papp",
+                                "type_class": "",
+                                "friendly_name": "",
+                                "question_node": 0,
+                                "function": "none",
+                                "score": 0.0,
+                                "ordinal": "none"
+                            },
+                            {
+                                "nid": 2,
+                                "node_type": "class",
+                                "id": "?c",
+                                "type_class": "",
+                                "friendly_name": "",
+                                "question_node": 0,
+                                "function": "none",
+                                "score": 0.0,
+                                "ordinal": "none"
+                            },
+                            {
+                                "nid": 3,
+                                "node_type": "class",
+                                "id": "?a",
+                                "type_class": "",
+                                "friendly_name": "",
+                                "question_node": 1,
+                                "function": "none",
+                                "score": 0.0,
+                                "ordinal": "none"
+                            }
+                        ],
+                        "edges": [
+                            {
+                                "start": 1,
+                                "end": 2,
+                                "relation": "film.person_or_entity_appearing_in_film.films",
+                                "friendly_name": "",
+                                "score": 0.0
+                            },
+                            {
+                                "start": 2,
+                                "end": 3,
+                                "relation": "film.personal_film_appearance.film",
+                                "friendly_name": "",
+                                "score": 0.0
+                            }
+                        ],
+                        "key_path": "film.person_or_entity_appearing_in_film.films\tfilm.personal_film_appearance.film",
+                        "sparql_query": "SELECT DISTINCT ?x WHERE {\nFILTER (!isLiteral(?x)) \nVALUES ?x1 { :en.joseph_papp } .\n?x1 :film.person_or_entity_appearing_in_film.films ?x2 .\n?x2 :film.personal_film_appearance.film ?x .\n}",
+                        "score": 1.5006295442581177,
+                        "denotation": [
+                            "m.0gyh0c2"
+                        ],
+                        "total_score": 0.0,
+                        "f1_score": 0
+                    },
+                    {
+                        "grounded_query_id": 100038,
+                        "type": "1_1",
+                        "nodes": [
+                            {
+                                "nid": 1,
+                                "node_type": "entity",
+                                "id": "en.joseph_papp",
+                                "type_class": "",
+                                "friendly_name": "",
+                                "question_node": 0,
+                                "function": "none",
+                                "score": 0.0,
+                                "ordinal": "none"
+                            },
+                            {
+                                "nid": 2,
+                                "node_type": "class",
+                                "id": "?c",
+                                "type_class": "",
+                                "friendly_name": "",
+                                "question_node": 0,
+                                "function": "none",
+                                "score": 0.0,
+                                "ordinal": "none"
+                            },
+                            {
+                                "nid": 3,
+                                "node_type": "class",
+                                "id": "?a",
+                                "type_class": "",
+                                "friendly_name": "",
+                                "question_node": 1,
+                                "function": "none",
+                                "score": 0.0,
+                                "ordinal": "none"
+                            }
+                        ],
+                        "edges": [
+                            {
+                                "start": 1,
+                                "end": 2,
+                                "relation": "people.person.spouse_s",
+                                "friendly_name": "",
+                                "score": 0.0
+                            },
+                            {
+                                "start": 2,
+                                "end": 3,
+                                "relation": "people.marriage.type_of_union",
+                                "friendly_name": "",
+                                "score": 0.0
+                            }
+                        ],
+                        "key_path": "people.person.spouse_s\tpeople.marriage.type_of_union",
+                        "sparql_query": "SELECT DISTINCT ?x WHERE {\nFILTER (!isLiteral(?x)) \nVALUES ?x1 { :en.joseph_papp } .\n?x1 :people.person.spouse_s ?x2 .\n?x2 :people.marriage.type_of_union ?x .\n}",
+                        "score": 0.6765664219856262,
+                        "denotation": [
+                            "en.marriage"
+                        ],
+                        "total_score": 0.0,
+                        "f1_score": 0
+                    },
+                    {
+                        "grounded_query_id": 100039,
+                        "type": "1_1",
+                        "nodes": [
+                            {
+                                "nid": 1,
+                                "node_type": "entity",
+                                "id": "en.joseph_papp",
+                                "type_class": "",
+                                "friendly_name": "",
+                                "question_node": 0,
+                                "function": "none",
+                                "score": 0.0,
+                                "ordinal": "none"
+                            },
+                            {
+                                "nid": 2,
+                                "node_type": "class",
+                                "id": "?c",
+                                "type_class": "",
+                                "friendly_name": "",
+                                "question_node": 0,
+                                "function": "none",
+                                "score": 0.0,
+                                "ordinal": "none"
+                            },
+                            {
+                                "nid": 3,
+                                "node_type": "class",
+                                "id": "?a",
+                                "type_class": "",
+                                "friendly_name": "",
+                                "question_node": 1,
+                                "function": "none",
+                                "score": 0.0,
+                                "ordinal": "none"
+                            }
+                        ],
+                        "edges": [
+                            {
+                                "start": 1,
+                                "end": 2,
+                                "relation": "tv.tv_producer.programs_produced",
+                                "friendly_name": "",
+                                "score": 0.0
+                            },
+                            {
+                                "start": 2,
+                                "end": 3,
+                                "relation": "tv.tv_producer_term.producer_type",
+                                "friendly_name": "",
+                                "score": 0.0
+                            }
+                        ],
+                        "key_path": "tv.tv_producer.programs_produced\ttv.tv_producer_term.producer_type",
+                        "sparql_query": "SELECT DISTINCT ?x WHERE {\nFILTER (!isLiteral(?x)) \nVALUES ?x1 { :en.joseph_papp } .\n?x1 :tv.tv_producer.programs_produced ?x2 .\n?x2 :tv.tv_producer_term.producer_type ?x .\n}",
+                        "score": 1.848846197128296,
+                        "denotation": [
+                            "en.producer"
+                        ],
+                        "total_score": 0.0,
+                        "f1_score": 0
+                    }
+                ]
+            }
+        ],
+        "gold_graph_query": null,
+        "gold_answer": [
+            "m.0kdd12q"
+        ],
+        "gold_sparql_query": {
+            "nodes": [
+                {
+                    "nid": 0,
+                    "node_type": "class",
+                    "id": "opera.opera_production",
+                    "class": "opera.opera_production",
+                    "friendly_name": "Opera Production",
+                    "question_node": 1,
+                    "function": "none"
+                },
+                {
+                    "nid": 1,
+                    "node_type": "entity",
+                    "id": "en.joseph_papp",
+                    "class": "opera.opera_producer",
+                    "friendly_name": "Joseph Papp",
+                    "question_node": 0,
+                    "function": "none"
+                }
+            ],
+            "edges": [
+                {
+                    "start": 0,
+                    "end": 1,
+                    "relation": "opera.opera_production.producer",
+                    "friendly_name": "Producer"
+                }
+            ]
+        }
+    }
+]
