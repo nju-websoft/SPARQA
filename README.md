@@ -64,10 +64,6 @@ Below, an example on GraphQuestions.
 * Combine sentence-level scorer and word-level scorer. Set module=2.3_add_question_match. The input: structure_with_2_2_grounded_graph_folder.
 * Run evaluation. Set module=3_evaluation. The input: structure_with_2_2_grounded_graph_folder. The output: results. 
 
-## Compare with Baselines
-* GraphQuestions: PARA4QA, SCANNER, UDEPLAMBDA.
-* CWQ 1.1: PullNet, SPLITQA, and MHQA-GRN. Note that PullNet used annotated topic entities of questions in its KB only setting. SPARQA, an end-to-end method, do not use annotated topic entities. Thus, it is not comparable.
-
 ## Skeleton Parsing
 * SPARQA also provides a tool of parsing. The input is a question. The output is the skeleton of the question. (Now, it only supports English language. Later, it will support Chinese language)
 * You can use SPARQA's skeleton parsing to train yourself language. (It need replace the pre-trained models and annotated data with your language)
@@ -75,10 +71,14 @@ Below, an example on GraphQuestions.
 ## Multi-Strategy Scoring
 * SPARQA has provided a trained word-level scorer model and sentence-level scorer above pan.
 
-## Oracle Graph
-* Complex questions always involve multi-relations in knowledge base, which lead to search space exponent problem. We have try two ways: online and offline. The former is to generate candidate queries online. The former is very slow because of large degree vertices. The latter first retrieve oracle graphs (to reduce storage space, we adopt path format storage) and then generate candidate queries from oracle graphs. About oracle graph, see [this paper](https://www.aclweb.org/anthology/Q16-1010.pdf).
+## Oracle Grounded Graph
+* Complex questions always involve multi-relations in knowledge base, which lead to search space exponent problem. We have try two ways: online and offline. The former is to generate candidate queries online. The former is very slow because of large degree vertices. The latter first retrieve oracle graphs (to reduce storage space, we adopt path format storage) and then generate candidate queries from oracle graphs. About oracle graph, please see [this paper](https://www.aclweb.org/anthology/Q16-1010.pdf).
 * We provide the code of offline ways, [oracle graphs of CWQ 1.1](https://github.com/nju-websoft/SPARQA) and [oracle graphs of GraphQuestions](https://github.com/nju-websoft/SPARQA).
-* We also provide the code of online ways.
+* We also can provide the code of online ways.
+
+## Compare with Baselines
+* GraphQuestions: PARA4QA, SCANNER, UDEPLAMBDA.
+* CWQ 1.1: PullNet, SPLITQA, and MHQA-GRN. Note that PullNet used annotated topic entities of questions in its KB only setting. SPARQA, an end-to-end method, do not use annotated topic entities. Thus, it is not comparable.
 
 ## Citation
 
