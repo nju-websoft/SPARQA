@@ -28,7 +28,7 @@ If you meet any questions, please email to him (ywsun at smail.nju.edu.cn).
 
 ## Common Resources
 * Eight Resources: GloVe (glove.6B.300d), Stanford CoreNLP server, SUTime Java library, BERT pre-trained Models, and four preprocessing files(stopwords.txt, ordinal_fengli.tsv, unimportantphrase, and unimportantwords). [pan](https://pan.baidu.com/s/1Wd3ghjpn3oB20uTodDFGHA). The extraction code is kbqa. unzip and save in the root.
-* Two version Freebase: [latest version](https://developers.google.com/freebase) and 2013 version (email SPARQA author, if you can not find the version). Next, download a virtuoso server and load the KBs. The [file](http://ws.nju.edu.cn/blog/2017/03/virtuoso%E5%AE%89%E8%A3%85%E5%92%8C%E5%AF%BC%E5%85%A5%E6%95%B0%E6%8D%AE/) is helpful, if you meet questions.
+* Two version Freebase: [latest version](https://developers.google.com/freebase) and 2013 version (we provide [the 2013 version db file](https://pan.baidu.com/s/19uk93fBgE1J33Jc34Cs5UA). The extraction code is kbqa). Next, download a virtuoso server and load the KBs. The [file](http://ws.nju.edu.cn/blog/2017/03/virtuoso%E5%AE%89%E8%A3%85%E5%92%8C%E5%AF%BC%E5%85%A5%E6%95%B0%E6%8D%AE/) is helpful, if you meet questions.
 
 ## Specific CWQ 1.1 Resources
 * CWQ 1.1 dataset, Skeleton Parsing models, Word-level scorer model, Sentence-level scorer model. [pan](https://pan.baidu.com/s/1gOPkTwXAS3dD9I3-ORQkSg). The extraction code is kbqa. unzip and save in the root.
