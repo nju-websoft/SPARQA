@@ -75,6 +75,11 @@ Below, an example on GraphQuestions.
 ## Multi-Strategy Scoring
 * SPARQA has provided a trained word-level scorer model and sentence-level scorer above pan.
 
+## Oracle Graph
+* Complex questions always involve multi-relations in knowledge base, which lead to search space exponent problem. We have try two ways: online and offline. The former is to generate candidate queries online. The former is very slow because of large degree vertices. The latter first retrieve oracle graphs (to reduce storage space, we adopt path format storage) and then generate candidate queries from oracle graphs. About oracle graph, see [this paper](https://www.aclweb.org/anthology/Q16-1010.pdf).
+* We provide the code of offline ways, [oracle graphs of CWQ 1.1](https://github.com/nju-websoft/SPARQA) and [oracle graphs of GraphQuestions](https://github.com/nju-websoft/SPARQA).
+* We also provide the code of online ways.
+
 ## Citation
 
 	@inproceedings{SunZ0Q20,
