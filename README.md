@@ -73,7 +73,7 @@ Below, an example on GraphQuestions.
 
 ## Oracle Grounded Graph
 * Complex questions always involve multi-relations in knowledge base, which lead to search space exponent problem. We have try two ways: online and offline. The former is to generate candidate queries online. The former is very slow because of large degree vertices. The latter first retrieve oracle graphs (to reduce storage space, we adopt path format storage) and then generate candidate queries from oracle graphs. About oracle graph, please see [this paper](https://www.aclweb.org/anthology/Q16-1010.pdf).
-* We provide the code of offline ways, [oracle graphs of CWQ 1.1](https://github.com/nju-websoft/SPARQA) and [oracle graphs of GraphQuestions](https://github.com/nju-websoft/SPARQA).
+* We provide the code of offline ways, [oracle graphs of CWQ 1.1](https://pan.baidu.com/s/13TRNcTiRPFMWgctt1qIN7g) and [oracle graphs of GraphQuestions](https://pan.baidu.com/s/1DKfydC1L0aQajHTCrZV7lA). The extraction codes are kbqa. 
 * We also can provide the code of online ways.
 
 ## Compare with Baselines
