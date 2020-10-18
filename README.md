@@ -1,6 +1,6 @@
 # SPARQA: question answering over knowledge bases
 
-Codes for paper: "SPARQA: Skeleton-based Semantic Parsing for Complex Questions over Knowledge Bases" (AAAI-2020) [detail](https://www.aaai.org/Papers/AAAI/2020GB/AAAI-SunY.3419.pdf).
+Codes for paper: "SPARQA: Skeleton-based Semantic Parsing for Complex Questions over Knowledge Bases" (AAAI-2020) [detail](https://aaai.org/ojs/index.php/AAAI/article/view/6426).
 If you meet any questions, please email to him (ywsun at smail.nju.edu.cn).
 
 ## Project Structure:
