@@ -1,7 +1,7 @@
 # SPARQA: question answering over knowledge bases
 
 Codes for paper: "SPARQA: Skeleton-based Semantic Parsing for Complex Questions over Knowledge Bases" (AAAI-2020) [detail](https://aaai.org/ojs/index.php/AAAI/article/view/6426).
-If you meet any questions, please email to him (ywsun at smail.nju.edu.cn).
+If you meet any questions, please email to him (ywsun at smail.nju.edu.cn). 
 
 ## Project Structure:
 
@@ -13,7 +13,7 @@ If you meet any questions, please email to him (ywsun at smail.nju.edu.cn).
         <td>code</td><td>codes</td>
     </tr>
     <tr>
-        <td>skeleton</td><td>skeleton bank of complex questions</td>
+        <td>skeleton</td><td>skeleton bank</td>
     </tr>
     <tr>
         <td>slides</td><td>slides and poster</td>
@@ -25,6 +25,8 @@ If you meet any questions, please email to him (ywsun at smail.nju.edu.cn).
 
 ## Configuration
 * Root of dataset: default D:/dataset. Note that you can edit it in common/globals_args.py. 
+
+** Note that the following files are in baidu wangpan. The extraction code of all files is kbqa. Default unzip and save in the root**
 
 ## Common Resources
 * Eight Resources: GloVe (glove.6B.300d), Stanford CoreNLP server, SUTime Java library, BERT pre-trained Models, and four preprocessing files(stopwords.txt, ordinal_fengli.tsv, unimportantphrase, and unimportantwords). [pan](https://pan.baidu.com/s/1Wd3ghjpn3oB20uTodDFGHA). The extraction code is kbqa. unzip and save in the root.
