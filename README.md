@@ -50,6 +50,8 @@ See running/freebase/pipeline_cwq.py if run CWQ 1.1.
 See running/freebase/pipeline_grapqh.py if run GraphQuestions.
 Below, an example on GraphQuestions.
 
+**Note that the steps are not friendly. To understand easliy, we provided samples of these steps in the output_graphq folder.**
+
 ### Specific-dataset Configuration
 
 * Set datset in the common/globals_args.py: q_mode=graphq. (note that q_mode=cwq if CWQ 1.1)
@@ -65,8 +67,6 @@ Below, an example on GraphQuestions.
 * Rank using word-level scorer. Set module=2.3_word_match. The input: 2.2 grounded graphs.
 * Combine sentence-level scorer and word-level scorer. Set module=2.3_add_question_match. The input: 2.2 grounded graphs.
 * Run evaluation. Set module=3_evaluation. The input: 2.2 grounded graphs. The output: result. 
-
-**Note that the above steps are not friendly. To understand easliy, we provided samples of these steps in the output_graphq folder.**
 
 ## Skeleton Parsing
 * SPARQA also provides a tool of parsing. The input is a question. The output is the skeleton of the question. (Now, it only supports English language. Later, it will support Chinese language)
