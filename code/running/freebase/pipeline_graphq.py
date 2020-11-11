@@ -26,7 +26,7 @@ if __name__ == '__main__':
     output_path = globals_args.fn_graph_file.dataset + 'output_graphq'
     structure_with_1_ungrounded_graphq_file = output_path + '/structures_with_1_ungrounded_graphs_test_spantree.json'
     structure_with_2_1_grounded_graph_file = output_path + '/structures_with_2_1_grounded_graph_test_1111.json'
-    structure_with_2_2_grounded_graph_folder = output_path + '/2.2_train/'
+    structure_with_2_2_grounded_graph_folder = output_path + '/2.2_test_f1561/'
     # module
     if module == '1.0':
         run_ungrounded_graph_from_graphq(graph_questions_filepath, structure_with_1_ungrounded_graphq_file)

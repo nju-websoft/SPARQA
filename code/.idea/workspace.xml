@@ -11,56 +11,17 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/code$query_graph_generator.coverage" NAME="query_graph_generator Coverage Results" MODIFIED="1605079458266" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/parsing" />
-    <SUITE FILE_PATH="coverage/code$pipeline_graphq.coverage" NAME="pipeline_graphq Coverage Results" MODIFIED="1605084358090" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/running/freebase" />
+    <SUITE FILE_PATH="coverage/code$pipeline_graphq.coverage" NAME="pipeline_graphq Coverage Results" MODIFIED="1605086204992" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/running/freebase" />
     <SUITE FILE_PATH="coverage/code$path_match_interface__1_.coverage" NAME="path_match_interface (1) Coverage Results" MODIFIED="1605082718445" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/grounding/ranking/path_match_word_level" />
     <SUITE FILE_PATH="coverage/code$path_match_interface.coverage" NAME="path_match_interface Coverage Results" MODIFIED="1605081939388" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/grounding/ranking/path_match_nn" />
-  </component>
-  <component name="DockManager">
-    <window id="6">
-      <content type="file-editors">
-        <state>
-          <leaf>
-            <file leaf-file-name="grounded_graph_to_sparql.py" pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/grounding/grounded_graph_to_sparql.py">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="409">
-                    <caret line="221" column="33" selection-start-line="221" selection-start-column="4" selection-end-line="221" selection-end-column="33" />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
-    <window id="4">
-      <content type="file-editors">
-        <state>
-          <leaf>
-            <file leaf-file-name="grounding_args.py" pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/grounding/grounding_args.py">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="288">
-                    <caret line="38" column="14" selection-start-line="38" selection-start-column="14" selection-end-line="38" selection-end-column="14" />
-                    <folding>
-                      <element signature="e#0#31#0" expanded="true" />
-                    </folding>
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="pipeline_graphq.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/running/freebase/pipeline_graphq.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="15" column="26" lean-forward="true" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+            <state relative-caret-position="252">
+              <caret line="34" column="25" lean-forward="true" selection-start-line="34" selection-start-column="25" selection-end-line="34" selection-end-column="25" />
               <folding>
                 <element signature="e#0#50#0" expanded="true" />
               </folding>
@@ -68,35 +29,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pipeline_cwq.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/running/freebase/pipeline_cwq.py">
+      <file leaf-file-name="kbcqa_evaluation.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/evaluation/kbcqa_evaluation.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+            <state relative-caret-position="351">
+              <caret line="70" column="57" selection-start-line="70" selection-start-column="57" selection-end-line="70" selection-end-column="57" />
               <folding>
-                <element signature="e#0#31#0" expanded="true" />
+                <element signature="e#0#9#0" expanded="true" />
+                <element signature="e#264#1206#0" />
+                <element signature="e#1269#2860#0" />
+                <element signature="e#2942#3834#0" />
+                <element signature="e#3898#7470#0" />
+                <element signature="e#7550#9734#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="globals_args.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/common/globals_args.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="349">
-              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
-              <folding>
-                <element signature="e#0#58#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="running_interface.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="running_interface.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/running/running_interface.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="25">
-              <caret line="162" column="4" selection-start-line="162" selection-start-column="4" selection-end-line="162" selection-end-column="4" />
+            <state relative-caret-position="482">
+              <caret line="139" lean-forward="true" selection-start-line="139" selection-end-line="139" />
               <folding>
                 <element signature="e#0#82#0" expanded="true" />
                 <element signature="e#149#823#0" />
@@ -104,6 +58,7 @@
                 <element signature="e#2338#4617#0" />
                 <element signature="e#2554#2807#0" />
                 <element signature="e#4694#5985#0" />
+                <element signature="e#6054#6913#0" />
               </folding>
             </state>
           </provider>
@@ -129,6 +84,8 @@
       <find>read_ngram_el_grounding_result</find>
       <find>freebase_relation_finalwords</find>
       <find>QuestionMatchInterface</find>
+      <find>sparql_to_denotation</find>
+      <find>freebase_types</find>
     </findStrings>
     <dirStrings>
       <dir>C:\Users\ywsun\Desktop\github_test\SPARQA\code</dir>
@@ -158,11 +115,11 @@
         <option value="$PROJECT_DIR$/grounding/ranking/path_match_sentence_level/question_match_interface.py" />
         <option value="$PROJECT_DIR$/grounding/ranking/path_match_sentence_level/question_match_data_preparation_cwq.py" />
         <option value="$PROJECT_DIR$/grounding/ranking/path_match_word_level/preproccess_freebase.py" />
-        <option value="$PROJECT_DIR$/evaluation/kbcqa_evaluation.py" />
-        <option value="$PROJECT_DIR$/running/running_interface.py" />
-        <option value="$PROJECT_DIR$/running/freebase/pipeline_graphq.py" />
         <option value="$PROJECT_DIR$/running/freebase/pipeline_cwq.py" />
         <option value="$PROJECT_DIR$/common/globals_args.py" />
+        <option value="$PROJECT_DIR$/running/freebase/pipeline_graphq.py" />
+        <option value="$PROJECT_DIR$/evaluation/kbcqa_evaluation.py" />
+        <option value="$PROJECT_DIR$/running/running_interface.py" />
       </list>
     </option>
   </component>
@@ -192,11 +149,6 @@
             <path>
               <item name="code" type="b2602c69:ProjectViewProjectNode" />
               <item name="code" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="code" type="b2602c69:ProjectViewProjectNode" />
-              <item name="code" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="code" type="b2602c69:ProjectViewProjectNode" />
@@ -354,10 +306,10 @@
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.274244" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.27632952" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="right" id="Remote Host" order="3" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20255864" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14765458" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -414,18 +366,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/evaluation/kbcqa_evaluation.py</url>
-          <line>106</line>
+          <line>97</line>
           <option name="timeStamp" value="48" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/evaluation/kbcqa_evaluation.py</url>
-          <line>113</line>
-          <option name="timeStamp" value="49" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/evaluation/kbcqa_evaluation.py</url>
-          <line>111</line>
-          <option name="timeStamp" value="50" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/evaluation/kbcqa_evaluation.py</url>
@@ -437,11 +379,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/parsing/models/fine_tuning_based_on_bert/greed_search_sequence_relation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-970" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/parsing/models/fine_tuning_based_on_bert_interface/joint_three_models_interface.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -697,16 +634,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grounding/grounding_args.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="38" column="14" selection-start-line="38" selection-start-column="14" selection-end-line="38" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/grounding/ranking/path_match_nn/question_match_data_preparation_cwq.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-345">
@@ -804,13 +731,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grounding/grounded_graph_to_sparql.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
-          <caret line="221" column="33" selection-start-line="221" selection-start-column="4" selection-end-line="221" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/grounding/ranking/path_match_sentence_level/question_match_interface.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2997">
@@ -899,45 +819,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/evaluation/kbcqa_evaluation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2821">
-          <caret line="39" selection-start-line="39" selection-end-line="39" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-            <element signature="e#264#1206#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/evaluation/sempre_evaluation.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1822" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/running/running_interface.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="162" column="4" selection-start-line="162" selection-start-column="4" selection-end-line="162" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#82#0" expanded="true" />
-            <element signature="e#149#823#0" />
-            <element signature="e#923#2173#0" />
-            <element signature="e#2338#4617#0" />
-            <element signature="e#2554#2807#0" />
-            <element signature="e#4694#5985#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/running/freebase/pipeline_graphq.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="15" column="26" lean-forward="true" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/running/freebase/pipeline_cwq.py">
@@ -952,10 +836,73 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/common/globals_args.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
+        <state relative-caret-position="621">
           <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
           <folding>
             <element signature="e#0#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grounding/grounded_graph_to_sparql.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6237">
+          <caret line="231" lean-forward="true" selection-start-line="231" selection-end-line="231" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grounding/grounding_args.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="38" column="14" selection-start-line="38" selection-start-column="14" selection-end-line="38" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/running/freebase/every_q_result.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-648" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/running/freebase/pipeline_graphq.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="34" column="25" lean-forward="true" selection-start-line="34" selection-start-column="25" selection-end-line="34" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evaluation/kbcqa_evaluation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="70" column="57" selection-start-line="70" selection-start-column="57" selection-end-line="70" selection-end-column="57" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+            <element signature="e#264#1206#0" />
+            <element signature="e#1269#2860#0" />
+            <element signature="e#2942#3834#0" />
+            <element signature="e#3898#7470#0" />
+            <element signature="e#7550#9734#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/running/running_interface.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="482">
+          <caret line="139" lean-forward="true" selection-start-line="139" selection-end-line="139" />
+          <folding>
+            <element signature="e#0#82#0" expanded="true" />
+            <element signature="e#149#823#0" />
+            <element signature="e#923#2173#0" />
+            <element signature="e#2338#4617#0" />
+            <element signature="e#2554#2807#0" />
+            <element signature="e#4694#5985#0" />
+            <element signature="e#6054#6913#0" />
           </folding>
         </state>
       </provider>

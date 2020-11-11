@@ -73,10 +73,6 @@ def grounded_graphes_by_score_standard_ywsun(input_file):
     count_number = 0
     all_f1_score = 0
     qid_f1_top1id_correctidlist__list = []
-
-    from grounding.grounded_graph_to_sparql import sparql_to_denotation_freebase
-    return_0_num = 0
-
     for structure_path in all_structure_path:
         print(structure_path)
         count_number += 1
@@ -90,12 +86,7 @@ def grounded_graphes_by_score_standard_ywsun(input_file):
         for structure in structure_list:
             qid = structure.qid
             for ungrounded_graph in structure.ungrounded_graph_forest:
-                ungrounded_graph_edges_num = len(ungrounded_graph.edges)
                 for grounded_graph in ungrounded_graph.get_grounded_graph_forest():
-                    # grounded_graph_edges_num = len(grounded_graph.edges)
-                    # edge constaints
-                    # if grounded_graph_edges_num != ungrounded_graph_edges_num: continue
-
                     score_to_queryid_sparql[grounded_graph.score].append(grounded_graph.grounded_query_id)
                     # score_to_queryid_sparql[grounded_graph.total_score].append(grounded_graph.grounded_query_id)
                     grounded_query_id_to_f1_denotation[grounded_graph.grounded_query_id] = grounded_graph.f1_score
@@ -108,12 +99,6 @@ def grounded_graphes_by_score_standard_ywsun(input_file):
             for grounded_query_id in grounded_query_ids:
                 f1_score = grounded_query_id_to_f1_denotation[grounded_query_id]
                 all_f1_score += f1_score
-                sparql_query = grounded_query_id_to_sparql_query[grounded_query_id]
-                print('#sparql_query:\t', sparql_query)
-                denotation_set = sparql_to_denotation_freebase(sparql_query)
-                print('#denotation:\t', len(denotation_set))
-                if len(denotation_set) == 0:
-                    return_0_num += 1
                 top1id = grounded_query_id
                 qid_f1_score = f1_score
                 break
@@ -129,8 +114,6 @@ def grounded_graphes_by_score_standard_ywsun(input_file):
 
     print('#all_f1_score:\t', all_f1_score)
     print('#count_number:\t', count_number)
-    print('#return_0_num:\t', return_0_num)
-
     fi = open('./every_q_result.txt', "w", encoding="utf-8")
     for (qid, qid_f1_score, top1id, correctlist) in qid_f1_top1id_correctidlist__list:
         fi.write('#qid:'+str(qid))

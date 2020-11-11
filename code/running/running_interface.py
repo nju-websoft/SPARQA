@@ -173,7 +173,7 @@ def run_end_to_end_evaluation(structure_with_2_2_grounded_graph_folder, dataset=
         #step1: every grounded graph's f1
         # kbcqa_evaluation.computed_every_grounded_graph_f1_graphq(structure_with_2_2_grounded_graph_folder)
         #step2: upbound
-        kbcqa_evaluation.compute_all_questions_recall(structure_with_2_2_grounded_graph_folder)
+        # kbcqa_evaluation.compute_all_questions_recall(structure_with_2_2_grounded_graph_folder)
         #step3: evaluation
-        # kbcqa_evaluation.grounded_graphes_by_score_standard_ywsun(input_file=structure_with_2_2_grounded_graph_folder)
+        kbcqa_evaluation.grounded_graphes_by_score_standard_ywsun(input_file=structure_with_2_2_grounded_graph_folder)
 
