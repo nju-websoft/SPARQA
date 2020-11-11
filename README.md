@@ -26,19 +26,19 @@ If you meet any questions, please email to him (ywsun at smail.nju.edu.cn).
 ## Configuration
 * Root of dataset: default D:/dataset. Note that you can edit it in common/globals_args.py. 
 
-**Note that the following files are in baidu wangpan. The extraction code of all files is kbqa. Default unzip and save in the root**
+**Note that the following files are in baidu wangpan. The extraction code of all files is kbqa.**
 
 ## Common Resources
-* Eight Resources: GloVe (glove.6B.300d), Stanford CoreNLP server, SUTime Java library, BERT pre-trained Models, and four preprocessing files(stopwords.txt, ordinal_fengli.tsv, unimportantphrase, and unimportantwords). [pan](https://pan.baidu.com/s/1Wd3ghjpn3oB20uTodDFGHA). The extraction code is kbqa. unzip and save in the root.
-* Two version Freebase: [latest version](https://developers.google.com/freebase) and 2013 version (we provide [the 2013 version db file](https://pan.baidu.com/s/19uk93fBgE1J33Jc34Cs5UA). The extraction code is kbqa). Next, download a virtuoso server and load the KBs. The [file](http://ws.nju.edu.cn/blog/2017/03/virtuoso%E5%AE%89%E8%A3%85%E5%92%8C%E5%AF%BC%E5%85%A5%E6%95%B0%E6%8D%AE/) is helpful, if you meet questions.
+* [Eight Resources](https://pan.baidu.com/s/1Wd3ghjpn3oB20uTodDFGHA): GloVe (glove.6B.300d), Stanford CoreNLP server, SUTime Java library, BERT pre-trained Models, and four preprocessing files(stopwords.txt, ordinal_fengli.tsv, unimportantphrase, and unimportantwords). unzip and save in the root.
+* Two version Freebase: [latest version](https://developers.google.com/freebase) and [2013 version](https://pan.baidu.com/s/19uk93fBgE1J33Jc34Cs5UA). Next, download a virtuoso server and load the KBs. The [file](http://ws.nju.edu.cn/blog/2017/03/virtuoso%E5%AE%89%E8%A3%85%E5%92%8C%E5%AF%BC%E5%85%A5%E6%95%B0%E6%8D%AE/) is helpful, if you meet questions.
 
 ## Specific CWQ 1.1 Resources
-* CWQ 1.1 dataset, Skeleton Parsing models, Word-level scorer model, Sentence-level scorer model. [pan](https://pan.baidu.com/s/1gOPkTwXAS3dD9I3-ORQkSg). The extraction code is kbqa. unzip and save in the root.
-* Entity-related Lexicons and schema-related lexicons. [pan](https://pan.baidu.com/s/1ToAesUe11RouLuQO_olorA). The extraction code is kbqa. unzip and save in the root.
+* [CWQ 1.1 dataset](https://pan.baidu.com/s/1gOPkTwXAS3dD9I3-ORQkSg): skeleton parsing models, word-level scorer model, sentence-level scorer model. unzip and save in the root.
+* [Lexicons](https://pan.baidu.com/s/1ToAesUe11RouLuQO_olorA): entity-related lexicons and KB schema-related lexicons. unzip and save in the root.
 
 ## Specific GraphQuestions Resources
-* GraphQuestions dataset, Skeleton Parsing models, Word-level scorer model. [pan](https://pan.baidu.com/s/1wiNczntTiWzE_k7hy9RuQw). The extraction code is kbqa. unzip and save in the root.
-* Entity-related Lexicons and schema-related lexicons. [pan](https://pan.baidu.com/s/1Zs0ufmSAHYHqFgoD4Hig3w). The extraction code is kbqa. unzip and save in the default root/kb_freebase_en_2013.
+* [GraphQuestions dataset](https://pan.baidu.com/s/1wiNczntTiWzE_k7hy9RuQw): Skeleton Parsing models, Word-level scorer model. unzip and save in the root.
+* [Lexicons](https://pan.baidu.com/s/1Zs0ufmSAHYHqFgoD4Hig3w): Entity-related Lexicons and KB schema-related lexicons. unzip and save in the root.
 
 ## Run SPARQA Pipeline
 The pipeline has two steps for answering questions: 
