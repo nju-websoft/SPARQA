@@ -57,26 +57,26 @@ Below, an example on GraphQuestions.
 * Replace the freebase_pyodbc_info and freebase_sparql_html_info in the common/globals_args.py with your local address. (note that 2013 version is for GraphQuestions, and latest version is for CWQ 1.1).
 
 ### KB-indenpendent query generation
-* Run KB-indenpendent query generation. Setup variable module=1.0. The input: graph_questions_filepath. The output: structure_with_1_ungrounded_graphq_file. We provided sample in output_graphq folder.
+* Run KB-indenpendent query generation. Setup variable module=1.0. The input: dataset. The output: structure with 1.0 ungrounded graph. We provided sample in output_graphq folder.
 
 ### KB-dependent query generation
-* Generate variant generation. Set variable module=2.1. The input: structure_with_1_ungrounded_graphq_file. The output: structure_with_2_1_grounded_graph_file.
-* Ground candidate queries. Set module=2.2. The input: structure_with_2_1_grounded_graph_file. The output: structure_with_2_2_grounded_graph_folder. We provided [one sample](https://github.com/nju-websoft/SPARQA/blob/master/slides/274000300.json) to understand easily. We also provided samples of questions in output_graphq folder.
-* Rank using word-level scorer. Set module=2.3_word_match. The input: structure_with_2_2_grounded_graph_folder.
-* Combine sentence-level scorer and word-level scorer. Set module=2.3_add_question_match. The input: structure_with_2_2_grounded_graph_folder.
-* Run evaluation. Set module=3_evaluation. The input: structure_with_2_2_grounded_graph_folder. The output: results. 
+* Generate variant generation. Set variable module=2.1. The input: structure with 1.0 ungrounded graph. The output: structure with 2.1 grounded graph. We provided sample in output_graphq folder.
+* Ground candidate queries. Set module=2.2. The input: structure with 2.1 grounded graph. The output: structure with 2.2 grounded graphs. We provided samples of questions in output_graphq folder. [one sample](https://github.com/nju-websoft/SPARQA/blob/master/slides/274000300.json).
+* Rank using word-level scorer. Set module=2.3_word_match. The input: 2.2 grounded graphs.
+* Combine sentence-level scorer and word-level scorer. Set module=2.3_add_question_match. The input: 2.2 grounded graphs.
+* Run evaluation. Set module=3_evaluation. The input: 2.2 grounded graphs. The output: result. 
 
 ## Skeleton Parsing
 * SPARQA also provides a tool of parsing. The input is a question. The output is the skeleton of the question. (Now, it only supports English language. Later, it will support Chinese language)
 * You can use SPARQA's skeleton parsing to train yourself language. (It need replace the pre-trained models and annotated data with your language)
 
 ## Multi-Strategy Scoring
-* SPARQA has provided a trained word-level scorer model and sentence-level scorer above pan.
+* SPARQA has provided a trained word-level scorer model and sentence-level scorer in dataset folder.
 
 ## Oracle Grounded Graph
 * Complex questions always involve multi-relations in knowledge base, which lead to search space exponent problem. We have try two ways: online and offline. The former is to generate candidate queries online. The former is very slow because of large degree vertices. The latter first retrieve oracle graphs (to reduce storage space, we adopt path format storage) and then generate candidate queries from oracle graphs. About oracle graph, please see [this paper](https://www.aclweb.org/anthology/Q16-1010.pdf).
-* We provide the code of offline ways, [oracle graphs of CWQ 1.1](https://pan.baidu.com/s/13TRNcTiRPFMWgctt1qIN7g) and [oracle graphs of GraphQuestions](https://pan.baidu.com/s/1DKfydC1L0aQajHTCrZV7lA). The extraction codes are kbqa. 
-* We also can provide the code of online ways.
+* We provide the code of offline ways, [oracle graphs of CWQ 1.1](https://pan.baidu.com/s/13TRNcTiRPFMWgctt1qIN7g) and [oracle graphs of GraphQuestions](https://pan.baidu.com/s/1DKfydC1L0aQajHTCrZV7lA). 
+* We can also provide the code of online ways. The problem is efficiency issue.
 
 ## Compare with Baselines
 * GraphQuestions: PARA4QA, SCANNER, UDEPLAMBDA.
