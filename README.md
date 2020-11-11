@@ -29,16 +29,16 @@ If you meet any questions, please email to him (ywsun at smail.nju.edu.cn).
 **Note that the following files are in baidu wangpan. The extraction code of all files is kbqa.**
 
 ## Common Resources
-* [Eight Resources](https://pan.baidu.com/s/1Wd3ghjpn3oB20uTodDFGHA): GloVe (glove.6B.300d), Stanford CoreNLP server, SUTime Java library, BERT pre-trained Models, and four preprocessing files(stopwords.txt, ordinal_fengli.tsv, unimportantphrase, and unimportantwords). unzip and save in the root.
-* Two version Freebase: [latest version](https://developers.google.com/freebase) and [2013 version](https://pan.baidu.com/s/19uk93fBgE1J33Jc34Cs5UA). Next, download a virtuoso server and load the KBs. The [file](http://ws.nju.edu.cn/blog/2017/03/virtuoso%E5%AE%89%E8%A3%85%E5%92%8C%E5%AF%BC%E5%85%A5%E6%95%B0%E6%8D%AE/) is helpful, if you meet questions.
+* [Eight Resources](https://pan.baidu.com/s/1__BBXhEvUuRfqdurofHooQ): GloVe (glove.6B.300d), Stanford CoreNLP server, SUTime Java library, BERT pre-trained Models, and four preprocessing files(stopwords.txt, ordinal_fengli.tsv, unimportantphrase, and unimportantwords). unzip and save in the root.
+* Two version Freebase: [latest version](https://developers.google.com/freebase) and [2013 version](https://pan.baidu.com/s/1FWwv1R_7JtO_mpk_6pL_TQ). Next, download a virtuoso server and load the KBs. The [file](http://ws.nju.edu.cn/blog/2017/03/virtuoso%E5%AE%89%E8%A3%85%E5%92%8C%E5%AF%BC%E5%85%A5%E6%95%B0%E6%8D%AE/) is helpful, if you meet questions.
 
 ## Specific CWQ 1.1 Resources
-* [CWQ 1.1 dataset](https://pan.baidu.com/s/1gOPkTwXAS3dD9I3-ORQkSg): skeleton parsing models, word-level scorer model, sentence-level scorer model. unzip and save in the root.
-* [Lexicons](https://pan.baidu.com/s/1ToAesUe11RouLuQO_olorA): entity-related lexicons and KB schema-related lexicons. unzip and save in the root.
+* [CWQ 1.1 dataset](https://pan.baidu.com/s/1N_WBCmoQIvNCk_W4oFHeKA): skeleton parsing models, word-level scorer model, sentence-level scorer model. unzip and save in the root.
+* [Lexicons](https://pan.baidu.com/s/146e7C4LCrNiQJp6urZU_ZQ): entity-related lexicons and KB schema-related lexicons. unzip and save in the root.
 
 ## Specific GraphQuestions Resources
-* [GraphQuestions dataset](https://pan.baidu.com/s/1wiNczntTiWzE_k7hy9RuQw): Skeleton Parsing models, Word-level scorer model. unzip and save in the root.
-* [Lexicons](https://pan.baidu.com/s/1Zs0ufmSAHYHqFgoD4Hig3w): Entity-related Lexicons and KB schema-related lexicons. unzip and save in the root.
+* [GraphQuestions dataset](https://pan.baidu.com/s/106vC73W9WKXyuuFcaoPIuQ): Skeleton Parsing models, Word-level scorer model. unzip and save in the root.
+* [Lexicons](https://pan.baidu.com/s/1VfF7O0TDRCKiZxqxRpQ8fQ): Entity-related Lexicons and KB schema-related lexicons. unzip and save in the root.
 
 ## Run SPARQA Pipeline
 The pipeline has two steps for answering questions: 
@@ -76,7 +76,7 @@ Below, an example on GraphQuestions.
 * SPARQA has provided a trained word-level scorer model and sentence-level scorer in dataset folder.
 
 ## Oracle Grounded Graph
-* We provide the code of offline ways, [oracle graphs of CWQ 1.1](https://pan.baidu.com/s/13TRNcTiRPFMWgctt1qIN7g) and [oracle graphs of GraphQuestions](https://pan.baidu.com/s/1DKfydC1L0aQajHTCrZV7lA). The way first retrieve oracle graphs (to reduce storage space) and then generate candidate queries from oracle graphs. About oracle graph, please see [this paper](https://www.aclweb.org/anthology/Q16-1010.pdf).
+* We provide the code of offline ways, [oracle graphs of CWQ 1.1](https://pan.baidu.com/s/11138yi_oe3TaV9NiuL6pVQ) and [oracle graphs of GraphQuestions](https://pan.baidu.com/s/1DAcCX2ic-eFYptn3FeEWbg). The way first retrieve oracle graphs (to reduce storage space) and then generate candidate queries from oracle graphs. About oracle graph, please see [this paper](https://www.aclweb.org/anthology/Q16-1010.pdf).
 * We can also provide the code of online ways. The way is to generate candidate queries online. The problem is efficiency issue.
 
 ## Compare with Baselines
