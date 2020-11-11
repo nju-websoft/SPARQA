@@ -66,6 +66,8 @@ Below, an example on GraphQuestions.
 * Combine sentence-level scorer and word-level scorer. Set module=2.3_add_question_match. The input: 2.2 grounded graphs.
 * Run evaluation. Set module=3_evaluation. The input: 2.2 grounded graphs. The output: result. 
 
+**Note that the above steps are not friendly. To understand easliy, we provided samples of these steps in the output_graphq folder.**
+
 ## Skeleton Parsing
 * SPARQA also provides a tool of parsing. The input is a question. The output is the skeleton of the question. (Now, it only supports English language. Later, it will support Chinese language)
 * You can use SPARQA's skeleton parsing to train yourself language. (It need replace the pre-trained models and annotated data with your language)
