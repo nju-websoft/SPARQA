@@ -9,13 +9,12 @@ def parser_composition_q_cwq_(data_dict, s1=None,t1=None, constaint=False):
             candidate_graphquery_list.extend(_1_0_to_graphs(data_dict['1_0'],s1=s1, t1=t1))
         elif querytype == "1_1":
             candidate_graphquery_list.extend(_1_1_to_graphs(data_dict['1_1'],s1=s1, t1=t1))
-
         elif querytype == "1_2" and not constaint:
             candidate_graphquery_list.extend(_1_2_to_graphs(data_dict['1_2'],s1=s1, t1=t1))
         # elif querytype == "1_3":
         #     candidate_graphquery_list.extend(_1_3_to_graphs(data_dict['1_3'],s1))
         else:
-            print ('Error structure')
+            print ('Other structure')
     return candidate_graphquery_list
 
 def parser_conjunction_q_cwq_(data_dict, s1=None, s2=None,t1=None,t2=None):
@@ -30,7 +29,7 @@ def parser_conjunction_q_cwq_(data_dict, s1=None, s2=None,t1=None,t2=None):
         # elif querytype == "2_3":
         #     candidate_graphquery_list.extend(_2_3_to_graphs(data_dict['2_3'], s1=s1, s2=s2,t1=t1,t2=t2))
         else:
-            print('Error structure')
+            print('Other structure')
     return candidate_graphquery_list
 
 ######################################
@@ -50,7 +49,7 @@ def parser_composition_q_graphq(data_dict, s1=None,t1=None, constaint=False):
         # elif querytype == "1_3":
         #     candidate_graphquery_list.extend(_1_3_to_graphs(data_dict['1_3'],s1))
         else:
-            print ('Error structure')
+            print ('Other structure')
     return candidate_graphquery_list
 
 def parser_conjunction_q_graphq(data_dict, s1=None, s2=None,t1=None,t2=None):
@@ -65,104 +64,7 @@ def parser_conjunction_q_graphq(data_dict, s1=None, s2=None,t1=None,t2=None):
         # elif querytype == "2_3":
         #     candidate_graphquery_list.extend(_2_3_to_graphs(data_dict['2_3'], s1=s1, s2=s2,t1=t1,t2=t2))
         else:
-            print('Error structure')
-    return candidate_graphquery_list
-
-######################################
-
-def parser_composition_q_lcquad(data_dict, s1=None,t1=None, constaint=False):
-    candidate_graphquery_list = []
-    for querytype in data_dict:
-        #1_0
-        if querytype == "1_0":
-            candidate_graphquery_list.extend(_1_0_to_graphs(data_dict['1_0'],s1=s1,t1=t1))
-        elif querytype == "1_0_b":
-            candidate_graphquery_list.extend(_1_0_b_to_graphs(data_dict['1_0_b'],s1=s1,t1=t1))
-
-        #1_1
-        elif querytype == "1_1":
-            candidate_graphquery_list.extend(_1_1_to_graphs(data_dict['1_1'],s1=s1,t1=t1))
-        elif querytype == "1_1_b":
-            candidate_graphquery_list.extend(_1_1_b_to_graphs(data_dict['1_1_b'],s1=s1,t1=t1))
-        elif querytype == "1_1_c":
-            candidate_graphquery_list.extend(_1_1_c_to_graphs(data_dict['1_1_c'],s1=s1,t1=t1))
-        elif querytype == "1_1_d":
-            candidate_graphquery_list.extend(_1_1_d_to_graphs(data_dict['1_1_d'],s1=s1,t1=t1))
-
-        #1_2
-        elif querytype == "1_2" and not constaint:
-            candidate_graphquery_list.extend(_1_2_to_graphs(data_dict['1_1'],s1=s1,t1=t1))
-        elif querytype == "1_2_b" and not constaint:
-            candidate_graphquery_list.extend(_1_2_b_to_graphs(data_dict['1_2_b'],s1=s1,t1=t1))
-        elif querytype == "1_2_c" and not constaint:
-            candidate_graphquery_list.extend(_1_2_c_to_graphs(data_dict['1_2_c'],s1=s1,t1=t1))
-        elif querytype == "1_2_d" and not constaint:
-            candidate_graphquery_list.extend(_1_2_d_to_graphs(data_dict['1_2_d'],s1=s1,t1=t1))
-        elif querytype == "1_2_e" and not constaint:
-            candidate_graphquery_list.extend(_1_2_e_to_graphs(data_dict['1_2_e'],s1=s1,t1=t1))
-        elif querytype == "1_2_f" and not constaint:
-            candidate_graphquery_list.extend(_1_2_f_to_graphs(data_dict['1_2_f'],s1=s1,t1=t1))
-        elif querytype == "1_2_g" and not constaint:
-            candidate_graphquery_list.extend(_1_2_g_to_graphs(data_dict['1_2_g'],s1=s1,t1=t1))
-        elif querytype == "1_2_h" and not constaint:
-            candidate_graphquery_list.extend(_1_2_h_to_graphs(data_dict['1_2_h'],s1=s1,t1=t1))
-        else:
-            print ('Error structure')
-    return candidate_graphquery_list
-
-def parser_conjunction_q_lcquad(data_dict, s1=None, s2=None,t1=None,t2=None):
-    candidate_graphquery_list = []
-    for querytype in data_dict:
-        if querytype == "2_0":
-            candidate_graphquery_list.extend(_2_0_to_graphs(data_dict['2_0'], s1=s1, s2=s2,t1=t1,t2=t2))
-        elif querytype == "2_0_b":
-            candidate_graphquery_list.extend(_2_0_b_to_graphs(data_dict['2_0_b'], s1=s1, s2=s2,t1=t1,t2=t2))
-        elif querytype == "2_0_c":
-            candidate_graphquery_list.extend(_2_0_c_to_graphs(data_dict['2_0_c'], s1=s1, s2=s2,t1=t1,t2=t2))
-        elif querytype == "2_0_d":
-            candidate_graphquery_list.extend(_2_0_d_to_graphs(data_dict['2_0_d'], s1=s1, s2=s2,t1=t1,t2=t2))
-
-        elif querytype == "2_1":
-            candidate_graphquery_list.extend(_2_1_to_graphs(data_dict['2_1'], s1=s1, s2=s2, t1=t1, t2=t2))
-        elif querytype == "2_1_b":
-            candidate_graphquery_list.extend(_2_1_b_to_graphs(data_dict['2_1_b'], s1=s1, s2=s2, t1=t1, t2=t2))
-        elif querytype == "2_1_c":
-            candidate_graphquery_list.extend(_2_1_c_to_graphs(data_dict['2_1_c'], s1=s1, s2=s2, t1=t1, t2=t2))
-        elif querytype == "2_1_d":
-            candidate_graphquery_list.extend(_2_1_d_to_graphs(data_dict['2_1_d'], s1=s1, s2=s2, t1=t1, t2=t2))
-        elif querytype == "2_1_e":
-            candidate_graphquery_list.extend(_2_1_e_to_graphs(data_dict['2_1_e'], s1=s1, s2=s2, t1=t1, t2=t2))
-        elif querytype == "2_1_f":
-            candidate_graphquery_list.extend(_2_1_f_to_graphs(data_dict['2_1_f'], s1=s1, s2=s2, t1=t1, t2=t2))
-        elif querytype == "2_1_g":
-            candidate_graphquery_list.extend(_2_1_g_to_graphs(data_dict['2_1_g'], s1=s1, s2=s2, t1=t1, t2=t2))
-        elif querytype == "2_1_h":
-            candidate_graphquery_list.extend(_2_1_h_to_graphs(data_dict['2_1_h'], s1=s1, s2=s2, t1=t1, t2=t2))
-
-        elif querytype == "2_2":
-            candidate_graphquery_list.extend(_2_2_to_graphs(data_dict['2_2'], s1=s1, s2=s2, t1=t1, t2=t2))
-        elif querytype == "2_2_b":
-            candidate_graphquery_list.extend(_2_2_b_to_graphs(data_dict['2_2_b'], s1=s1, s2=s2, t1=t1, t2=t2))
-        elif querytype == "2_2_c":
-            candidate_graphquery_list.extend(_2_2_c_to_graphs(data_dict['2_2_c'], s1=s1, s2=s2, t1=t1, t2=t2))
-        elif querytype == "2_2_d":
-            candidate_graphquery_list.extend(_2_2_d_to_graphs(data_dict['2_2_d'], s1=s1, s2=s2, t1=t1, t2=t2))
-        elif querytype == "2_2_e":
-            candidate_graphquery_list.extend(_2_2_e_to_graphs(data_dict['2_2_e'], s1=s1, s2=s2, t1=t1, t2=t2))
-        elif querytype == "2_2_f":
-            candidate_graphquery_list.extend(_2_2_f_to_graphs(data_dict['2_2_f'], s1=s1, s2=s2, t1=t1, t2=t2))
-        elif querytype == "2_2_g":
-            candidate_graphquery_list.extend(_2_2_g_to_graphs(data_dict['2_2_g'], s1=s1, s2=s2, t1=t1, t2=t2))
-        elif querytype == "2_2_h":
-            candidate_graphquery_list.extend(_2_2_h_to_graphs(data_dict['2_2_h'], s1=s1, s2=s2, t1=t1, t2=t2))
-
-        elif querytype == "3_0":
-            candidate_graphquery_list.extend(_3_0_to_graphs(data_dict['3_0'], s1=s1, s2=s2, t1=t1, t2=t2))
-        elif querytype == "3_0_b":
-            candidate_graphquery_list.extend(_3_0_b_to_graphs(data_dict['3_0_b'], s1=s1, s2=s2, t1=t1, t2=t2))
-
-        else:
-            print('Error structure')
+            print('Other structure')
     return candidate_graphquery_list
 
 ######################################
@@ -1653,38 +1555,3 @@ def _3_0_b_to_graphs(paths, s1, s2,t1,t2):
         candidate_graphquery_list.append(candidate_graphquery)
     return candidate_graphquery_list
 
-#################################################
-
-# def _2_0_a_to_graphs(paths, s1, s2, t1, t2):
-#     candidate_graphquery_list = []
-#     current_nid = 1
-#     node_topic_entity1 = GroundedNode(nid=current_nid, node_type=t1, id=s1, type_class='', friendly_name="", question_node=0)
-#     current_nid += 1
-#     node_topic_entity2 = GroundedNode(nid=current_nid, node_type=t2, id=s2, type_class='', friendly_name="", question_node=0)
-#     current_nid += 1
-#     node_answer_entity = GroundedNode(nid=current_nid, node_type="class", id='?a', type_class='', friendly_name="", question_node=1)
-#     p1_p2_answers = collections.defaultdict(set)
-#     for candidate in paths:
-#         cols = candidate.split("\t")
-#         if len(cols) != 3: continue
-#         p1, answer_entity, p2 = cols
-#         p1_p2_answers['\t'.join([p1, p2])].add(answer_entity)
-#
-#     for p1_p2 in p1_p2_answers:
-#         candidate_graphquery = dict()
-#         candidate_graphquery["querytype"] = '2_0_a'
-#         candidate_graphquery["nodes"] = [node_topic_entity1,node_topic_entity2, node_answer_entity]
-#         p1, p2 = p1_p2.split('\t')
-#         if t1=='literal':
-#             edge1 = GroundedEdge(start=node_answer_entity.nid, end=node_topic_entity1.nid, relation=p1)
-#         else:
-#             edge1 = GroundedEdge(start=node_topic_entity1.nid, end=node_answer_entity.nid, relation=p1)
-#         if t2=='literal':
-#             edge2 = GroundedEdge(start=node_answer_entity.nid, end=node_topic_entity2.nid, relation=p2)
-#         else:
-#             edge2 = GroundedEdge(start=node_topic_entity2.nid, end=node_answer_entity.nid, relation=p2)
-#         candidate_graphquery["edges"] = [edge1, edge2]
-#         candidate_graphquery["path"] = p1_p2
-#         candidate_graphquery["denotation"] = list(p1_p2_answers[p1_p2])
-#         candidate_graphquery_list.append(candidate_graphquery)
-#     return candidate_graphquery_list

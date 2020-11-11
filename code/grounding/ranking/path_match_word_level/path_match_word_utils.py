@@ -17,18 +17,14 @@ def get_qid_abstractquestion(any_2_1):
     return qid_abstractquestions
 
 def get_word_pair_sim_without_memory(word1, word2, wem):
-    sim = max((judge_twowords_samelemma(word1, word2)),
-              cosine_similarity([wem.get_word_embedding(word1).numpy(),
-                                 wem.get_word_embedding(word2).numpy()])[0][1])
+    sim = max((judge_twowords_samelemma(word1, word2)),cosine_similarity([wem.get_word_embedding(word1).numpy(), wem.get_word_embedding(word2).numpy()])[0][1])
     return torch.tensor(float(sim))
 
 def get_word_pair_sim(word1, word2, wem, word_pair_sim):
     if word1 + '###' + word2 in word_pair_sim:
         return word_pair_sim[word1 + '###' + word2]
     else:
-        sim = max((judge_twowords_samelemma(word1, word2)),
-                  cosine_similarity([wem.get_word_embedding(word1).numpy(),
-                                     wem.get_word_embedding(word2).numpy()])[0][1])
+        sim = max((judge_twowords_samelemma(word1, word2)), cosine_similarity([wem.get_word_embedding(word1).numpy(), wem.get_word_embedding(word2).numpy()])[0][1])
         sim = torch.tensor(float(sim))
         word_pair_sim[word1 + '###' + word2] = sim
         return sim

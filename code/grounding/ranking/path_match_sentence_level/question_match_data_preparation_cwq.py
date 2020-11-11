@@ -6,7 +6,7 @@ import os
 # from common import globals_args
 from common.globals_args import root
 from common.hand_files import write_json, read_json,read_structure_file
-from grounding.ranking.path_match_nn.question_match_interface import QuestionMatchInterface
+from grounding.ranking.path_match_sentence_level.question_match_interface import QuestionMatchInterface
 from datasets_interface.question_interface import questions_utils
 
 resources_cwq=root+'/dataset_cwq_1_1/'
@@ -16,8 +16,6 @@ dev_cwq_bgp_filepath=resources_cwq+'/ComplexWebQuestions_dev_bgp.txt'
 train_cwq_bgp_filepath=resources_cwq+'/ComplexWebQuestions_train_bgp.txt'
 
 output_path = resources_cwq + '/output_cwq'
-# train_structure_with_2_1_grounded_graph_file = output_path + '/2.1/' + 'structures_with_2_1_grounded_graph_all_train_head_0901_0_5000.json'
-# train_structure_with_2_1_grounded_graph_file = output_path + '/2.1/' + 'structures_with_2_1_grounded_graph_all_train_head_0901_0_15000.json'
 train_structure_with_2_1_grounded_graph_file = output_path + '/2.1/' + 'structures_with_2_1_grounded_graph_all_train_head_0901.json'
 # dev_structure_with_2_1_grounded_graph_file = output_path + '/2.1/' + 'structures_with_2_1_grounded_graph_all_dev_head_0901.json'
 test_structure_with_2_1_grounded_graph_file = output_path + '/2.1/' + 'structures_with_2_1_grounded_graph_all_test_head_0901.json'
@@ -49,7 +47,6 @@ def generate_predicate_qids():
     # dev_qid_to_grounded_graph_dict = questions_utils.extract_grounded_graph_from_jena_freebase(dev_cwq_bgp_filepath)
     test_qid_to_grounded_graph_dict = questions_utils.extract_grounded_graph_from_jena_freebase(test_cwq_bgp_filepath)
     qid_abstractquestions = read_json(data_question_match + 'qid_abstractquestion.json')
-
     train_predicate_qids = collections.defaultdict(list)
     for qid, grounded_graph in train_qid_to_grounded_graph_dict.items():
         # qid='train_'+str(qid.split('-')[1])
@@ -121,15 +118,12 @@ def generate_trainset():
 
     for k, predicate in enumerate(train_predicate_qids):
         print(k, predicate)
-
         same_abstractquestions = set()
         for qid in train_predicate_qids[predicate]:
             if qid in qid_abstractquestions:
                 same_abstractquestions.add(qid_abstractquestions[qid])
-
         residu_abstractquestions=(list(abstractquestion_all-same_abstractquestions))
         same_abstractquestions=list(same_abstractquestions)[:10]
-
         for first, current in enumerate(same_abstractquestions):
             for second, gold in enumerate(same_abstractquestions):
                 if current != gold:
@@ -138,7 +132,6 @@ def generate_trainset():
                     trainset.append([current, gold, 1])
                     for neg in neg_samples:
                         trainset.append([current, neg, 0])
-
         # if len(same_abstractquestions)>1:
         #     current=list(same_abstractquestions)[0]
         #     gold=list(same_abstractquestions)[1]
@@ -156,7 +149,6 @@ def generate_trainset():
         #     for neg in neg_samples:
         #         trainset.append([current, neg, 0])
         #     # trainset.append([current, gold, neg_samples])
-
     write_json(trainset,data_question_match + 'trainset.json')
 
 def generate_testset():
@@ -164,26 +156,22 @@ def generate_testset():
     test_2_1 = read_structure_file(test_structure_with_2_1_grounded_graph_file)
     train_predicate_qids = read_json(data_question_match + 'train_predicate_qids.json')
     qid_abstractquestions = read_json(data_question_match + 'qid_abstractquestion.json')
-
     train_abstractquestion = set()
     for predicate in train_predicate_qids:
         for qid in train_predicate_qids[predicate]:
             if qid in qid_abstractquestions:
                 train_abstractquestion.add(qid_abstractquestions[qid])
-
     test_abstractquestions=set()
     for one in test_2_1:
         if 'test_'+str(one.qid) in qid_abstractquestions:
             abstractquestion=qid_abstractquestions['test_'+str(one.qid)]
             test_abstractquestions.add(abstractquestion)
-
     for abstractquestion in test_abstractquestions:
         for ta in train_abstractquestion:
             testset.append([abstractquestion, ta])
     write_json(testset, data_question_match+ 'testset.json')
 
 def score_testquestion_bert():
-
     def reverse(path):
         data = read_json(path)
         res = dict()
@@ -191,7 +179,6 @@ def score_testquestion_bert():
             for val in data[key]:
                 res[val] = key
         return res
-
     # def read_abstractquestionpair_pro():
     #     diction = dict()
     #     with open(data_question_match + '09_03_cwq_test_gpu.log', 'r') as f: #'05_10_test.log'
@@ -221,7 +208,6 @@ def score_testquestion_bert():
         mm.close()
         f.close()
         return diction
-
 
     abstractquestionpair_pro = read_abstractquestionpair_pro()
     # print(abstractquestionpair_pro)
@@ -267,7 +253,6 @@ def score_testquestion_bert():
     write_json(test_qid_trainqid_pro,data_question_match+'test_qid_trainqid_pro_bert')
     write_json(testqid_trainqidmax,data_question_match+'testqid_trainqid_bertmax.json')
 
-
 def investigate_denotation_same():
 
     testqid_trainqid_bertmax = read_json(data_question_match + 'testqid_trainqid_bertmax.json')
@@ -305,7 +290,6 @@ def investigate_denotation_same():
 
 
 if __name__=='__main__':
-
     '''1'''
     # generate_qid_abstractquestion()
 

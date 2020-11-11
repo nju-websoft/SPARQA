@@ -5,12 +5,12 @@ import torch
 from common.globals_args import fn_cwq_file, fn_graph_file, root, argument_parser, kb_freebase_latest_file, kb_freebase_en_2013
 from common.hand_files import read_json, write_json, read_structure_file
 import random
-from grounding.ranking.path_match_nn.wordvec import WordEmbedding
+from grounding.ranking.path_match_word_level.wordvec import WordEmbedding
 from datasets_interface.question_interface.questions_utils import extract_grounded_graph_from_jena_freebase
-from grounding.ranking.path_match_nn import path_match_word_utils
-from grounding.ranking.path_match_nn import wordvec
+from grounding.ranking.path_match_word_level import path_match_word_utils
+from grounding.ranking.path_match_word_level import wordvec
 from parsing import parsing_utils
-from grounding.ranking.path_match_nn.parameters import get_parameters
+from grounding.ranking.path_match_word_level.parameters import get_parameters
 model_parameters = get_parameters()
 
 def conquer_cwq():
@@ -236,12 +236,10 @@ def train_data_generation_samestructure_wq(train_qid_to_grounded_graph_dict, pro
             continue
         elif len(list(train_qid_abstractquestions[qid])[0]) == 0:
             continue
-
         # if 'WebQTrn-'+str(qid) not in train_qid_to_grounded_graph_dict:
         #     print('do not exist: WebQTrn-'+str(qid))
         #     continue
         # gold_graph = train_qid_to_grounded_graph_dict['WebQTrn-'+str(qid)]
-
         if qid not in train_qid_to_grounded_graph_dict:
             print('do not exist: '+ qid)
             continue
@@ -251,7 +249,6 @@ def train_data_generation_samestructure_wq(train_qid_to_grounded_graph_dict, pro
             predicates.append(edge.friendly_name)
         predicates.sort()
         gold_path = '\t'.join(predicates)
-
         negatives=list()
         j=0
         for structure in data:
@@ -265,7 +262,6 @@ def train_data_generation_samestructure_wq(train_qid_to_grounded_graph_dict, pro
                     if j < model_parameters.neg_size and len(ps) == len(predicates) and path != gold_path:
                         negatives.append(path)
                         j += 1
-
         if j>0:
             if j < model_parameters.neg_size:
                 while j < model_parameters.neg_size:
@@ -398,7 +394,6 @@ def divide_train_val(infile, out_file1, out_file2):
     torch.save((val_pos_ques_pathsimmax_list, val_pos_path_quessimmax_list, val_pos_path_len_list,val_neg_ques_pathsimmax_list, val_neg_path_quessimmax_list,val_neg_path_len_list),out_file2)
 
 if __name__=='__main__':
-
     conquer_graphq()
     # pass
     # conquer()

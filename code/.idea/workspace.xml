@@ -10,15 +10,57 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/code$pipeline_graphq.coverage" NAME="pipeline_graphq Coverage Results" MODIFIED="1597369992879" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/running/freebase" />
+    <SUITE FILE_PATH="coverage/code$query_graph_generator.coverage" NAME="query_graph_generator Coverage Results" MODIFIED="1605079458266" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/parsing" />
+    <SUITE FILE_PATH="coverage/code$pipeline_graphq.coverage" NAME="pipeline_graphq Coverage Results" MODIFIED="1605084358090" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/running/freebase" />
+    <SUITE FILE_PATH="coverage/code$path_match_interface__1_.coverage" NAME="path_match_interface (1) Coverage Results" MODIFIED="1605082718445" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/grounding/ranking/path_match_word_level" />
+    <SUITE FILE_PATH="coverage/code$path_match_interface.coverage" NAME="path_match_interface Coverage Results" MODIFIED="1605081939388" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/grounding/ranking/path_match_nn" />
+  </component>
+  <component name="DockManager">
+    <window id="6">
+      <content type="file-editors">
+        <state>
+          <leaf>
+            <file leaf-file-name="grounded_graph_to_sparql.py" pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/grounding/grounded_graph_to_sparql.py">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="409">
+                    <caret line="221" column="33" selection-start-line="221" selection-start-column="4" selection-end-line="221" selection-end-column="33" />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
+    <window id="4">
+      <content type="file-editors">
+        <state>
+          <leaf>
+            <file leaf-file-name="grounding_args.py" pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/grounding/grounding_args.py">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="288">
+                    <caret line="38" column="14" selection-start-line="38" selection-start-column="14" selection-end-line="38" selection-end-column="14" />
+                    <folding>
+                      <element signature="e#0#31#0" expanded="true" />
+                    </folding>
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="pipeline_graphq.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/running/freebase/pipeline_graphq.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="10" column="49" lean-forward="true" selection-start-line="10" selection-start-column="49" selection-end-line="10" selection-end-column="49" />
+            <state relative-caret-position="405">
+              <caret line="15" column="26" lean-forward="true" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
               <folding>
                 <element signature="e#0#50#0" expanded="true" />
               </folding>
@@ -26,22 +68,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="graphquestion_interface.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/datasets_interface/question_interface/graphquestion_interface.py">
+      <file leaf-file-name="pipeline_cwq.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/running/freebase/pipeline_cwq.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="151">
-              <caret line="56" column="86" selection-start-line="56" selection-start-column="86" selection-end-line="56" selection-end-column="86" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dataset_name.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/common/dataset_name.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
-              <caret line="28" column="22" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
+            <state relative-caret-position="378">
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
               <folding>
-                <element signature="e#88#1174#0" />
+                <element signature="e#0#31#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -50,8 +83,8 @@
       <file leaf-file-name="globals_args.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/common/globals_args.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
+            <state relative-caret-position="349">
+              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
               <folding>
                 <element signature="e#0#58#0" expanded="true" />
               </folding>
@@ -59,20 +92,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hand_files.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/common/hand_files.py">
+      <file leaf-file-name="running_interface.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/running/running_interface.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
-              <caret line="380" selection-start-line="380" selection-end-line="380" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bert_args.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/common/bert_args.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="729">
-              <caret line="27" column="32" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
+            <state relative-caret-position="25">
+              <caret line="162" column="4" selection-start-line="162" selection-start-column="4" selection-end-line="162" selection-end-column="4" />
+              <folding>
+                <element signature="e#0#82#0" expanded="true" />
+                <element signature="e#149#823#0" />
+                <element signature="e#923#2173#0" />
+                <element signature="e#2338#4617#0" />
+                <element signature="e#2554#2807#0" />
+                <element signature="e#4694#5985#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -84,6 +116,19 @@
       <find>run_sequence_classifier</find>
       <find>question_normal</find>
       <find>graph_testing_question_normal</find>
+      <find>graphquestions_testing_answers_dir</find>
+      <find>2019.05.13_test_answers</find>
+      <find>test_qid_to_answers_mid_dict</find>
+      <find>freebase_graph_name_entity_file</find>
+      <find>clueweb_mention_pro_entity_file</find>
+      <find>schema_lines_list</find>
+      <find>relortype_level_words</find>
+      <find>property_level_words</find>
+      <find>Error structure</find>
+      <find>path_match_vocab</find>
+      <find>read_ngram_el_grounding_result</find>
+      <find>freebase_relation_finalwords</find>
+      <find>QuestionMatchInterface</find>
     </findStrings>
     <dirStrings>
       <dir>C:\Users\ywsun\Desktop\github_test\SPARQA\code</dir>
@@ -93,12 +138,30 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/common/bert_args.py" />
-        <option value="$PROJECT_DIR$/common/kb_name.py" />
-        <option value="$PROJECT_DIR$/running/freebase/pipeline_cwq.py" />
         <option value="$PROJECT_DIR$/parsing/query_graph_generator.py" />
+        <option value="$PROJECT_DIR$/datasets_interface/virtuoso_interface/freebase_sparql_odbc.py" />
         <option value="$PROJECT_DIR$/datasets_interface/question_interface/graphquestion_interface.py" />
-        <option value="$PROJECT_DIR$/running/freebase/pipeline_graphq.py" />
+        <option value="$PROJECT_DIR$/grounding/ranking/path_match_vocab.py" />
+        <option value="$PROJECT_DIR$/grounding/_2_2_grounded_graph_offline/graph_2_1_to_2_2_by_transfer.py" />
+        <option value="$PROJECT_DIR$/grounding/_2_2_grounded_graph_offline/path_to_graph.py" />
+        <option value="$PROJECT_DIR$/common/kb_name.py" />
+        <option value="$PROJECT_DIR$/grounding/grounding_args.py" />
         <option value="$PROJECT_DIR$/common/dataset_name.py" />
+        <option value="$PROJECT_DIR$/grounding/ranking/path_match_nn/path_match_interface.py" />
+        <option value="$PROJECT_DIR$/grounding/ranking/path_match_nn/question_match_data_preparation_cwq.py" />
+        <option value="$PROJECT_DIR$/grounding/ranking/path_match_word_level/path_match_interface.py" />
+        <option value="$PROJECT_DIR$/grounding/ranking/path_match_word_level/path_match_word_utils.py" />
+        <option value="$PROJECT_DIR$/grounding/ranking/path_match_word_level/question_match_interface.py" />
+        <option value="$PROJECT_DIR$/grounding/ranking/path_match_word_level/train_test_path_nn.py" />
+        <option value="$PROJECT_DIR$/grounding/ranking/path_match_sentence_level/question_match_data_preparation_graphquestions.py" />
+        <option value="$PROJECT_DIR$/grounding/grounded_graph_to_sparql.py" />
+        <option value="$PROJECT_DIR$/grounding/ranking/path_match_sentence_level/question_match_interface.py" />
+        <option value="$PROJECT_DIR$/grounding/ranking/path_match_sentence_level/question_match_data_preparation_cwq.py" />
+        <option value="$PROJECT_DIR$/grounding/ranking/path_match_word_level/preproccess_freebase.py" />
+        <option value="$PROJECT_DIR$/evaluation/kbcqa_evaluation.py" />
+        <option value="$PROJECT_DIR$/running/running_interface.py" />
+        <option value="$PROJECT_DIR$/running/freebase/pipeline_graphq.py" />
+        <option value="$PROJECT_DIR$/running/freebase/pipeline_cwq.py" />
         <option value="$PROJECT_DIR$/common/globals_args.py" />
       </list>
     </option>
@@ -123,7 +186,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -151,6 +213,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -159,6 +222,11 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ywsun\Desktop\github_test\SPARQA\code\grounding\ranking\path_match_sentence_level" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -172,7 +240,45 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.pipeline_graphq">
+    <configuration name="path_match_interface (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="code" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/grounding/ranking/path_match_word_level" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/grounding/ranking/path_match_word_level/path_match_interface.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="path_match_interface" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="code" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/grounding/ranking/path_match_nn" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/grounding/ranking/path_match_nn/path_match_interface.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <configuration name="pipeline_graphq" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="code" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -192,9 +298,37 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
+    <configuration name="query_graph_generator" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="code" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/parsing" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/parsing/query_graph_generator.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.pipeline_graphq" />
+      <item itemvalue="Python.query_graph_generator" />
+      <item itemvalue="Python.path_match_interface" />
+      <item itemvalue="Python.path_match_interface (1)" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.pipeline_graphq" />
+        <item itemvalue="Python.path_match_interface (1)" />
+        <item itemvalue="Python.path_match_interface" />
+        <item itemvalue="Python.query_graph_generator" />
       </list>
     </recent_temporary>
   </component>
@@ -220,10 +354,10 @@
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.28467155" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.274244" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="right" id="Remote Host" order="3" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15031983" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20255864" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -250,122 +384,59 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/common/dataset_name.py</url>
-          <line>24</line>
+          <line>22</line>
           <option name="timeStamp" value="26" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/common/dataset_name.py</url>
-          <line>33</line>
-          <option name="timeStamp" value="32" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/running/freebase/pipeline_graphq.py</url>
-          <line>11</line>
-          <option name="timeStamp" value="37" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/running/freebase/pipeline_graphq.py</url>
           <line>9</line>
           <option name="timeStamp" value="38" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/running/freebase/pipeline_graphq.py</url>
+          <line>42</line>
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/running/running_interface.py</url>
+          <line>177</line>
+          <option name="timeStamp" value="42" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/datasets_interface/virtuoso_interface/freebase_kb_interface.py</url>
+          <line>26</line>
+          <option name="timeStamp" value="43" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/datasets_interface/virtuoso_interface/freebase_sparql_odbc.py</url>
+          <line>3</line>
+          <option name="timeStamp" value="46" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/evaluation/kbcqa_evaluation.py</url>
+          <line>106</line>
+          <option name="timeStamp" value="48" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/evaluation/kbcqa_evaluation.py</url>
+          <line>113</line>
+          <option name="timeStamp" value="49" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/evaluation/kbcqa_evaluation.py</url>
+          <line>111</line>
+          <option name="timeStamp" value="50" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/evaluation/kbcqa_evaluation.py</url>
+          <line>13</line>
+          <option name="timeStamp" value="51" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="39" />
+      <option name="time" value="58" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/grounding/ranking/path_match_nn/train_test_path_nn.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/parsing/models/fine_tuning_based_on_bert/run_sequence_classifier.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4077">
-          <caret line="162" column="16" selection-start-line="162" selection-start-column="16" selection-end-line="162" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/parsing/models/fine_tuning_based_on_bert_interface/paraphrase_classifier_interface.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/running/freebase/pipeline_graphq.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="621">
-          <caret line="25" column="17" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/running/freebase/pipeline_graphq.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="25" column="17" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/parsing/query_graph_generator.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/parsing/parsing_args.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/running/running_interface.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-426">
-          <caret line="227" column="4" selection-start-line="227" selection-start-column="4" selection-end-line="227" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/evaluation/cwq_precision_1/eval_script_ywsun.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/evaluation/cwq_precision_1/eval_script.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3735" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/kb_name.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/parsing/models/fine_tuning_based_on_bert_interface/redundancy_span_interface.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-241" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/parsing/models/fine_tuning_based_on_bert_interface/token_classifier_interface.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1699" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/parsing/models/fine_tuning_based_on_bert_interface/headword_span_interface.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1213" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/parsing/models/fine_tuning_based_on_bert/greed_search_redundancy_span.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-997" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/parsing/models/fine_tuning_based_on_bert/greed_search_sequence_relation.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-970" />
@@ -388,9 +459,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grounding/ranking/path_match_nn/train_test_path_nn.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/parsing/models/fine_tuning_based_on_bert/run_sequence_classifier.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4077">
@@ -405,33 +473,84 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/running/freebase/pipeline_cwq.py">
+    <entry file="file://$PROJECT_DIR$/datasets_interface/virtuoso_interface/freebase_kb_interface.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="27" column="64" selection-start-line="27" selection-start-column="54" selection-end-line="27" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/hand_files.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="380" selection-start-line="380" selection-end-line="380" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/datasets_interface/question_interface/graphquestion_interface.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="56" column="86" selection-start-line="56" selection-start-column="86" selection-end-line="56" selection-end-column="86" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/dataset_name.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="28" column="22" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
+        <state relative-caret-position="243">
+          <caret line="25" column="13" lean-forward="true" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
           <folding>
-            <element signature="e#88#1174#0" />
+            <element signature="e#0#63#0" expanded="true" />
+            <element signature="e#365#971#0" />
+            <element signature="e#1133#1184#0" />
+            <element signature="e#1229#1282#0" />
+            <element signature="e#1329#1393#0" />
+            <element signature="e#1475#1574#0" />
+            <element signature="e#1611#1693#0" />
+            <element signature="e#1730#1812#0" />
+            <element signature="e#1856#2091#0" />
+            <element signature="e#2134#2369#0" />
+            <element signature="e#2405#2713#0" />
+            <element signature="e#2748#3045#0" />
+            <element signature="e#3080#3185#0" />
+            <element signature="e#3234#3649#0" />
+            <element signature="e#3684#3960#0" />
+            <element signature="e#4011#4169#0" />
+            <element signature="e#4209#5664#0" />
+            <element signature="e#5693#6919#0" />
+            <element signature="e#6953#12670#0" />
+            <element signature="e#12705#12865#0" />
+            <element signature="e#12900#12944#0" />
+            <element signature="e#12975#13302#0" />
+            <element signature="e#13347#13557#0" />
+            <element signature="e#13612#13905#0" />
+            <element signature="e#13949#14359#0" />
+            <element signature="e#14416#14573#0" />
+            <element signature="e#14605#14801#0" />
+            <element signature="e#14844#15564#0" />
+            <element signature="e#15610#17848#0" />
+            <element signature="e#17883#19207#0" />
+            <element signature="e#19238#25213#0" />
+            <element signature="e#25244#25988#0" />
+            <element signature="e#26028#26684#0" />
+            <element signature="e#26724#26887#0" />
+            <element signature="e#26925#28618#0" />
+            <element signature="e#28654#29606#0" />
+            <element signature="e#29649#30789#0" />
+            <element signature="e#30822#32616#0" />
+            <element signature="e#32658#33621#0" />
+            <element signature="e#33657#34101#0" />
+            <element signature="e#34167#34603#0" />
+            <element signature="e#34645#34839#0" />
+            <element signature="e#34894#35250#0" />
+            <element signature="e#35304#35501#0" />
+            <element signature="e#35563#35779#0" />
+            <element signature="e#35841#36244#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/datasets_interface/virtuoso_interface/freebase_sparql_odbc.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1269">
+          <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grounding/_2_1_grounded_graph/node_linking_interface_freebase.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="3" column="28" lean-forward="true" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/parsing/parsing_args.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="8" column="60" lean-forward="true" selection-start-line="8" selection-start-column="60" selection-end-line="8" selection-end-column="60" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -443,20 +562,398 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/running/freebase/pipeline_graphq.py">
+    <entry file="file://$PROJECT_DIR$/datasets_interface/question_interface/complexwebquestion_interface.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1920">
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/datasets_interface/question_interface/graphquestion_interface.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
+          <folding>
+            <element signature="e#179#1120#0" />
+            <element signature="e#1166#2997#0" />
+            <element signature="e#3270#3578#0" />
+            <element signature="e#3632#4213#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/datasets_interface/question_interface/questions_utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="125" lean-forward="true" selection-start-line="125" selection-end-line="125" />
+          <folding>
+            <element signature="e#0#82#0" expanded="true" />
+            <element signature="e#251#2664#0" />
+            <element signature="e#2768#5716#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grounding/_2_2_grounded_graph_offline/path_to_graph.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="52" column="36" selection-start-line="52" selection-start-column="36" selection-end-line="52" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#206#868#0" />
+            <element signature="e#950#1654#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grounding/_2_2_grounded_graph_online/ReadMe.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="23" lean-forward="true" selection-start-column="23" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grounding/_2_2_grounded_graph_offline/graph_2_1_to_2_2_by_transfer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="123" column="35" selection-start-line="123" selection-start-column="35" selection-end-line="123" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#63#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/parsing/node_recognition.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="80" column="61" lean-forward="true" selection-start-line="80" selection-start-column="61" selection-end-line="80" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/parsing/query_graph_generator_el_gold.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="50" column="18" selection-start-line="50" selection-start-column="18" selection-end-line="50" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#33#0" expanded="true" />
+            <element signature="e#478#1861#0" />
+            <element signature="e#2001#8964#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/parsing/query_graph_generator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="125" column="49" selection-start-line="125" selection-start-column="49" selection-end-line="125" selection-end-column="49" />
+          <folding>
+            <element signature="e#526#7394#0" />
+            <element signature="e#7430#7864#0" />
+            <element signature="e#7913#8568#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grounding/ranking/path_match_vocab.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="349">
+          <caret line="47" column="72" lean-forward="true" selection-start-line="47" selection-start-column="72" selection-end-line="47" selection-end-column="72" />
+          <folding>
+            <element signature="e#141#601#0" />
+            <element signature="e#636#1181#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/dataset_name.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="747">
+          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/kb_name.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/hand_files.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="332" selection-start-line="332" selection-end-line="332" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grounding/grounding_args.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="38" column="14" selection-start-line="38" selection-start-column="14" selection-end-line="38" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grounding/ranking/path_match_nn/question_match_data_preparation_cwq.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-345">
+          <caret line="268" lean-forward="true" selection-start-line="268" selection-end-line="268" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#1437#2462#0" />
+            <element signature="e#2499#5337#0" />
+            <element signature="e#5368#7716#0" />
+            <element signature="e#7746#8714#0" />
+            <element signature="e#8752#12299#0" />
+            <element signature="e#12342#14138#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grounding/ranking/path_match_word_level/model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-917">
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grounding/ranking/path_match_word_level/parameters.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-215" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grounding/ranking/path_match_word_level/sequence_loader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1160">
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grounding/ranking/path_match_word_level/train_test_path_nn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="90" lean-forward="true" selection-start-line="90" selection-end-line="90" />
+          <folding>
+            <element signature="e#24#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grounding/ranking/path_match_word_level/wordvec.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-188">
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grounding/ranking/path_match_sentence_level/paraphrase_bert.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-472">
+          <caret line="6" column="36" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grounding/ranking/path_match_sentence_level/prepare_lc.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="28" column="23" lean-forward="true" selection-start-line="28" selection-start-column="23" selection-end-line="28" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grounding/grounding_utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grounding/ranking/path_match_word_level/path_match_interface.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grounding/grounded_graph_to_sparql.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="409">
+          <caret line="221" column="33" selection-start-line="221" selection-start-column="4" selection-end-line="221" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grounding/ranking/path_match_sentence_level/question_match_interface.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2997">
+          <caret line="218" lean-forward="true" selection-start-line="218" selection-end-line="218" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grounding/ranking/path_match_sentence_level/question_match_data_preparation_graphquestions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="200" column="25" lean-forward="true" selection-start-line="200" selection-start-column="25" selection-end-line="200" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#322#1535#0" />
+            <element signature="e#1608#4538#0" />
+            <element signature="e#4573#5456#0" />
+            <element signature="e#5487#7054#0" />
+            <element signature="e#7084#8088#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grounding/ranking/path_match_sentence_level/question_match_data_preparation_cwq.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="565">
+          <caret line="292" selection-start-line="292" selection-end-line="292" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#1437#2462#0" />
+            <element signature="e#2499#5337#0" />
+            <element signature="e#5368#7716#0" />
+            <element signature="e#7746#8714#0" />
+            <element signature="e#8752#12299#0" />
+            <element signature="e#9619#10185#0" />
+            <element signature="e#12341#14137#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grounding/ranking/path_match_sentence_level/question_match_interface.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2903">
+          <caret line="122" column="34" lean-forward="true" selection-start-line="122" selection-start-column="34" selection-end-line="122" selection-end-column="34" />
+          <folding>
+            <element signature="e#1#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grounding/ranking/path_match_word_level/path_match_word_utils.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
-          <caret line="10" column="49" lean-forward="true" selection-start-line="10" selection-start-column="49" selection-end-line="10" selection-end-column="49" />
+          <caret line="49" column="42" selection-start-line="49" selection-start-column="42" selection-end-line="49" selection-end-column="42" />
+          <folding>
+            <element signature="e#131#635#0" />
+            <element signature="e#698#889#0" />
+            <element signature="e#952#1330#0" />
+            <element signature="e#1392#2117#0" />
+            <element signature="e#2166#2620#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grounding/ranking/path_match_word_level/preproccess_freebase.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="864">
+          <caret line="396" column="20" lean-forward="true" selection-start-line="396" selection-start-column="20" selection-end-line="396" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+            <element signature="e#739#2811#0" />
+            <element signature="e#2839#4672#0" />
+            <element signature="e#4702#6897#0" />
+            <element signature="e#6990#9221#0" />
+            <element signature="e#9357#11511#0" />
+            <element signature="e#11654#14183#0" />
+            <element signature="e#14273#17795#0" />
+            <element signature="e#17853#20221#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evaluation/evaluation_utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="5" selection-start-line="5" selection-end-line="5" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evaluation/kbcqa_evaluation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2821">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+            <element signature="e#264#1206#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evaluation/sempre_evaluation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1822" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/running/running_interface.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="162" column="4" selection-start-line="162" selection-start-column="4" selection-end-line="162" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#82#0" expanded="true" />
+            <element signature="e#149#823#0" />
+            <element signature="e#923#2173#0" />
+            <element signature="e#2338#4617#0" />
+            <element signature="e#2554#2807#0" />
+            <element signature="e#4694#5985#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/running/freebase/pipeline_graphq.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="15" column="26" lean-forward="true" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
           <folding>
             <element signature="e#0#50#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/running/freebase/pipeline_cwq.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/common/globals_args.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
+        <state relative-caret-position="349">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
           <folding>
             <element signature="e#0#58#0" expanded="true" />
           </folding>

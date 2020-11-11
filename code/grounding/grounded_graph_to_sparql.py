@@ -229,9 +229,3 @@ def sparql_to_denotation_freebase(sparqlquery):
     denotation_set = freebase_kb_interface.execute_sparql(sparqlquery)
     return denotation_set
 
-def sparql_to_denotation_dbpedia(sparqlquery):
-    '''sparql_result = list(sparql_to_denotation(gold_sparql))'''
-    from datasets_interface.virtuoso_interface import dbpedia_kb_interface
-    denotation_set = dbpedia_kb_interface.execute_sparql(sparqlquery)
-    return denotation_set
-

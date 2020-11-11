@@ -7,13 +7,15 @@ class KB_Freebase_Latest():
         self.entity_list_file = self.dataset + "el_aqqu_mid_vocab/entity-list"
         self.surface_map_file = self.dataset + "el_aqqu_mid_vocab/entity-surface-map"
         self.entity_index_prefix = self.dataset + "el_aqqu_mid_vocab/entity-index"
-
+        #mediator
         self.mediatortypes_file = self.dataset + "mediators.tsv"
         self.mediators_instances_file = self.dataset + "freebase_all_mediators_instances"
+        #quotations
         self.quotation_file = self.dataset + 'freebase_all_quotations_name'
         #class linking
         self.freebase_class_pro = self.dataset + 'freebase_types_reverse'
         self.freebase_class_popularity = self.dataset + 'freebase_types_popularity'
+        #relation
         self.freebase_relations_file = self.dataset+"freebase_relations"
 
 
@@ -25,7 +27,14 @@ class KB_Freebase_en_2013():
         self.freebase_graph_alias_entity = self.dataset + 'el_en_vocab/graphq201306_aliasentity_handled'
         self.graphquestions_train_friendlyname_entity = self.dataset + 'el_en_vocab/graphquestions_train_friendlyname_entity_handled'
         self.clueweb_mention_pro_entity = self.dataset + 'el_en_vocab/clueweb_name_entity_pro_handled'
+        #mediator
         self.mediatortypes_file = self.dataset + "mediatortypes"
         self.mediators_instances_file = self.dataset + "freebase_all_mediators_instances"
+        #quotations
+
+        #class linking
         self.freebase_class_pro = self.dataset + 'freebase_types_reverse'
         self.freebase_class_popularity = self.dataset + 'freebase_types_popularity'
+        #relation
+        self.freebase_relations_file = self.dataset+"freebase_relations"
+

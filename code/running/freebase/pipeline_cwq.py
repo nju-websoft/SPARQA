@@ -13,7 +13,6 @@ def run_ungrounded_graph_from_complexwebquestion(complexquestin_filepath, struct
     structure_list = running_interface.run_query_graph_generation(tuples_list=tuples_list)
     write_structure_file(structure_list, structure_with_1_ungrounded_cwq_file)
 
-
 if __name__ == '__main__':
     module = "3_evaluation"
     #1.0  utterance -> span tree -> ungrounded graph
@@ -26,8 +25,8 @@ if __name__ == '__main__':
 
     complexwebquestion_filepath = globals_args.fn_cwq_file.complexwebquestion_train_dir
     output_path = globals_args.fn_cwq_file.dataset + 'output_cwq'
-    structure_with_1_ungrounded_graphq_file = output_path + '/1/' + 'structures_with_1_ungrounded_graphs_all_train.json'
-    structure_with_2_1_grounded_graph_file = output_path + '/2.1/' + 'structures_with_2_1_grounded_graphs_all_test.json'
+    structure_with_1_ungrounded_graphq_file = output_path + '/structures_with_1_ungrounded_graphs_all_train.json'
+    structure_with_2_1_grounded_graph_file = output_path + '/structures_with_2_1_grounded_graphs_all_test.json'
     structure_with_2_2_grounded_graph_folder = output_path + '/2.2_test_span_transfer_wo_wordlevel/'
     # module
     if module == '1.0':
@@ -39,8 +38,7 @@ if __name__ == '__main__':
     elif module == '2.3_word_match':
         running_interface.run_grounding_graph_path_match(structure_with_2_2_grounded_graph_folder)
     elif module == '2.3_add_question_match':
-        # running_interface.run_grounding_graph_guiyi_add_question_match(structure_with_2_2_grounded_graph_folder)
-        running_interface.run_grounding_graph_question_match_minus(structure_with_2_2_grounded_graph_folder)
+        running_interface.run_grounding_graph_guiyi_add_question_match(structure_with_2_2_grounded_graph_folder)
         # running_interface.run_grounding_graph_add_question_match(structure_with_2_2_grounded_graph_folder)
     elif module == '3_evaluation':  # evaluation
         running_interface.run_end_to_end_evaluation(structure_with_2_2_grounded_graph_folder, dataset='cwq')

@@ -3,9 +3,9 @@ import torch
 import torch.optim as optim
 
 from common.globals_args import root, fn_graph_file
-from grounding.ranking.path_match_nn.sequence_loader import SeqRankingLoader
-from grounding.ranking.path_match_nn.model import PathRanking
-from grounding.ranking.path_match_nn.parameters import get_parameters
+from grounding.ranking.path_match_word_level.sequence_loader import SeqRankingLoader
+from grounding.ranking.path_match_word_level.model import PathRanking
+from grounding.ranking.path_match_word_level.parameters import get_parameters
 
 model_parameters = get_parameters()
 
@@ -88,7 +88,6 @@ if __name__=='__main__':
     # train_file = data_path_match + "train_pathranking_samestructure.pt"
     # val_file = data_path_match + "valid_pathranking_samestructure.pt"
     # train(train_file, val_file, model_file)
-
 
     model_file = fn_graph_file.model_file
     train_file =fn_graph_file.path_match_dir + "train_pathranking_samestructure.pt"

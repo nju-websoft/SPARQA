@@ -9,6 +9,7 @@ class GraphQuestion:
         self.qid = ''  # int  251000000,
         self.question = ''  # string  "xtracycle is which type of bicycle?",
         self.answer = ''  # list  ["Longtail"]
+        self.answer_mid = []
         self.function = ''  # string  "none"
         self.commonness = ''  # float   -19.635822428214723,
         self.num_node = ''  # int  2
@@ -36,6 +37,7 @@ def read_graph_question_json(filename):
         # graphq.question = questionAnnotation["question"]
         graphq.question = questionAnnotation["question_normal"]
         graphq.answer = questionAnnotation["answer"]
+        graphq.answer_mid = questionAnnotation["answer_mid"]
         graphq.function = questionAnnotation["function"]
         graphq.commonness = questionAnnotation["commonness"]
         graphq.num_node = questionAnnotation["num_node"]
@@ -54,20 +56,35 @@ def read_graph_question_json(filename):
         graphquestionsList.append(graphq)
     return graphquestionsList
 
-graph_questions_struct = read_graph_question_json(globals_args.fn_graph_file.graphquestions_testing_dir)
-def look_for_aggregation_by_qid(qid):
-    function = "none"
-    for graphq_struct in graph_questions_struct:
-        if graphq_struct.qid == qid:
-            function = graphq_struct.function
-            break
-    return function
+test_graph_questions_struct = read_graph_question_json(globals_args.fn_graph_file.graphquestions_testing_dir)
+train_graph_questions_struct = read_graph_question_json(globals_args.fn_graph_file.graphquestions_training_dir)
 
-"""
-qid_to_q_dict = read_dict(globals_args.fn_graph_file.question_qid_normal_dict)
-def look_for_q_normal_by_qid(qid):
-    q_normal = "none"
-    if str(qid) in qid_to_q_dict:
-        q_normal = qid_to_q_dict[str(qid)][0]
-    return q_normal
-"""
+def get_answers_by_question(question=None):
+    answers = []
+    for data_ann in test_graph_questions_struct:
+        if data_ann.question == question:
+            answers = data_ann.answer
+            break
+    for data_ann in train_graph_questions_struct:
+        if data_ann.question == question:
+            answers = data_ann.answer
+    return answers
+
+def get_answers_mid_by_question(question=None):
+    answers = []
+    for data_ann in test_graph_questions_struct:
+        if data_ann.question == question:
+            answers = data_ann.answer_mid
+            break
+    for data_ann in train_graph_questions_struct:
+        if data_ann.question == question:
+            answers = data_ann.answer_mid
+    # [80] -> ['80']
+    new_gold_answers_set = set()
+    for gold_answer in answers:
+        if isinstance(gold_answer, int):
+            new_gold_answers_set.add(str(gold_answer))
+        else:
+            new_gold_answers_set.add(gold_answer)
+    return list(new_gold_answers_set)
+
