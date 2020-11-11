@@ -26,7 +26,7 @@ If you meet any questions, please email to him (ywsun at smail.nju.edu.cn).
 ## Configuration
 * Root of dataset: default D:/dataset. Note that you can edit it in common/globals_args.py. 
 
-** Note that the following files are in baidu wangpan. The extraction code of all files is kbqa. Default unzip and save in the root**
+**Note that the following files are in baidu wangpan. The extraction code of all files is kbqa. Default unzip and save in the root**
 
 ## Common Resources
 * Eight Resources: GloVe (glove.6B.300d), Stanford CoreNLP server, SUTime Java library, BERT pre-trained Models, and four preprocessing files(stopwords.txt, ordinal_fengli.tsv, unimportantphrase, and unimportantwords). [pan](https://pan.baidu.com/s/1Wd3ghjpn3oB20uTodDFGHA). The extraction code is kbqa. unzip and save in the root.
