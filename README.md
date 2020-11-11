@@ -57,11 +57,11 @@ Below, an example on GraphQuestions.
 * Replace the freebase_pyodbc_info and freebase_sparql_html_info in the common/globals_args.py with your local address. (note that 2013 version is for GraphQuestions, and latest version is for CWQ 1.1).
 
 ### KB-indenpendent query generation
-* Run KB-indenpendent query generation. Setup variable module=1.0. The input: graph_questions_filepath. The output: structure_with_1_ungrounded_graphq_file. We provided [one sample](https://github.com/nju-websoft/SPARQA/blob/master/slides/274000300.json) to help easily understand the complete structure. I can provide the structures of all questions if you need.
+* Run KB-indenpendent query generation. Setup variable module=1.0. The input: graph_questions_filepath. The output: structure_with_1_ungrounded_graphq_file. We provided sample in output_graphq folder.
 
 ### KB-dependent query generation
 * Generate variant generation. Set variable module=2.1. The input: structure_with_1_ungrounded_graphq_file. The output: structure_with_2_1_grounded_graph_file.
-* Ground candidate queries. Set module=2.2. The input: structure_with_2_1_grounded_graph_file. The output: structure_with_2_2_grounded_graph_folder.
+* Ground candidate queries. Set module=2.2. The input: structure_with_2_1_grounded_graph_file. The output: structure_with_2_2_grounded_graph_folder. We provided [one sample](https://github.com/nju-websoft/SPARQA/blob/master/slides/274000300.json) to understand easily. We also provided samples of questions in output_graphq folder.
 * Rank using word-level scorer. Set module=2.3_word_match. The input: structure_with_2_2_grounded_graph_folder.
 * Combine sentence-level scorer and word-level scorer. Set module=2.3_add_question_match. The input: structure_with_2_2_grounded_graph_folder.
 * Run evaluation. Set module=3_evaluation. The input: structure_with_2_2_grounded_graph_folder. The output: results. 
