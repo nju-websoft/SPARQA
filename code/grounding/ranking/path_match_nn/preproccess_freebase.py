@@ -5,12 +5,12 @@ import torch
 from common.globals_args import fn_cwq_file, fn_graph_file, root, argument_parser, kb_freebase_latest_file, kb_freebase_en_2013
 from common.hand_files import read_json, write_json, read_structure_file
 import random
-from grounding.ranking.path_match_word_level.wordvec import WordEmbedding
+from grounding.ranking.path_match_nn.wordvec import WordEmbedding
 from datasets_interface.question_interface.questions_utils import extract_grounded_graph_from_jena_freebase
-from grounding.ranking.path_match_word_level import path_match_word_utils
-from grounding.ranking.path_match_word_level import wordvec
+from grounding.ranking.path_match_nn import path_match_word_utils
+from grounding.ranking.path_match_nn import wordvec
 from parsing import parsing_utils
-from grounding.ranking.path_match_word_level.parameters import get_parameters
+from grounding.ranking.path_match_nn.parameters import get_parameters
 model_parameters = get_parameters()
 
 def conquer_cwq():

@@ -88,7 +88,7 @@ def run_grounded_graph_generation_by_structure_transformation(structure_with_gro
 #2.3_path match
 def run_grounding_graph_path_match(input_file_folder):
     '''path candidate grounding graph'''
-    from grounding.ranking.path_match_word_level.path_match_interface import PathMatchByLexicalNN
+    from grounding.ranking.path_match_nn.path_match_interface import PathMatchByLexicalNN
     import os
     from parsing.parsing_utils import extract_importantwords_from_question
     all_data_path = os.listdir(input_file_folder)

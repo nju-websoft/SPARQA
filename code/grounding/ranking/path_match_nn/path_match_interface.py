@@ -3,9 +3,9 @@ from torch.autograd import Variable
 
 from common.globals_args import fn_graph_file, fn_cwq_file, kb_freebase_latest_file, kb_freebase_en_2013, q_mode as mode
 from common.hand_files import read_json
-from grounding.ranking.path_match_word_level.parameters import get_parameters
-from grounding.ranking.path_match_word_level.wordvec import WordEmbedding
-from grounding.ranking.path_match_word_level import path_match_word_utils
+from grounding.ranking.path_match_nn.parameters import get_parameters
+from grounding.ranking.path_match_nn.wordvec import WordEmbedding
+from grounding.ranking.path_match_nn import path_match_word_utils
 
 
 class PathMatchByLexicalNN():
