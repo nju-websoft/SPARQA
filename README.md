@@ -30,7 +30,7 @@ If you meet any questions, please email to him (ywsun at smail.nju.edu.cn).
 
 ## Common Resources
 * [Eight Resources](https://pan.baidu.com/s/1__BBXhEvUuRfqdurofHooQ): GloVe (glove.6B.300d), Stanford CoreNLP server, SUTime Java library, BERT pre-trained Models, and four preprocessing files(stopwords.txt, ordinal_fengli.tsv, unimportantphrase, and unimportantwords). unzip and save in the root.
-* Two version Freebase: [latest version](https://developers.google.com/freebase) and [2013 version](https://pan.baidu.com/s/1FWwv1R_7JtO_mpk_6pL_TQ). Next, download a virtuoso server and load the KBs. The [file](http://ws.nju.edu.cn/blog/2017/03/virtuoso%E5%AE%89%E8%A3%85%E5%92%8C%E5%AF%BC%E5%85%A5%E6%95%B0%E6%8D%AE/) is helpful, if you meet questions.
+* Two version Freebase: [latest version](https://pan.baidu.com/s/1CCxljj_yH9S3Y4Zeh6epmw) and [2013 version](https://pan.baidu.com/s/1FWwv1R_7JtO_mpk_6pL_TQ). Next, download a virtuoso server and load the KBs. You can also download the KBs from [freebase site](https://developers.google.com/freebase). The [file](http://ws.nju.edu.cn/blog/2017/03/virtuoso%E5%AE%89%E8%A3%85%E5%92%8C%E5%AF%BC%E5%85%A5%E6%95%B0%E6%8D%AE/) is helpful, if you meet questions.
 
 ## Specific CWQ 1.1 Resources
 * [CWQ 1.1 dataset](https://pan.baidu.com/s/1N_WBCmoQIvNCk_W4oFHeKA): skeleton parsing models, word-level scorer model, sentence-level scorer model. unzip and save in the root.
