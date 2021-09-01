@@ -96,4 +96,6 @@ Below, an example on GraphQuestions.
 	}
 
 ## Contacts
-If you have any difficulty or questions in running codes, reproducing experimental results, and skeleton parsing, please email to him (ywsun at smail.nju.edu.cn). 
+If you have any difficulty or questions in running codes, reproducing experimental results, and skeleton parsing, please email to him (ywsun at smail.nju.edu.cn).
+
+**Note that SPARQA is updated to: SkeletonKBQA. If you are interested in SkeletonKBQA, please see [here](https://github.com/nju-websoft/SkeletonKBQA).**
