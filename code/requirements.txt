@@ -4,7 +4,7 @@ tqdm==4.29.1
 torch==1.5.1+cpu
 numpy==1.16.4
 fuzzywuzzy==0.17.0
-requests==2.20.0
+requests==2.31.0
 boto3==1.9.62
 networkx==2.3
 nltk==3.4.5
